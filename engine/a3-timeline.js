@@ -209,17 +209,19 @@
     try{
       const lr=await fetch(Z.ROOT+'analysis/lyrics_mv.lrc');
       const lrc=(lr.ok?await lr.text():'').replace(/^﻿/,'').replace(/^\[ti:.*\]\s*$/m,'');
-      const jzOptIn=new URLSearchParams(location.search).get('jz')==='1';
+      const _q=new URLSearchParams(location.search);
+      const jzOptIn=_q.get('jz')==='1';
+      const _style=_q.get('style'), _scheme=_q.get('scheme');
       if(lrc.trim()&&window.J&&window.JZ&&jzOptIn){
         JZ.setAudio({duration:film.duration,beats:Z.audio.beats,energy:null,energyRate:0});
         // Whitelist, not deny-list: the plates are pale portraits, so only layouts that keep type in a
         // readable band (or a vertical column) may be used. Anything not listed is off except 'none'.
         const KEEP = {
-          layout: 'center mixed vcols condensed stack quote lowerThird frameBox corners columnsBig tyBandHide tyLineFocus swissGrid',
+          layout: 'center vcols condensed tyLineFocus',
           enter: 'type wipe slice riseMask dropMask slideL slideR strokeDraw outlineFill blurStagger fadeStagger trackIn inkBleed',
           hold: 'still drift breathe sway float zoomSlow trackBreathe shimmer',
           exit: 'wipe drift sinkMask blurOut shrink foldOut',
-          decor: 'brackets lines ruledLines indexNum bracketsJP',
+          decor: 'brackets lines indexNum',
           treat: 'outline softShadow underline sizeWave kerningWide emphasisDots',
           fx: 'chroma rgbSplit whipBlur bloom',
           bg: '', cam: '', trans: ''
@@ -234,8 +236,8 @@
           extra:true,wa:false,horror:false,
           colors:{accentOn:true,accent:GOLD,ghostA:'#39C6E0',ghostB:'#C8373A'},
           schemes:[0],                                      // sumi scheme 0: ink text on the pale plates
-          fx:{motion:.7,glitch:.35,chroma:.55,decor:.4,density:.5,texture:.5,flash:false,koma:12,hud:'off',bgSwitch:.3}};
-        await JZ.addPlan('main',Object.assign({},common,{style:'sumi',mood:'editorial',centerFree:true}));
+          fx:{motion:.55,glitch:.25,chroma:.5,decor:0,density:.12,texture:.45,flash:false,koma:12,hud:'off',bgSwitch:0}};
+        await JZ.addPlan('main',Object.assign({},common,{style:_style||'sumi',mood:'editorial',centerFree:true,schemes:_scheme!=null?[_scheme]:common.schemes}));
         await JZ.addPlan('cf',Object.assign({},common,{style:'sumi',mood:'editorial',centerFree:true}));
         await JZ.addPlan('noir',Object.assign({},common,{style:'noir',mood:'glitch',
           fx:Object.assign({},common.fx,{glitch:.6,chroma:.75})}));
