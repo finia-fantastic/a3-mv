@@ -23,11 +23,11 @@ def tsv(name):
 
 plates = [1,2,6,7,29,32,34,45,59]
 manifest = [stage(SOURCE/'素材'/f'{i}.png', ROOT/'assets/a3'/f'{i}.png') for i in plates]
-source_master = SOURCE/'音频/夜酒_无和声.wav'
-master = stage(source_master, ROOT/'audio/A3_no_harmony.wav')
-master['provenance'] = '夜酒_无和声.wav; explicitly selected by user'
-master['sampleRate'] = 44100
-master['sourceDuration'] = 191.541406
+source_master = ROOT/'audio/A3_film.wav'
+master = stage(source_master, ROOT/'audio/A3_film.wav')
+master['provenance'] = '夜酒_无和声.wav, 0-186.6 s; Suno AI announcement at 188-191 s removed, 3 s fade-out'
+master['sampleRate'] = 48000
+master['sourceDuration'] = 186.6
 master['alignmentStatus'] = 'Existing lyric times retained; alignment against this recording not yet checked'
 lines = [{'start': float(r['start_s']), 'end': float(r['end_s']), 'text':r['ja'], 'zh':(r.get('zh_reference') or '').strip()} for r in tsv('A3_aligned.tsv')]
 cues = [{'start':float(r['start_s']), 'end':float(r['end_s']), 'text':r['keyword']} for r in tsv('A3_keyword_cues.tsv')]
@@ -62,7 +62,7 @@ lrc_lines.append((100.25, lrc_stamp(100.25) + '[間奏 11.85]'))
 lrc_lines.sort(key=lambda x: x[0])
 LRC = '\n'.join(x[1] for x in lrc_lines) + '\n'
 
-DATA = {'title':'恋爱如酒','singer':'肥鱼爱吃大白饭','duration':191.541,'fps':30,
+DATA = {'title':'恋爱如酒','singer':'肥鱼爱吃大白饭','duration':186.6,'fps':30,
         'lines':lines, 'cues':cues, 'plates':manifest,'master':master,'timingConflicts':conflicts,
         'timingPolicy':'Sentence and keyword timestamps are separate authoritative inputs; no inferred word timing.'}
 dst=ROOT/'analysis/a3-film.json'
@@ -78,7 +78,7 @@ if dst.exists() and dst.read_text(encoding='utf-8') != text:
         return d
     a, b = norm(previous), norm(DATA)
     for key in set(a) | set(b):
-        if key != 'master' and a.get(key) != b.get(key):
+        if key not in ('master','duration') and a.get(key) != b.get(key):
             raise RuntimeError(f'Refusing unrelated generated-data change: {key}')
 dst.write_text(text,encoding='utf-8')
 lrc_dst = ROOT/'analysis/lyrics_mv.lrc'

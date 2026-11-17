@@ -1,7 +1,7 @@
 {
   "title": "恋爱如酒",
   "singer": "肥鱼爱吃大白饭",
-  "duration": 191.541,
+  "duration": 186.6,
   "fps": 30,
   "lines": [
     {
@@ -361,11 +361,11 @@
     }
   ],
   "master": {
-    "path": "audio/A3_no_harmony.wav",
-    "sha256": "55fcacf2b81648bc26708e36ad83f9be387a4781c3f0ea550d0ccb3ab00d1139",
-    "provenance": "夜酒_无和声.wav; explicitly selected by user",
-    "sampleRate": 44100,
-    "sourceDuration": 191.541406,
+    "path": "audio/A3_film.wav",
+    "sha256": "3e05662fd466f0e49832f294e1020cb8e65e6b41c2793b674c1f8fa7c80ed1ba",
+    "provenance": "夜酒_无和声.wav, 0-186.6 s; Suno AI announcement at 188-191 s removed, 3 s fade-out",
+    "sampleRate": 48000,
+    "sourceDuration": 186.6,
     "alignmentStatus": "Existing lyric times retained; alignment against this recording not yet checked"
   },
   "timingConflicts": [

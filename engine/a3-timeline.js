@@ -297,7 +297,7 @@
       const shot={id:`a3_${String(i+1).padStart(2,'0')}`,t0,t1:rows[i+1]?.[0]??film.duration,
         scene:'a3-plate',args:{image,kind,from,to,cupAnchor:[1080,610,160,36]},
         lyric:jzOn?'front':'none',plan:closeup?'cf':'main',hud:false,text,
-        post:S=>({fade:S.t<.45?1-C(S.t/.45):C((S.t-189.5)/(film.duration-189.5))})};
+        post:S=>({fade:S.t<.45?1-C(S.t/.45):C((S.t-(film.duration-2.4))/2.4)})};
       if(i&&['outro','instrumental'].includes(kind)) shot.trans={type:'xfade',dur:.6};
       return shot;
     });

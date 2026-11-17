@@ -9,7 +9,7 @@
 <body><main><header><div><h1>恋爱如酒</h1><small>九张原图 · 日文歌词 · 16:9 / 1920 × 1080 / 30 fps</small></div><small>字效与运镜试剪</small></header>
 <canvas id="out" width="1920" height="1080" aria-label="歌词音乐视频预览"></canvas>
 <div class="controls"><button id="play" disabled>加载中…</button><input id="seek" type="range" min="0" max="191.541" step="0.033333" value="0" aria-label="播放进度"><output id="clock">00:00.000 / 03:11.541</output><button id="back" aria-label="上一帧">−1 帧</button><button id="forward" aria-label="下一帧">+1 帧</button><select id="line" aria-label="跳转到歌词"><option value="0">片头</option></select></div>
-<div class="notes"><p id="status" role="status">准备图片和字体…</p><p id="warning">本版使用你指定的「夜酒_无和声.wav」（44.1 kHz / 191.541 秒）。逐句和关键词时间保留原表，尚未对这份录音完成回听校对；三个“苦い”卡点存在来源冲突。</p><details><summary>查看试剪说明</summary><pre id="notes"></pre></details></div>
+<div class="notes"><p id="status" role="status">准备图片和字体…</p><p id="warning">本版音频：夜酒_无和声 0–186.6 秒（48 kHz），已剪掉结尾 188–191 秒的 AI 播报并加 3 秒淡出。逐句和关键词时间保留原表；三个“苦い”卡点与整句时间冲突，画面里只在整句含该词时才播。</p><details><summary>查看试剪说明</summary><pre id="notes"></pre></details></div>
 <audio id="audio" preload="metadata"></audio></main>
 <script>if(new URLSearchParams(location.search).has('render'))document.body.classList.add('render-only');</script>
 <script>
