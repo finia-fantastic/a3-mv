@@ -106,6 +106,7 @@
       await Promise.all([
         document.fonts.load('500 58px "Noto Serif JP"','恋ってお酒みたいでちょっと苦い'),
         document.fonts.load('400 150px "Dela Gothic One"','乾杯苦いお酒'),
+        document.fonts.load('500 46px "A3 Chinese"','恋爱如酒演唱肥鱼爱吃大白饭我们的相遇会是意外吗'),
         document.fonts.load('700 100px "A3 Chinese"','恋爱如酒演唱肥鱼爱吃大白饭')
       ]);
       const warm=Z.canvas(1920,1080),cx=warm.getContext('2d');
@@ -154,19 +155,35 @@
   }
   const lyricObjects=new Map([
     [7,'meeting'],[9.63,'thread'],[12.87,'orbit'],[16.05,'clock'],
-    [19.37,'heart'],[22.45,'spark'],[25.17,'bottle'],[27.89,'toast'],
+    [19.37,'rose'],[22.45,'spark'],[25.17,'bottle'],[27.89,'toast'],
     [31.17,'orbit'],[35.33,'path'],[38.51,'bottle'],[40.67,'toast'],
-    [43.99,'spark'],[48.17,'orbit'],[52.09,'steam'],[57.63,'lamp'],
-    [61.47,'path'],[64.81,'clock'],[68.15,'sky'],[71.27,'bottle'],
-    [73.89,'bottle'],[77.29,'door'],[80.65,'lamp'],[83.45,'bottle'],
-    [85.45,'toast'],[91.27,'lamp'],[93.29,'ripple'],[96.89,'orbit'],
-    [112.1,'sky'],[115.49,'toast'],[118.67,'ripple'],[121.87,'heart'],
-    [124.57,'orbit'],[128.81,'eye'],[131.81,'steam'],[135.01,'eye'],
-    [138.05,'thread'],[141.45,'path'],[144.45,'drop'],[148.97,'bottle'],
+    [43.99,'spark'],[48.17,'orbit'],[52.09,'steam'],[57.63,'lantern'],
+    [61.47,'key'],[64.81,'clock'],[68.15,'sky'],[71.27,'glass'],
+    [73.89,'goblet'],[77.29,'door'],[80.65,'window'],[83.45,'bottle'],
+    [85.45,'toast'],[91.27,'candle'],[93.29,'ripple'],[96.89,'orbit'],
+    [112.1,'sky'],[115.49,'toast'],[118.67,'ripple'],[121.87,'rose'],
+    [124.57,'orbit'],[128.81,'eye'],[131.81,'crescent'],[135.01,'eye'],
+    [138.05,'thread'],[141.45,'path'],[144.45,'drop'],[148.97,'glass'],
     [152.99,'toast'],[155.55,'clock'],[158.67,'sky'],[162.67,'thread'],
     [168.11,'drop']
   ]);
   const ornamentPaths={
+    rose:[[[-1,1],[-9,-2],[-13,-9],[-7,-15],[3,-16],[12,-12],[14,-6],[7,1],[-1,1]],
+      [[-8,-10],[-3,-6],[5,-7],[8,-11],[1,-13],[-3,-10],[2,-9]],
+      [[3,1],[1,9],[-4,17]],[[0,11],[-8,6],[-14,7],[-8,12],[0,11],[9,7],[13,8],[7,12],[0,11]]],
+    glass:[[[-12,-14],[12,-14],[11,-3],[7,3],[0,5],[-7,3],[-11,-3],[-12,-14]],
+      [[-10,-6],[-4,-4],[3,-6],[10,-5]],[[0,5],[0,16],[-8,16],[8,16]]],
+    lantern:[[[-10,-10],[10,-10],[14,-5],[14,9],[9,14],[-9,14],[-14,9],[-14,-5],[-10,-10]],
+      [[-5,-10],[-5,-16],[5,-16],[5,-10]],[[0,-5],[-4,5],[0,10],[4,5],[0,-5]]],
+    key:[[[-15,-4],[-10,-9],[-4,-9],[1,-4],[-4,1],[-10,1],[-15,-4]],
+      [[0,-3],[17,11],[14,14],[10,10],[7,12],[4,9]]],
+    crescent:[[[8,-16],[-3,-14],[-12,-7],[-14,2],[-9,11],[0,15],[9,13],[15,7],
+      [5,8],[-2,3],[-4,-5],[0,-12],[8,-16]]],
+    window:[[[-13,14],[-13,-6],[-7,-13],[0,-16],[7,-13],[13,-6],[13,14],[-13,14]],
+      [[0,-15],[0,14]],[[-13,0],[13,0]]],
+    candle:[[[-6,14],[-6,-3],[6,-3],[6,14],[-6,14]],[[0,-3],[0,-8]],
+      [[0,-8],[-4,-12],[0,-19],[4,-12],[0,-8]],[[-12,14],[12,14]]],
+    goblet:[[[-13,-12],[13,-12],[8,-1],[0,5],[-8,-1],[-13,-12]],[[0,5],[0,15],[-9,15],[9,15]]],
     meeting:[[[0,-10],[10,0],[0,10],[-10,0],[0,-10]]],
     thread:[[[-22,10],[-13,3],[-5,5],[3,-5],[12,-3],[22,-12]]],
     orbit:[[[-18,3],[-14,-7],[-5,-13],[7,-12],[16,-6],[19,2],[14,10],[4,14],[-8,12],[-18,3]],
@@ -333,22 +350,17 @@
         ctx.beginPath();ctx.moveTo(x0,y+34);ctx.lineTo(x0+Math.min(240,width*.2)*E.outCubic(sweep),y+34);ctx.stroke();
         star(ctx,x0-26,y-22,chorus?8:5,0,.8);
       }
-      const object=lyricObjects.get(line.start) ?? 'sky';
-      const accent=object==='toast'?activeCue(t):null;
-      if(accent?.text==='乾杯'){
-        lyricOrnament(ctx,1585,630,t-accent.start,accent.end-t,'toast');
-      }else{
-        lyricOrnament(ctx,Math.max(62,x0-55),y-40,age,left,object==='toast'?'sky':object);
-      }
+      // Per-line line-art motif (lyricObjects / lyricOrnament) is parked: under a two-line
+      // subtitle it read as a stray glyph. Re-enable by calling lyricOrnament again.
       // Chinese reference line, one notch smaller, after the Japanese has landed.
       if(line.zh){
         const ca=C((age-.24)/.26)*C(left/.08);
         if(ca>0){
-          let cz=44;
-          ctx.font=`500 ${cz}px "A3 Chinese", "Microsoft YaHei", sans-serif`;
+          let cz=46;
+          ctx.font=`500 ${cz}px "A3 Chinese", "Source Han Serif SC", "Microsoft YaHei", sans-serif`;
           let cw=ctx.measureText(line.zh).width;
           if(cw>1480){cz=Math.max(30,Math.floor(cz*1480/cw));
-            ctx.font=`500 ${cz}px "A3 Chinese", "Microsoft YaHei", sans-serif`;
+            ctx.font=`500 ${cz}px "A3 Chinese", "Source Han Serif SC", "Microsoft YaHei", sans-serif`;
             cw=ctx.measureText(line.zh).width;}
           ctx.save();ctx.globalAlpha=ca*.95;
           ctx.shadowColor='rgba(4,2,8,.85)';ctx.shadowBlur=8;ctx.shadowOffsetY=2;
