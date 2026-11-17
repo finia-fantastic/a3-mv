@@ -29,7 +29,7 @@ master['provenance'] = '夜酒_无和声.wav; explicitly selected by user'
 master['sampleRate'] = 44100
 master['sourceDuration'] = 191.541406
 master['alignmentStatus'] = 'Existing lyric times retained; alignment against this recording not yet checked'
-lines = [{'start': float(r['start_s']), 'end': float(r['end_s']), 'text':r['ja']} for r in tsv('A3_aligned.tsv')]
+lines = [{'start': float(r['start_s']), 'end': float(r['end_s']), 'text':r['ja'], 'zh':(r.get('zh_reference') or '').strip()} for r in tsv('A3_aligned.tsv')]
 cues = [{'start':float(r['start_s']), 'end':float(r['end_s']), 'text':r['keyword']} for r in tsv('A3_keyword_cues.tsv')]
 assert len(lines) == 45 and len(cues) == 9
 assert all(l['end'] > l['start'] for l in lines)
@@ -70,8 +70,15 @@ text=json.dumps(DATA,ensure_ascii=False,indent=2)+'\n'
 if dst.exists() and dst.read_text(encoding='utf-8') != text:
     previous = json.loads(dst.read_text(encoding='utf-8'))
     # Authorized audio change only; fail if other generated inputs drifted.
-    for key in set(previous) | set(DATA):
-        if key != 'master' and previous.get(key) != DATA.get(key):
+    def norm(d):
+        d = dict(d)
+        d['lines'] = [{k: v for k, v in l.items() if k != 'zh'} for l in d.get('lines', [])]
+        d['timingConflicts'] = [{**c, 'activeSentence': {k: v for k, v in (c.get('activeSentence') or {}).items() if k != 'zh'}}
+                                for c in d.get('timingConflicts', [])]
+        return d
+    a, b = norm(previous), norm(DATA)
+    for key in set(a) | set(b):
+        if key != 'master' and a.get(key) != b.get(key):
             raise RuntimeError(f'Refusing unrelated generated-data change: {key}')
 dst.write_text(text,encoding='utf-8')
 lrc_dst = ROOT/'analysis/lyrics_mv.lrc'

@@ -151,7 +151,7 @@
       if(width>1660){const k=1660/width;size=Math.max(44,Math.floor(size*k));
         ctx.font=`600 ${size}px "Noto Serif JP"`;
         widths=chars.map(c=>ctx.measureText(c).width);width=widths.reduce((a,b)=>a+b,0);}
-      const y=946,stagger=Math.min(.02,.42/chars.length),HOT='苦い乾杯お酒';
+      const y=884,stagger=Math.min(.02,.42/chars.length),HOT='苦い乾杯お酒';
       let x=(1920-width)/2;const x0=x;
       ctx.save();ctx.shadowColor='rgba(4,2,8,.85)';ctx.shadowBlur=10;ctx.shadowOffsetY=3;
       for(let i=0;i<chars.length;i++){
@@ -173,6 +173,23 @@
         ctx.strokeStyle=GOLD;ctx.lineWidth=2;
         ctx.beginPath();ctx.moveTo(x0,y+34);ctx.lineTo(x0+Math.min(240,width*.2)*E.outCubic(sweep),y+34);ctx.stroke();
         star(ctx,x0-26,y-22,chorus?8:5,0,.8);
+      }
+      // Chinese reference line, one notch smaller, after the Japanese has landed.
+      if(line.zh){
+        const ca=C((age-.24)/.26)*C(left/.08);
+        if(ca>0){
+          let cz=44;
+          ctx.font=`500 ${cz}px "A3 Chinese", "Microsoft YaHei", sans-serif`;
+          let cw=ctx.measureText(line.zh).width;
+          if(cw>1480){cz=Math.max(30,Math.floor(cz*1480/cw));
+            ctx.font=`500 ${cz}px "A3 Chinese", "Microsoft YaHei", sans-serif`;
+            cw=ctx.measureText(line.zh).width;}
+          ctx.save();ctx.globalAlpha=ca*.95;
+          ctx.shadowColor='rgba(4,2,8,.85)';ctx.shadowBlur=8;ctx.shadowOffsetY=2;
+          ctx.fillStyle='#f1e5d3';
+          ctx.fillText(line.zh,(1920-cw)/2,y+80+(1-ca)*10);
+          ctx.restore();
+        }
       }
     }
     const cue=activeCue(t);
