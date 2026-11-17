@@ -39,6 +39,29 @@ for cue in cues:
     active = next((l for l in lines if l['start'] <= cue['start'] < l['end']), None)
     if active is None or cue['text'] not in active['text']:
         conflicts.append({'cue':cue, 'activeSentence':active, 'status':'source disagreement; unchanged'})
+def lrc_stamp(t):
+    m = int(t // 60)
+    return f'[{m:02d}:{t - m * 60:05.2f}]'
+
+def jizura_markup(text):
+    """JIZURA markup only: *word* = emphasis cut, / = forced cut break, trailing ! = KIME line.
+    The words and their times are untouched; this is typography, not re-timing."""
+    t = text.replace('苦い', '*苦い*').replace('乾杯', '*乾杯*')
+    t = t.replace('、もう一杯', '、/もう一杯', 1)
+    return t
+
+KIME = 148.97                      # last chorus: one KIME line only
+
+lrc_lines = []
+for l in lines:
+    body = jizura_markup(l['text'])
+    if abs(l['start'] - KIME) < 1e-6:
+        body += '!'
+    lrc_lines.append((l['start'], lrc_stamp(l['start']) + body))
+lrc_lines.append((100.25, lrc_stamp(100.25) + '[間奏 11.85]'))
+lrc_lines.sort(key=lambda x: x[0])
+LRC = '\n'.join(x[1] for x in lrc_lines) + '\n'
+
 DATA = {'title':'恋爱如酒','singer':'肥鱼爱吃大白饭','duration':191.541,'fps':30,
         'lines':lines, 'cues':cues, 'plates':manifest,'master':master,'timingConflicts':conflicts,
         'timingPolicy':'Sentence and keyword timestamps are separate authoritative inputs; no inferred word timing.'}
@@ -51,4 +74,8 @@ if dst.exists() and dst.read_text(encoding='utf-8') != text:
         if key != 'master' and previous.get(key) != DATA.get(key):
             raise RuntimeError(f'Refusing unrelated generated-data change: {key}')
 dst.write_text(text,encoding='utf-8')
-print(json.dumps({'plates':len(manifest),'lines':len(lines),'cues':len(cues),'conflicts':len(conflicts),'master':master,'data':str(dst)},ensure_ascii=False))
+lrc_dst = ROOT/'analysis/lyrics_mv.lrc'
+if lrc_dst.exists() and lrc_dst.read_text(encoding='utf-8') != LRC:
+    raise RuntimeError(f'Refusing to overwrite differing lyric file: {lrc_dst}')
+lrc_dst.write_text(LRC, encoding='utf-8')
+print(json.dumps({'plates':len(manifest),'lines':len(lines),'cues':len(cues),'conflicts':len(conflicts),'master':master,'data':str(dst),'lrc':str(lrc_dst)},ensure_ascii=False))

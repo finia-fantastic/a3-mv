@@ -6,12 +6,11 @@ from pathlib import Path
 import zipfile, os
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = Path('I:/mv-20261117/render/A3_MV_环境包_2026-11-17.zip')
+OUT = Path('I:/mv-20261117/render/A3_MV_环境包_v2.zip')
 SKILL = Path('I:/vocaloid-style-mv-pipeline/skills/vocaloid-style-mv')
 
 SKIP_DIRS = {'render', '.git', 'stems', 'asr', '__pycache__', '.pnpm'}
 SKIP_FILES = {'audio/song.wav', 'audio/A3_master.wav'}
-KEEP_FONTS = {'NotoSerifJP_wght_.ttf', 'DelaGothicOne-Regular.ttf', 'fonts.css'}
 SKILL_FILES = ['SKILL.md']          # + references/** + scripts/**
 
 def wanted(rel: Path) -> bool:
@@ -20,7 +19,7 @@ def wanted(rel: Path) -> bool:
         return False
     if str(rel).replace('\\', '/') in SKIP_FILES:
         return False
-    if parts[0] == 'engine' and len(parts) > 2 and parts[1] == 'fonts' and rel.name not in KEEP_FONTS:
+    if rel.suffix == '.part':
         return False
     return True
 

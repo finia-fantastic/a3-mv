@@ -98,7 +98,7 @@
       }
       ctx.restore();
       // Readability gradient, never a separate text card.
-      if(activeLine(S.t)){
+      if(activeLine(S.t)&&!Z.A3.jizura){
         const g=ctx.createLinearGradient(0,660,0,1080);
         g.addColorStop(0,'rgba(12,8,17,0)');g.addColorStop(.55,'rgba(12,8,17,.52)');g.addColorStop(1,'rgba(12,8,17,.8)');
         ctx.fillStyle=g;ctx.fillRect(0,660,1920,420);
@@ -136,27 +136,43 @@
       star(ctx,x+392,y+196,8,t,.5*(1-C((t-next-.3)/1)));
       return;
     }
+    if(Z.A3.jizura) return;                       // JIZURA owns the body text; only the title card is drawn here
     const line=activeLine(t);
     if(line){
       const age=t-line.start,left=line.end-t;
       const chorus=line.text.startsWith('恋って')||line.text.startsWith('今夜は君と乾杯');
       // Whole sentence never changes position with camera or keyword accents.
-      const y=950,maxW=1660;let size=chorus?62:57;
-      ctx.font=`500 ${size}px "Noto Serif JP"`;
-      let width=ctx.measureText(line.text).width;
-      if(width>maxW){size*=maxW/width;ctx.font=`500 ${size}px "Noto Serif JP"`;width=ctx.measureText(line.text).width;}
-      const x=(1920-width)/2;
-      ctx.globalAlpha=Math.min(1,C(age/.07),C(left/.07));
-      ctx.shadowColor='rgba(0,0,0,.85)';ctx.shadowBlur=8;ctx.shadowOffsetY=2;
-      ctx.fillStyle=WHITE;ctx.fillText(line.text,x,y);
-      ctx.shadowBlur=0;ctx.shadowOffsetY=0;
-      const travel=C(age/.32);ctx.strokeStyle=GOLD;ctx.lineWidth=2;
-      ctx.beginPath();ctx.moveTo(x,y+28);ctx.lineTo(x+Math.min(118,width)*E.outCubic(travel),y+28);ctx.stroke();
-      star(ctx,x-26,y-19,chorus?7:4,0,.75);
-      // Quiet outline echo only at chorus line entry; readable main line is persistent.
-      if(chorus&&age<.22){
-        ctx.globalAlpha=.2*(1-age/.22);ctx.strokeStyle=GOLD;ctx.lineWidth=1;
-        ctx.strokeText(line.text,x+10*(1-age/.22),y-9*(1-age/.22));
+      // Per-character mask reveal: the line types itself in one glyph at a time, then holds dead still.
+      let size=chorus?68:62;
+      ctx.font=`600 ${size}px "Noto Serif JP"`;
+      const chars=[...line.text];
+      let widths=chars.map(c=>ctx.measureText(c).width);
+      let width=widths.reduce((a,b)=>a+b,0);
+      if(width>1660){const k=1660/width;size=Math.max(44,Math.floor(size*k));
+        ctx.font=`600 ${size}px "Noto Serif JP"`;
+        widths=chars.map(c=>ctx.measureText(c).width);width=widths.reduce((a,b)=>a+b,0);}
+      const y=946,stagger=Math.min(.02,.42/chars.length),HOT='苦い乾杯お酒';
+      let x=(1920-width)/2;const x0=x;
+      ctx.save();ctx.shadowColor='rgba(4,2,8,.85)';ctx.shadowBlur=10;ctx.shadowOffsetY=3;
+      for(let i=0;i<chars.length;i++){
+        const a=C((age-i*stagger)/.16)*C(left/.08);
+        if(a>0){
+          ctx.save();ctx.beginPath();
+          ctx.rect(x-4,y-size*1.08,widths[i]+8,size*1.42);ctx.clip();
+          ctx.globalAlpha=a;
+          ctx.fillStyle=HOT.includes(chars[i])?GOLD:WHITE;
+          ctx.fillText(chars[i],x,y+(1-a)*size*.52);
+          ctx.restore();
+        }
+        x+=widths[i];
+      }
+      ctx.restore();
+      const sweep=C((age-.16)/.3);
+      if(sweep>0){
+        ctx.globalAlpha=Math.min(1,C(left/.1));
+        ctx.strokeStyle=GOLD;ctx.lineWidth=2;
+        ctx.beginPath();ctx.moveTo(x0,y+34);ctx.lineTo(x0+Math.min(240,width*.2)*E.outCubic(sweep),y+34);ctx.stroke();
+        star(ctx,x0-26,y-22,chorus?8:5,0,.8);
       }
     }
     const cue=activeCue(t);
@@ -187,6 +203,47 @@
     if(!r.ok)throw new Error('Run tools/a3_prepare.py first: '+r.status);
     film=await r.json();Z.A3=film;
     window.__zankoMeta.duration=film.duration;window.__zankoMeta.fps=film.fps;
+
+    // ---- JIZURA 字面 lyric layer (the pipeline's own text engine, upstream v0.10.1 bundle)
+    let jzOn=false;
+    try{
+      const lr=await fetch(Z.ROOT+'analysis/lyrics_mv.lrc');
+      const lrc=(lr.ok?await lr.text():'').replace(/^﻿/,'').replace(/^\[ti:.*\]\s*$/m,'');
+      const jzOptIn=new URLSearchParams(location.search).get('jz')==='1';
+      if(lrc.trim()&&window.J&&window.JZ&&jzOptIn){
+        JZ.setAudio({duration:film.duration,beats:Z.audio.beats,energy:null,energyRate:0});
+        // Whitelist, not deny-list: the plates are pale portraits, so only layouts that keep type in a
+        // readable band (or a vertical column) may be used. Anything not listed is off except 'none'.
+        const KEEP = {
+          layout: 'center mixed vcols condensed stack quote lowerThird frameBox corners columnsBig tyBandHide tyLineFocus swissGrid',
+          enter: 'type wipe slice riseMask dropMask slideL slideR strokeDraw outlineFill blurStagger fadeStagger trackIn inkBleed',
+          hold: 'still drift breathe sway float zoomSlow trackBreathe shimmer',
+          exit: 'wipe drift sinkMask blurOut shrink foldOut',
+          decor: 'brackets lines ruledLines indexNum bracketsJP',
+          treat: 'outline softShadow underline sizeWave kerningWide emphasisDots',
+          fx: 'chroma rgbSplit whipBlur bloom',
+          bg: '', cam: '', trans: ''
+        };
+        const enabled = {};
+        for (const g of J.GROUP_KEYS) {
+          const keep = new Set((KEEP[g] || '').split(/\s+/).filter(Boolean));
+          enabled[g] = {};
+          for (const k of J.order(g)) enabled[g][k] = k === 'none' || keep.has(k);
+        }
+        const common={enabled,lyrics:lrc,fps:30,res:1080,aspect:'16:9',seed:2611,unify:true,typeset:true,
+          extra:true,wa:false,horror:false,
+          colors:{accentOn:true,accent:GOLD,ghostA:'#39C6E0',ghostB:'#C8373A'},
+          schemes:[0],                                      // sumi scheme 0: ink text on the pale plates
+          fx:{motion:.7,glitch:.35,chroma:.55,decor:.4,density:.5,texture:.5,flash:false,koma:12,hud:'off',bgSwitch:.3}};
+        await JZ.addPlan('main',Object.assign({},common,{style:'sumi',mood:'editorial',centerFree:true}));
+        await JZ.addPlan('cf',Object.assign({},common,{style:'sumi',mood:'editorial',centerFree:true}));
+        await JZ.addPlan('noir',Object.assign({},common,{style:'noir',mood:'glitch',
+          fx:Object.assign({},common.fx,{glitch:.6,chroma:.75})}));
+        jzOn=true;
+      }
+    }catch(e){console.warn('JIZURA lyric layer unavailable; falling back to the native text layer',e);}
+    Z.A3.jizura=jzOn;
+    Z.A3.plans=jzOn?{closeups:['32','29','34','45'],climax:['noir']}:null;
     Z.LOOK_DEFAULT={boil:0,lutMix:0,exposure:0,contrast:1,saturation:1,bloom:.08,bloomThreshold:.86,vignette:.12,grain:.012,ca:0,textCa:0};
     Z.SHOTS=rows.map(([t0,image,kind='verse'],i)=>{
       let [from,to]=presets[image].map(v=>v.slice());
@@ -197,9 +254,10 @@
       if(kind==='instrumental'){from=[1.05,.50,.50];to=[1.22,.42,.40];}
       // Alternate push / pull between verses so the film never sits on one motion for long.
       if(kind==='verse'&&i%2){const t=from;from=to;to=t;}
+      const closeup=['32','29','34','45'].includes(String(image));
       const shot={id:`a3_${String(i+1).padStart(2,'0')}`,t0,t1:rows[i+1]?.[0]??film.duration,
         scene:'a3-plate',args:{image,kind,from,to,cupAnchor:[1080,610,160,36]},
-        lyric:'none',hud:false,text,
+        lyric:jzOn?'front':'none',plan:closeup?'cf':'main',hud:false,text,
         post:S=>({fade:S.t<.45?1-C(S.t/.45):C((S.t-189.5)/(film.duration-189.5))})};
       if(i&&['outro','instrumental'].includes(kind)) shot.trans={type:'xfade',dur:.6};
       return shot;

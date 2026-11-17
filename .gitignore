@@ -17,8 +17,6 @@ npm-debug.log*
 /engine/fonts/*.otf
 /engine/fonts/*.woff
 /engine/fonts/*.woff2
-/jizura/app/jizura_engine.js
-/jizura/parts.json
 /jizura/probe*/
 
 # ---------------------------------------------------------------- the song (never publish someone's master)

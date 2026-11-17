@@ -1,0 +1,10002 @@
+{
+ "groups": [
+  "layout",
+  "enter",
+  "hold",
+  "exit",
+  "decor",
+  "treat",
+  "bg",
+  "cam",
+  "fx",
+  "trans"
+ ],
+ "out": {
+  "layout": [
+   {
+    "k": "center",
+    "name": "中央",
+    "moods": [
+     "glitch",
+     "calm",
+     "pop",
+     "editorial",
+     "emotional",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "mixed",
+    "name": "大小ミックス",
+    "moods": [
+     "calm",
+     "pop",
+     "editorial",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "vcols",
+    "name": "縦書き",
+    "moods": [
+     "glitch",
+     "calm",
+     "editorial",
+     "emotional",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "marquee",
+    "name": "流れる帯",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tile",
+    "name": "敷き詰め",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scatter",
+    "name": "散らし",
+    "moods": [
+     "glitch",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ring",
+    "name": "円環",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "wave",
+    "name": "波の軌跡",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "huge",
+    "name": "画面突き抜け",
+    "moods": [
+     "glitch",
+     "pop",
+     "graphic",
+     "emotional",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "labels",
+    "name": "ラベル貼り",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "condensed",
+    "name": "縦長圧縮",
+    "moods": [
+     "glitch",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "gloss",
+    "name": "注釈",
+    "moods": [
+     "calm",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "type",
+    "name": "タイプ",
+    "moods": [
+     "calm",
+     "editorial",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "diag",
+    "name": "斜め帯",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "circle",
+    "name": "円窓",
+    "moods": [
+     "calm",
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stack",
+    "name": "残像スタック",
+    "moods": [
+     "glitch",
+     "calm",
+     "editorial",
+     "emotional",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pill",
+    "name": "カプセル",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrFlashlight",
+    "name": "懐中電灯",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrDoorGap",
+    "name": "扉の隙間",
+    "moods": [
+     "horror",
+     "editorial"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrWallScrawl",
+    "name": "壁の落書き",
+    "moods": [
+     "horror",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrCctv",
+    "name": "監視モニター",
+    "moods": [
+     "horror",
+     "glitch",
+     "editorial"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrOuija",
+    "name": "降霊盤",
+    "moods": [
+     "horror"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrMissing",
+    "name": "尋ね人",
+    "moods": [
+     "horror",
+     "editorial"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrWrongOne",
+    "name": "一字だけ違う",
+    "moods": [
+     "horror",
+     "editorial",
+     "calm"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrRisingDark",
+    "name": "闇から這い出る",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrRedacted",
+    "name": "黒塗り文書",
+    "moods": [
+     "horror",
+     "editorial"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrStaticTv",
+    "name": "砂嵐のテレビ",
+    "moods": [
+     "horror",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrSpiritPhoto",
+    "name": "心霊写真",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrWrongShadow",
+    "name": "影が違う",
+    "moods": [
+     "horror",
+     "emotional",
+     "graphic"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knSlamStack",
+    "name": "積み上げ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knQuarterTurn",
+    "name": "直角ターン",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knSwapCenter",
+    "name": "入れ替わり",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knZoomDive",
+    "name": "文字へ潜る",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knFlowSnap",
+    "name": "流れて整列",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knSeesaw",
+    "name": "シーソー",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knTypeSlam",
+    "name": "タイプ→スラム",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knRhythmCuts",
+    "name": "語のカット割り",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knPathRide",
+    "name": "ループ軌道",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knGearWords",
+    "name": "歯車",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knCollide",
+    "name": "正面衝突",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knTumble",
+    "name": "箱転がし",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knReflow",
+    "name": "縦から横へ",
+    "moods": [
+     "editorial",
+     "graphic",
+     "emotional"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knPadGrid",
+    "name": "パッド",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "lowerThird",
+    "name": "下部テロップ",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "corners",
+    "name": "対角配置",
+    "moods": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "staircase",
+    "name": "階段",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zigzag",
+    "name": "ジグザグ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "arcTop",
+    "name": "虹の弧",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spiral",
+    "name": "螺旋",
+    "moods": [
+     "emotional",
+     "graphic",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "gridCells",
+    "name": "升目",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dropCap",
+    "name": "大きな頭文字",
+    "moods": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "justified",
+    "name": "版面",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "frameBox",
+    "name": "額縁",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bubble",
+    "name": "吹き出し",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "subtitleBar",
+    "name": "字幕帯",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ticker",
+    "name": "ティッカー",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "splitScreen",
+    "name": "二分割",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "mirror",
+    "name": "鏡像",
+    "moods": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sideways",
+    "name": "縦倒し",
+    "moods": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "edgeFrame",
+    "name": "外周",
+    "moods": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "perspective",
+    "name": "奥行き",
+    "moods": [
+     "graphic",
+     "emotional",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hanko",
+    "name": "落款",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "genkou",
+    "name": "原稿用紙",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "panels",
+    "name": "コマ割り",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "filmstrip",
+    "name": "フィルム",
+    "moods": [
+     "emotional",
+     "calm",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "quote",
+    "name": "引用",
+    "moods": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ruler",
+    "name": "寸法線",
+    "moods": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "searchBar",
+    "name": "検索窓",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "chat",
+    "name": "チャット",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "notification",
+    "name": "通知",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ticket",
+    "name": "チケット",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rain",
+    "name": "文字の雨",
+    "moods": [
+     "glitch",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hanging",
+    "name": "吊り下げ",
+    "moods": [
+     "pop",
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "orbit",
+    "name": "周回",
+    "moods": [
+     "calm",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tunnel",
+    "name": "トンネル",
+    "moods": [
+     "glitch",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "wordCloud",
+    "name": "ワードクラウド",
+    "moods": [
+     "pop",
+     "editorial",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bounceLine",
+    "name": "跳ねる",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "elastic",
+    "name": "ゴム",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "crossBands",
+    "name": "交差帯",
+    "moods": [
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stickerBomb",
+    "name": "ステッカー",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "neon",
+    "name": "ネオン",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "keycaps",
+    "name": "キーキャップ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bubbles",
+    "name": "泡",
+    "moods": [
+     "pop",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slotMachine",
+    "name": "スロット",
+    "moods": [
+     "pop",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flipBoard",
+    "name": "パタパタ",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "credits",
+    "name": "エンドロール",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zoomRepeat",
+    "name": "連続拡大",
+    "moods": [
+     "glitch",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "splitHalves",
+    "name": "上下割り",
+    "moods": [
+     "graphic",
+     "glitch",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "columnsBig",
+    "name": "大小縦組",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "circleWords",
+    "name": "同心円",
+    "moods": [
+     "graphic",
+     "calm",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dotMatrix",
+    "name": "ドット表示",
+    "moods": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "depthStack",
+    "name": "奥行き重ね",
+    "moods": [
+     "graphic",
+     "emotional",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "typeSpecimen",
+    "name": "書体見本",
+    "moods": [
+     "editorial",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "kanjiFocus",
+    "name": "一字強調",
+    "moods": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "halfVertical",
+    "name": "縦横混植",
+    "moods": [
+     "editorial",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "curtain",
+    "name": "幕",
+    "moods": [
+     "emotional",
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "equalizer",
+    "name": "イコライザー",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tape",
+    "name": "テープ",
+    "moods": [
+     "pop",
+     "editorial",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "magazine",
+    "name": "見開き",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "headlineDeck",
+    "name": "見出しとリード",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "contents",
+    "name": "目次",
+    "moods": [
+     "editorial",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "footnote",
+    "name": "脚注",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "proofread",
+    "name": "校正刷り",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "numbered",
+    "name": "番号付き",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "poster",
+    "name": "ポスター",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "swissGrid",
+    "name": "スイスグリッド",
+    "moods": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dictionary",
+    "name": "辞書",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ema",
+    "name": "絵馬",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "ransom",
+    "name": "切り抜き文字",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "newspaper",
+    "name": "新聞",
+    "moods": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "vinyl",
+    "name": "レコード",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "cassette",
+    "name": "カセット",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bookSpine",
+    "name": "背表紙",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "polaroid",
+    "name": "ポラロイド",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stampSheet",
+    "name": "切手シート",
+    "moods": [
+     "pop",
+     "graphic",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "postcard",
+    "name": "はがき",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "letterPaper",
+    "name": "便箋",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "calendar",
+    "name": "カレンダー",
+    "moods": [
+     "pop",
+     "editorial",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "chochin",
+    "name": "提灯",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "routeMap",
+    "name": "路線図",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stationSign",
+    "name": "駅名標",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "noren",
+    "name": "暖簾",
+    "moods": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "tanzaku",
+    "name": "短冊",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "omikuji",
+    "name": "おみくじ",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "kakejiku",
+    "name": "掛け軸",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "shoji",
+    "name": "障子",
+    "moods": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "clapper",
+    "name": "カチンコ",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "warningLabel",
+    "name": "警告ラベル",
+    "moods": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "priceTag",
+    "name": "値札",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "nameTag",
+    "name": "名札",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stickyNotes",
+    "name": "付箋",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "karuta",
+    "name": "かるた札",
+    "moods": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "cube",
+    "name": "立方体",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "cylinder",
+    "name": "円筒",
+    "moods": [
+     "graphic",
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flipCards",
+    "name": "カードめくり",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "accordion",
+    "name": "蛇腹",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flag",
+    "name": "はためく旗",
+    "moods": [
+     "emotional",
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ribbon",
+    "name": "リボン",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pendulum",
+    "name": "振り子",
+    "moods": [
+     "calm",
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pile",
+    "name": "文字の山",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blocks",
+    "name": "積み木",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "balloons",
+    "name": "文字風船",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "magnets",
+    "name": "マグネット",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tiles",
+    "name": "文字タイル",
+    "moods": [
+     "pop",
+     "editorial",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bulbs",
+    "name": "電球サイン",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ledScroll",
+    "name": "電光掲示板",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "billboard",
+    "name": "看板",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "crowdBubbles",
+    "name": "吹き出しの群れ",
+    "moods": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "crossword",
+    "name": "クロスワード",
+    "moods": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "wordSearch",
+    "name": "文字探し",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "puzzle",
+    "name": "パズル",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shadowPlay",
+    "name": "影絵",
+    "moods": [
+     "emotional",
+     "calm",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "kaleido",
+    "name": "万華鏡",
+    "moods": [
+     "glitch",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dominoes",
+    "name": "ドミノ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "burst",
+    "name": "ドカン",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "fisheye",
+    "name": "魚眼レンズ",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "wall",
+    "name": "壁面パース",
+    "moods": [
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "origami",
+    "name": "折り紙",
+    "moods": [
+     "calm",
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "zipper",
+    "name": "ジッパー",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sliceStack",
+    "name": "スライス積層",
+    "moods": [
+     "glitch",
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glitchGrid",
+    "name": "グリッチ格子",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "mosaicTiles",
+    "name": "タイル画",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "maskReveal",
+    "name": "文字窓",
+    "moods": [
+     "graphic",
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "contour",
+    "name": "等高線",
+    "moods": [
+     "calm",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "halftoneBig",
+    "name": "網点巨大文字",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stencil",
+    "name": "ステンシル",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyKeySplit",
+    "name": "大字挟み",
+    "moods": [
+     "editorial",
+     "graphic",
+     "emotional"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyCropGiant",
+    "name": "見切れ大文字",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyCross",
+    "name": "十字組",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyBandHide",
+    "name": "帯隠れ",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyRuby",
+    "name": "ルビ振り",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyBaseline",
+    "name": "罫線組",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyScaleSteps",
+    "name": "級数上げ",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyJustify",
+    "name": "幅揃え",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyIndexTable",
+    "name": "一覧表",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tySplitType",
+    "name": "断ち割り",
+    "moods": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyErode",
+    "name": "削り反復",
+    "moods": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyVRuler",
+    "name": "縦目盛り",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyFullTrack",
+    "name": "全幅字送り",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyStatCount",
+    "name": "字数表示",
+    "moods": [
+     "editorial",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyMargin",
+    "name": "余白",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyRotBlock",
+    "name": "回転ブロック",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tySquare",
+    "name": "方形組",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyLineFocus",
+    "name": "行中強調",
+    "moods": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   }
+  ],
+  "enter": [
+   {
+    "k": "cut",
+    "name": "カット",
+    "moods": null,
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "assemble",
+    "name": "分解→集合",
+    "moods": [
+     "glitch",
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slice",
+    "name": "スライス",
+    "moods": [
+     "glitch",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "type",
+    "name": "タイプ",
+    "moods": [
+     "calm",
+     "editorial",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pop",
+    "name": "ポップ",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "drop",
+    "name": "落下",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stretch",
+    "name": "伸縮",
+    "moods": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "wipe",
+    "name": "ワイプ",
+    "moods": [
+     "calm",
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blur",
+    "name": "ブラー",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spin",
+    "name": "回転",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flicker",
+    "name": "点滅",
+    "moods": [
+     "glitch",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scramble",
+    "name": "スクランブル",
+    "moods": [
+     "glitch",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zoom",
+    "name": "ズーム",
+    "moods": [
+     "glitch",
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "riseMask",
+    "name": "下から出現",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dropMask",
+    "name": "上から出現",
+    "moods": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slideL",
+    "name": "左からスライド",
+    "moods": [
+     "editorial",
+     "calm",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slideR",
+    "name": "右からスライド",
+    "moods": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slideWhole",
+    "name": "全体スライド",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flipX",
+    "name": "縦軸フリップ",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flipY",
+    "name": "横軸フリップ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "domino",
+    "name": "ドミノ",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "fold",
+    "name": "折り開き",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "unroll",
+    "name": "巻き開き",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "strokeDraw",
+    "name": "線画から塗り",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "outlineFill",
+    "name": "輪郭→塗り",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "splitJoin",
+    "name": "上下合体",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "vSlice",
+    "name": "縦スライス",
+    "moods": [
+     "graphic",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shutter",
+    "name": "シャッター",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "iris",
+    "name": "アイリス",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "diagWipe",
+    "name": "斜めワイプ",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blinds",
+    "name": "ブラインド",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "checker",
+    "name": "市松",
+    "moods": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "randomOrder",
+    "name": "ランダム順",
+    "moods": [
+     "pop",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bounceBig",
+    "name": "大ジャンプ",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "squashDrop",
+    "name": "潰れて着地",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rubber",
+    "name": "ゴム伸び",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glitchIn",
+    "name": "グリッチ出現",
+    "moods": [
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "echoIn",
+    "name": "残像集束",
+    "moods": [
+     "graphic",
+     "emotional",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "whip",
+    "name": "ホイップ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "skewIn",
+    "name": "スキュー",
+    "moods": [
+     "editorial",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "trackIn",
+    "name": "字間収束",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "trackOut",
+    "name": "字間拡張",
+    "moods": [
+     "calm",
+     "editorial",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blurStagger",
+    "name": "ブラー段差",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "fadeStagger",
+    "name": "字ごとフェード",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "waveIn",
+    "name": "波立ち",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spiralIn",
+    "name": "螺旋集合",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zoomOut",
+    "name": "巨大→等倍",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "resolve",
+    "name": "解読",
+    "moods": [
+     "glitch",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "magnet",
+    "name": "磁石",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "inkBleed",
+    "name": "にじみ",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "neonOn",
+    "name": "ネオン点灯",
+    "moods": [
+     "glitch",
+     "emotional",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "cursorSweep",
+    "name": "カーソル掃引",
+    "moods": [
+     "editorial",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stamp",
+    "name": "スタンプ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "springIn",
+    "name": "バネ",
+    "moods": [
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pendulum",
+    "name": "振り子",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rollIn",
+    "name": "転がり",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slingshot",
+    "name": "パチンコ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rockSettle",
+    "name": "ぐらぐら着地",
+    "moods": [
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bounceBall",
+    "name": "バウンドボール",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "snapRail",
+    "name": "スナップ整列",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "fanOpen",
+    "name": "扇開き",
+    "moods": [
+     "emotional",
+     "graphic",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "cylinder",
+    "name": "円筒回転",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shuffle",
+    "name": "シャッフル",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stopMotion",
+    "name": "コマ撮り",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ripple",
+    "name": "波紋",
+    "moods": [
+     "emotional",
+     "calm",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zipper",
+    "name": "ジッパー",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zoomAlt",
+    "name": "交互ズーム",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tiltUp",
+    "name": "起立",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stickerPeel",
+    "name": "シール貼り",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "crumple",
+    "name": "くしゃ戻り",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "noteUnfold",
+    "name": "手紙開き",
+    "moods": [
+     "emotional",
+     "calm",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tornJoin",
+    "name": "破れ合わせ",
+    "moods": [
+     "graphic",
+     "emotional",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "splitFlap",
+    "name": "パタパタ",
+    "moods": [
+     "glitch",
+     "editorial",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "overexpose",
+    "name": "露出オーバー",
+    "moods": [
+     "emotional",
+     "pop",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glint",
+    "name": "グリント",
+    "moods": [
+     "editorial",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "loupe",
+    "name": "ルーペ",
+    "moods": [
+     "editorial",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "filmFeed",
+    "name": "フィルム送り",
+    "moods": [
+     "emotional",
+     "glitch",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "backlight",
+    "name": "逆光",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "lightLeak",
+    "name": "光漏れ",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "heatHaze",
+    "name": "陽炎",
+    "moods": [
+     "emotional",
+     "calm",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "crtOn",
+    "name": "CRT電源",
+    "moods": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "interlace",
+    "name": "インターレース",
+    "moods": [
+     "glitch",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "loadingBar",
+    "name": "ローディング",
+    "moods": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dither",
+    "name": "ディザ",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "odometer",
+    "name": "ドラム回転",
+    "moods": [
+     "glitch",
+     "editorial",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "matrixRain",
+    "name": "データ降下",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hatchFill",
+    "name": "ハッチ→ベタ",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "brushReveal",
+    "name": "筆払い",
+    "moods": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "inkDrop",
+    "name": "インク滴",
+    "moods": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "quarters",
+    "name": "四方集結",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "invertBox",
+    "name": "反転抜け",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "printRegister",
+    "name": "版ズレ",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "echoCount",
+    "name": "カウントイン",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "liquidFill",
+    "name": "水位上昇",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "windBlown",
+    "name": "風に乗って",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "strokeOrder",
+    "name": "一画ずつ",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "clockWipe",
+    "name": "時計回り",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shadowFirst",
+    "name": "影落とし",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bubbles",
+    "name": "泡",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tokoroten",
+    "name": "ところてん",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrBlinkCreep",
+    "name": "瞬きの間に",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrJumpScare",
+    "name": "飛び出し",
+    "moods": [
+     "horror",
+     "glitch",
+     "pop"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrUneasy",
+    "name": "間の悪い出現",
+    "moods": [
+     "horror",
+     "editorial"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrVhold",
+    "name": "垂直同期",
+    "moods": [
+     "horror",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrMirrorSnap",
+    "name": "鏡文字",
+    "moods": [
+     "horror",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrManifest",
+    "name": "浮かび上がる",
+    "moods": [
+     "horror",
+     "emotional",
+     "calm"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrClawReveal",
+    "name": "爪痕から",
+    "moods": [
+     "horror",
+     "graphic"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knWordSlam",
+    "name": "語ごとスラム",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knTypeToSlam",
+    "name": "打鍵→拡大",
+    "moods": [
+     "pop",
+     "editorial",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knReplaceIn",
+    "name": "入れ替わり登場",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knHingeDrop",
+    "name": "蝶番おろし",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knLoopIn",
+    "name": "ループ入り",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knPushIn",
+    "name": "押し込み",
+    "moods": [
+     "pop",
+     "editorial",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knInertia",
+    "name": "急ブレーキ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knWordSpin",
+    "name": "語ごと回転",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knDiveIn",
+    "name": "手前から語",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knStretchOut",
+    "name": "伸び出し",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyKeyFirst",
+    "name": "キー字先行",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyLineWipe",
+    "name": "行送りワイプ",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyZoomOne",
+    "name": "一字ずつ拡大",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyUnderLift",
+    "name": "下線から立つ",
+    "moods": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyDotGrow",
+    "name": "点から字",
+    "moods": [
+     "pop",
+     "calm",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyBracketOpen",
+    "name": "括弧が開く",
+    "moods": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyRetype",
+    "name": "打ち直し",
+    "moods": [
+     "editorial",
+     "glitch",
+     "emotional"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyRubyDrop",
+    "name": "ルビから",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   }
+  ],
+  "hold": [
+   {
+    "k": "still",
+    "name": "静止",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "jitter",
+    "name": "ジッター",
+    "moods": [
+     "glitch",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "drift",
+    "name": "ドリフト",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "breathe",
+    "name": "呼吸",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "wave",
+    "name": "ウェーブ",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glitchtick",
+    "name": "グリッチ",
+    "moods": [
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "float",
+    "name": "ふわふわ",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sway",
+    "name": "ゆらぎ",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pulse",
+    "name": "脈動",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shimmer",
+    "name": "きらめき",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "colorRun",
+    "name": "色が走る",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rotateSlow",
+    "name": "ゆっくり回転",
+    "moods": [
+     "calm",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "trackBreathe",
+    "name": "字間の呼吸",
+    "moods": [
+     "calm",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "skewWobble",
+    "name": "斜め揺れ",
+    "moods": [
+     "pop",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "beatHop",
+    "name": "拍で跳ねる",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hWave",
+    "name": "横波",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "heartbeat",
+    "name": "鼓動",
+    "moods": [
+     "emotional",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "orbitSmall",
+    "name": "小さな円運動",
+    "moods": [
+     "calm",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "jelly",
+    "name": "ゼリー",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scanBand",
+    "name": "走査帯",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "noiseDrift",
+    "name": "ノイズ漂流",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tilt",
+    "name": "シーソー",
+    "moods": [
+     "calm",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zoomSlow",
+    "name": "じわ寄り",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stretchPulse",
+    "name": "横伸び拍",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glitchJump",
+    "name": "時々ずれる",
+    "moods": [
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "echoTrail",
+    "name": "残像を引く",
+    "moods": [
+     "emotional",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glowFlicker",
+    "name": "灯火のゆらぎ",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "windGust",
+    "name": "突風",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dangle",
+    "name": "ぶら下がり",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "eqBounce",
+    "name": "音圧で伸びる",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flashBox",
+    "name": "拍で反転",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glintSweep",
+    "name": "光沢",
+    "moods": [
+     "graphic",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flipSwap",
+    "name": "時々裏返る",
+    "moods": [
+     "glitch",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shadowSway",
+    "name": "影が揺れる",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "magnetJiggle",
+    "name": "磁力",
+    "moods": [
+     "pop",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "typeRattle",
+    "name": "タイプの震え",
+    "moods": [
+     "editorial",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "focusRack",
+    "name": "ピント送り",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pluckString",
+    "name": "弦の振動",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrTwitch",
+    "name": "痙攣",
+    "moods": [
+     "horror",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrStare",
+    "name": "見つめる字",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrLagOne",
+    "name": "遅れる一字",
+    "moods": [
+     "horror",
+     "calm"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrFlickerLight",
+    "name": "切れかけの灯",
+    "moods": [
+     "horror",
+     "glitch",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knWordPulse",
+    "name": "語ごとの拍",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knCounterRock",
+    "name": "逆回転ゆれ",
+    "moods": [
+     "pop",
+     "calm",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knWordRide",
+    "name": "語の波乗り",
+    "moods": [
+     "calm",
+     "emotional",
+     "pop"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knTickShift",
+    "name": "刻みシフト",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knBeatLean",
+    "name": "拍で傾く",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knGapBreath",
+    "name": "語間の呼吸",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyKeyPulse",
+    "name": "一字の鼓動",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyReadCursor",
+    "name": "読み送り",
+    "moods": [
+     "calm",
+     "editorial",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyOutlineBlink",
+    "name": "白抜き明滅",
+    "moods": [
+     "glitch",
+     "graphic",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyTrackStep",
+    "name": "字間ステップ",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   }
+  ],
+  "exit": [
+   {
+    "k": "cut",
+    "name": "カット",
+    "moods": null,
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "explode",
+    "name": "爆散",
+    "moods": [
+     "glitch",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "fall",
+    "name": "崩落",
+    "moods": [
+     "glitch",
+     "emotional",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "drift",
+    "name": "霧散",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slice",
+    "name": "スライス退場",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "wipe",
+    "name": "ワイプ退場",
+    "moods": [
+     "calm",
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shrink",
+    "name": "収縮",
+    "moods": [
+     "calm",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blur",
+    "name": "ブラー退場",
+    "moods": [
+     "calm",
+     "pop",
+     "editorial",
+     "emotional",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stretch",
+    "name": "伸縮退場",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scatter",
+    "name": "飛散",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glitch",
+    "name": "グリッチ退場",
+    "moods": [
+     "glitch",
+     "horror"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sinkMask",
+    "name": "沈む",
+    "moods": [
+     "calm",
+     "editorial",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "riseOut",
+    "name": "上へ抜ける",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slideOutL",
+    "name": "左へ流れる",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slideOutR",
+    "name": "右へ流れる",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flipOutX",
+    "name": "扉が閉まる",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flipOutY",
+    "name": "パタン倒れ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "foldOut",
+    "name": "折り畳み",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "squash",
+    "name": "潰れる",
+    "moods": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "trackOutWide",
+    "name": "字間が開く",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "collapse",
+    "name": "吸い込み",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zoomThrough",
+    "name": "手前へ抜ける",
+    "moods": [
+     "emotional",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zoomFar",
+    "name": "奥へ遠ざかる",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spinOut",
+    "name": "回って消える",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "twist",
+    "name": "ねじれ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "waveOut",
+    "name": "波で崩れる",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blurOutStagger",
+    "name": "字ごとボケ",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "undraw",
+    "name": "線に戻る",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "outlineOut",
+    "name": "塗りが抜ける",
+    "moods": [
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "irisClose",
+    "name": "アイリス",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "diagWipeOut",
+    "name": "斜めワイプ",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blindsClose",
+    "name": "ブラインド",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "checkerOut",
+    "name": "市松",
+    "moods": [
+     "graphic",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "splitApart",
+    "name": "上下に割れる",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "vSliceDrop",
+    "name": "縦スライス落下",
+    "moods": [
+     "graphic",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "melt",
+    "name": "溶ける",
+    "moods": [
+     "emotional",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dissolve",
+    "name": "ほろほろ",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "backspace",
+    "name": "バックスペース",
+    "moods": [
+     "editorial",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scrambleOut",
+    "name": "記号化",
+    "moods": [
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glitchDissolve",
+    "name": "ブロック化",
+    "moods": [
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "echoOut",
+    "name": "残響",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "whipOut",
+    "name": "ホイップ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "gravity",
+    "name": "重力落下",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "popOut",
+    "name": "弾ける",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "burn",
+    "name": "焼失",
+    "moods": [
+     "emotional",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sweepCover",
+    "name": "バーで隠す",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shatterLite",
+    "name": "四分割飛散",
+    "moods": [
+     "pop",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "peelOff",
+    "name": "ステッカー剥がし",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "crumpleOut",
+    "name": "丸めて捨てる",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tearOut",
+    "name": "破り捨て",
+    "moods": [
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scorchOut",
+    "name": "焦げて消える",
+    "moods": [
+     "emotional",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "overexposeOut",
+    "name": "白飛び",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scanOut",
+    "name": "走査線消去",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stripesOut",
+    "name": "ストライプ消去",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "halftoneOut",
+    "name": "網点に消える",
+    "moods": [
+     "graphic",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "eraserOut",
+    "name": "黒板消し",
+    "moods": [
+     "editorial",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "vacuumOut",
+    "name": "一点に吸われる",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sandOut",
+    "name": "砂になって飛ぶ",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shredOut",
+    "name": "シュレッダー",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dominoOut",
+    "name": "ドミノ倒し",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hingeOut",
+    "name": "片留めが外れる",
+    "moods": [
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rocketOff",
+    "name": "打ち上げ",
+    "moods": [
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bounceOff",
+    "name": "弾んで去る",
+    "moods": [
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "balloonOff",
+    "name": "風船で飛ぶ",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "deflateOut",
+    "name": "しぼんで飛ぶ",
+    "moods": [
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hazeOut",
+    "name": "陽炎に消える",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glassBreak",
+    "name": "ガラス割れ",
+    "moods": [
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zipOut",
+    "name": "ジッパー",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "clapShut",
+    "name": "中央で閉じる",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "lampOff",
+    "name": "消灯",
+    "moods": [
+     "glitch",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slotOut",
+    "name": "スロット回転",
+    "moods": [
+     "glitch",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "clockOut",
+    "name": "時計ワイプ",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "matrixOut",
+    "name": "デジタル雨",
+    "moods": [
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tornadoOut",
+    "name": "竜巻",
+    "moods": [
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rollUpOut",
+    "name": "巻き取る",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "snakeOut",
+    "name": "列になって去る",
+    "moods": [
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flutterOut",
+    "name": "ひらひら落ちる",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rollOff",
+    "name": "転がって去る",
+    "moods": [
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "fanClose",
+    "name": "扇を閉じる",
+    "moods": [
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "rgbSplitOut",
+    "name": "色分解",
+    "moods": [
+     "glitch",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shockOut",
+    "name": "衝撃波",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "floodOut",
+    "name": "水没",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slashOut",
+    "name": "一刀両断",
+    "moods": [
+     "graphic",
+     "emotional",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "mosaicOut",
+    "name": "モザイク",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scribbleOut",
+    "name": "ぐしゃぐしゃ消し",
+    "moods": [
+     "editorial",
+     "emotional",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "candleOut",
+    "name": "吹き消す",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrPulledDown",
+    "name": "引きずり込み",
+    "moods": [
+     "horror",
+     "glitch",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrLookBack",
+    "name": "一字残る",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrTurnAway",
+    "name": "背を向ける",
+    "moods": [
+     "horror",
+     "calm",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrShiver",
+    "name": "震えて消える",
+    "moods": [
+     "horror",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrSwallow",
+    "name": "闇に呑まれる",
+    "moods": [
+     "horror",
+     "emotional",
+     "graphic"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrFlickerDie",
+    "name": "明滅して消える",
+    "moods": [
+     "horror",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrDrain",
+    "name": "滴り落ちる",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knWordKick",
+    "name": "語ごと蹴り出し",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knPushOut",
+    "name": "押し出し退場",
+    "moods": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knDiveGlyph",
+    "name": "一字へ突入",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knLaunch",
+    "name": "急発進",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knWordBlink",
+    "name": "一語ずつ消灯",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knCloseGap",
+    "name": "詰めて消える",
+    "moods": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knJumpCutOut",
+    "name": "ジャンプカット",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knStackAway",
+    "name": "積んで落とす",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyStrike",
+    "name": "線で消す",
+    "moods": [
+     "editorial",
+     "graphic",
+     "emotional"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyToDot",
+    "name": "点に戻る",
+    "moods": [
+     "calm",
+     "pop",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyLineFeed",
+    "name": "改行送り",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyBracketClose",
+    "name": "括弧閉じ",
+    "moods": [
+     "editorial",
+     "graphic",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyToIndex",
+    "name": "番号に変わる",
+    "moods": [
+     "editorial",
+     "glitch",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyKeyLast",
+    "name": "一字残し",
+    "moods": [
+     "emotional",
+     "pop",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyUnderSink",
+    "name": "下線へ沈む",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyFoldVert",
+    "name": "縦組に折れる",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   }
+  ],
+  "decor": [
+   {
+    "k": "brackets",
+    "name": "枠マーク",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rings",
+    "name": "座標の円",
+    "moods": [
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dots",
+    "name": "ドットの輪",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "arrows",
+    "name": "矢印",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slash",
+    "name": "スラッシュ",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sparks",
+    "name": "スパーク",
+    "moods": [
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "leaders",
+    "name": "引き出し線",
+    "moods": [
+     "editorial",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "waveform",
+    "name": "波形",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "barcode",
+    "name": "バーコード",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "grid",
+    "name": "グリッド",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stripes",
+    "name": "ストライプ",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blobs",
+    "name": "インクの染み",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bars",
+    "name": "荒い帯",
+    "moods": [
+     "graphic",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shapes",
+    "name": "図形",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "counter",
+    "name": "大きな数字",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "crosshair",
+    "name": "照準線",
+    "moods": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "cropMarks",
+    "name": "トンボ",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "reticle",
+    "name": "ロックオン",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "radar",
+    "name": "レーダー",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "progressRing",
+    "name": "進行リング",
+    "moods": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "timecodeBar",
+    "name": "タイムコード",
+    "moods": [
+     "editorial",
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rulerEdge",
+    "name": "端の定規",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dimension",
+    "name": "寸法線",
+    "moods": [
+     "editorial",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "indexNum",
+    "name": "通し番号",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dateStamp",
+    "name": "日付写真",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "qrBlock",
+    "name": "QR風ブロック",
+    "moods": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glitchRects",
+    "name": "グリッチ片",
+    "moods": [
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "concentricSquares",
+    "name": "同心四角",
+    "moods": [
+     "graphic",
+     "calm",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "triangleSpin",
+    "name": "回転三角",
+    "moods": [
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "lineBurst",
+    "name": "放射線",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "plusGrid",
+    "name": "プラス格子",
+    "moods": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "guides",
+    "name": "ガイド線",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "waveLine",
+    "name": "波線",
+    "moods": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spiralLine",
+    "name": "渦巻き",
+    "moods": [
+     "graphic",
+     "pop",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "halftonePatch",
+    "name": "網点",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "checkerStrip",
+    "name": "市松の帯",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "beatRing",
+    "name": "拍の輪",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "orbitDots",
+    "name": "周回する点",
+    "moods": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "constellation",
+    "name": "星座",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "confetti",
+    "name": "紙吹雪",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "petals",
+    "name": "花びら",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "rainStreaks",
+    "name": "雨の筋",
+    "moods": [
+     "emotional",
+     "calm",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "snow",
+    "name": "雪",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "lightLeak",
+    "name": "光漏れ",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bokeh",
+    "name": "ボケ玉",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "speedCorner",
+    "name": "集中線",
+    "moods": [
+     "pop",
+     "emotional",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "risingParticles",
+    "name": "立ち上る粒",
+    "moods": [
+     "emotional",
+     "calm",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "twinkle",
+    "name": "きらめき",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "brushStroke",
+    "name": "筆の払い",
+    "moods": [
+     "emotional",
+     "editorial",
+     "pop"
+    ],
+    "set": "",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "tapePieces",
+    "name": "マスキングテープ",
+    "moods": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scribbleCircle",
+    "name": "手描きの囲み",
+    "moods": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scribbleUnder",
+    "name": "手描き下線",
+    "moods": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "crossOut",
+    "name": "推敲の走り書き",
+    "moods": [
+     "editorial",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "highlightMark",
+    "name": "蛍光マーカー",
+    "moods": [
+     "pop",
+     "editorial",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "heartsStars",
+    "name": "ハートと星",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "watermarkKanji",
+    "name": "透かし大漢字",
+    "moods": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "verticalStrip",
+    "name": "縦書き帯",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "romajiLine",
+    "name": "ローマ字",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bracketsJP",
+    "name": "隅付き括弧",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "seal",
+    "name": "落款",
+    "moods": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "kamon",
+    "name": "家紋",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "seigaiha",
+    "name": "青海波",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "asanoha",
+    "name": "麻の葉",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "hanabi",
+    "name": "花火",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "chochin",
+    "name": "提灯",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "shimenawa",
+    "name": "注連縄",
+    "moods": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "sensu",
+    "name": "扇",
+    "moods": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "tsukiKumo",
+    "name": "月に雲",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "momiji",
+    "name": "紅葉",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "namiGashira",
+    "name": "波頭",
+    "moods": [
+     "emotional",
+     "editorial",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "kasumi",
+    "name": "霞",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "hexGrid",
+    "name": "六角格子",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spectrumRing",
+    "name": "円形スペクトラム",
+    "moods": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dataColumns",
+    "name": "データ列",
+    "moods": [
+     "glitch",
+     "editorial",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spinner",
+    "name": "読み込み",
+    "moods": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "headingTape",
+    "name": "方位テープ",
+    "moods": [
+     "glitch",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glyphLock",
+    "name": "文字ロック",
+    "moods": [
+     "glitch",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "atomOrbit",
+    "name": "原子軌道",
+    "moods": [
+     "graphic",
+     "glitch",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sonarArcs",
+    "name": "音波",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "circuit",
+    "name": "回路",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "swatches",
+    "name": "色見本",
+    "moods": [
+     "editorial",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ruledLines",
+    "name": "罫線ノート",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "registration",
+    "name": "見当合わせ",
+    "moods": [
+     "editorial",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "punchHoles",
+    "name": "パンチ穴",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "staple",
+    "name": "ホチキス",
+    "moods": [
+     "editorial",
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "paperClip",
+    "name": "クリップ",
+    "moods": [
+     "editorial",
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "indexTabs",
+    "name": "見出しタブ",
+    "moods": [
+     "editorial",
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "vines",
+    "name": "蔓",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "cloudPuffs",
+    "name": "雲",
+    "moods": [
+     "calm",
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "starField",
+    "name": "星空",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "moonPhases",
+    "name": "月齢",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sunRays",
+    "name": "陽射し",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rainRipples",
+    "name": "雨の波紋",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bubbles",
+    "name": "シャボン玉",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "smoke",
+    "name": "煙",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dandelion",
+    "name": "綿毛",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "fireflies",
+    "name": "蛍",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "memphis",
+    "name": "メンフィス",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zigzagRibbon",
+    "name": "ジグザグリボン",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "polkaPatch",
+    "name": "水玉",
+    "moods": [
+     "pop",
+     "graphic",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stripeCircle",
+    "name": "縞の円",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "decoCorners",
+    "name": "装飾コーナー",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "halfCircles",
+    "name": "半円の積層",
+    "moods": [
+     "graphic",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "loopArrows",
+    "name": "循環矢印",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "starburst",
+    "name": "スターバースト",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tally",
+    "name": "正の字",
+    "moods": [
+     "editorial",
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "cursorClick",
+    "name": "カーソル",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "windowChrome",
+    "name": "ウィンドウ",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "progressBar",
+    "name": "読み込みバー",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "toggleSwitch",
+    "name": "トグル",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "notifBell",
+    "name": "通知",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "likeCounter",
+    "name": "いいね",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "mediaControls",
+    "name": "再生ボタン",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "volumeBars",
+    "name": "音量",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "musicNotes",
+    "name": "音符",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrScratches",
+    "name": "引っ掻き傷",
+    "moods": [
+     "horror",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrSigil",
+    "name": "魔法陣",
+    "moods": [
+     "horror",
+     "graphic"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrWatchEye",
+    "name": "見ている目",
+    "moods": [
+     "horror",
+     "graphic"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrStaticPatch",
+    "name": "砂嵐の欠片",
+    "moods": [
+     "horror",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrDustBeam",
+    "name": "光の筋と埃",
+    "moods": [
+     "horror",
+     "calm",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrDrips",
+    "name": "垂れる墨",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrCracks",
+    "name": "ひび割れ",
+    "moods": [
+     "horror",
+     "graphic",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knSpeedTrail",
+    "name": "追従スピード線",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knWordTicks",
+    "name": "語カウンター",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyColophon",
+    "name": "奥付",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyRunningHead",
+    "name": "柱とノンブル",
+    "moods": [
+     "editorial",
+     "calm"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyGlyphBody",
+    "name": "字割り線",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyTextRule",
+    "name": "文字罫",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyTypeScale",
+    "name": "級数見本",
+    "moods": [
+     "editorial",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyBigPunct",
+    "name": "大きな約物",
+    "moods": [
+     "editorial",
+     "emotional",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   }
+  ],
+  "treat": [
+   {
+    "k": "none",
+    "name": "なし",
+    "moods": null,
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrInkBleed",
+    "name": "滲み垂れ",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrEroded",
+    "name": "風化",
+    "moods": [
+     "horror",
+     "editorial",
+     "graphic"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrRedact",
+    "name": "黒塗り",
+    "moods": [
+     "horror",
+     "editorial",
+     "graphic"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrDoubleExp",
+    "name": "二重露光",
+    "moods": [
+     "horror",
+     "emotional",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knWordScale",
+    "name": "大小語",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knWordPlate",
+    "name": "語ごと反転",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "outline",
+    "name": "袋文字",
+    "moods": [
+     "graphic",
+     "pop",
+     "glitch",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "outlineFill",
+    "name": "縁取り",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "doubleOutline",
+    "name": "二重縁",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "extrude",
+    "name": "立体",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "longShadow",
+    "name": "長い影",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hardShadow",
+    "name": "ずらし影",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "softShadow",
+    "name": "ぼかし影",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glow",
+    "name": "発光",
+    "moods": [
+     "emotional",
+     "calm",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "marker",
+    "name": "マーカー",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "underline",
+    "name": "下線",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "strike",
+    "name": "取り消し線",
+    "moods": [
+     "glitch",
+     "editorial",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "boxed",
+    "name": "箱組",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "gradientV",
+    "name": "縦グラデ",
+    "moods": [
+     "emotional",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "splitColor",
+    "name": "上下二色",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "halftone",
+    "name": "網点",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stripes",
+    "name": "ストライプ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hatch",
+    "name": "斜線",
+    "moods": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dotted",
+    "name": "点線輪郭",
+    "moods": [
+     "calm",
+     "editorial",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "alternate",
+    "name": "交互色",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "italic",
+    "name": "斜体",
+    "moods": [
+     "editorial",
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "wide",
+    "name": "平体",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tall",
+    "name": "長体",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "echoOutline",
+    "name": "輪郭の残響",
+    "moods": [
+     "glitch",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "emphasisDots",
+    "name": "傍点",
+    "moods": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "neonOutline",
+    "name": "ネオン管",
+    "moods": [
+     "glitch",
+     "emotional",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "chrome",
+    "name": "クローム",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rainbow",
+    "name": "虹色",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "glitchSplit",
+    "name": "色版ズレ",
+    "moods": [
+     "glitch",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shadowStack",
+    "name": "多重影",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stencilGap",
+    "name": "ステンシル字",
+    "moods": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "waterline",
+    "name": "水位",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "karaoke",
+    "name": "カラオケ",
+    "moods": [
+     "emotional",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sizeWave",
+    "name": "大小リズム",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rotateAlt",
+    "name": "揺れ字",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "baselineShift",
+    "name": "段違い",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "fauxBold",
+    "name": "極太",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "circled",
+    "name": "丸囲み",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bracketsQuote",
+    "name": "かぎ括弧",
+    "moods": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "reflection",
+    "name": "映り込み",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "inline",
+    "name": "インライン",
+    "moods": [
+     "editorial",
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sticker",
+    "name": "シール縁",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "gradientSweep",
+    "name": "光沢スイープ",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "kerningWide",
+    "name": "字間広め",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "monoGrid",
+    "name": "原稿用紙風",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "outlineOffset",
+    "name": "版ズレ袋文字",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "toneShadow",
+    "name": "トーン影",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "fadeChars",
+    "name": "余韻",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "cutShift",
+    "name": "断ち切り",
+    "moods": [
+     "graphic",
+     "glitch",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "focusPull",
+    "name": "ぼかし送り",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spotChar",
+    "name": "一字マーク",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ransom",
+    "name": "切り貼り文字",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyHollowKey",
+    "name": "一字抜き",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyHeadRules",
+    "name": "天地罫",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyHeadBig",
+    "name": "頭字強調",
+    "moods": [
+     "editorial",
+     "pop",
+     "emotional"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyIndexSup",
+    "name": "字番号",
+    "moods": [
+     "editorial",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   }
+  ],
+  "bg": [
+   {
+    "k": "none",
+    "name": "無地",
+    "moods": null,
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "auroraRibbons",
+    "name": "オーロラ",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "meshBlobs",
+    "name": "メッシュグラデ",
+    "moods": [
+     "calm",
+     "emotional",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "duotoneSweep",
+    "name": "二色スイープ",
+    "moods": [
+     "calm",
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "horizonGlow",
+    "name": "惑星の縁",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "seigaiha",
+    "name": "青海波",
+    "moods": [
+     "calm",
+     "editorial",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "asanoha",
+    "name": "麻の葉",
+    "moods": [
+     "calm",
+     "editorial",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": true,
+    "horror": false
+   },
+   {
+    "k": "houndstooth",
+    "name": "千鳥格子",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "herringbone",
+    "name": "ヘリンボーン",
+    "moods": [
+     "editorial",
+     "calm",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "argyle",
+    "name": "アーガイル",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tartan",
+    "name": "タータン",
+    "moods": [
+     "pop",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "chevron",
+    "name": "山形",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "isoCubes",
+    "name": "立方体",
+    "moods": [
+     "graphic",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hexGrid",
+    "name": "六角格子",
+    "moods": [
+     "graphic",
+     "glitch",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "triTess",
+    "name": "三角モザイク",
+    "moods": [
+     "graphic",
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "moire",
+    "name": "モアレ",
+    "moods": [
+     "glitch",
+     "graphic",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "squareTunnel",
+    "name": "四角トンネル",
+    "moods": [
+     "glitch",
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spiralArms",
+    "name": "渦巻き",
+    "moods": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "topoLines",
+    "name": "等高線",
+    "moods": [
+     "calm",
+     "editorial",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ridgePlot",
+    "name": "稜線グラフ",
+    "moods": [
+     "editorial",
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "starfield",
+    "name": "星空",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "nightMoon",
+    "name": "月夜",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "skyline",
+    "name": "街並み",
+    "moods": [
+     "emotional",
+     "editorial",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sunsetSun",
+    "name": "夕日",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "oceanWaves",
+    "name": "海の波",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rainWindow",
+    "name": "雨の窓",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "snowLayers",
+    "name": "雪",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "fireworks",
+    "name": "花火",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "cloudLayers",
+    "name": "雲",
+    "moods": [
+     "calm",
+     "emotional",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "mountains",
+    "name": "山並み",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "filmStrip",
+    "name": "フィルム",
+    "moods": [
+     "editorial",
+     "emotional",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "vhsBand",
+    "name": "VHSノイズ",
+    "moods": [
+     "glitch",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tornPaper",
+    "name": "破れ紙",
+    "moods": [
+     "editorial",
+     "emotional",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "godRays",
+    "name": "光芒",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "vignettePulse",
+    "name": "色の周辺光",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "kaleidoscope",
+    "name": "万華鏡",
+    "moods": [
+     "pop",
+     "glitch",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "marble",
+    "name": "大理石",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "paperCut",
+    "name": "切り絵",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrFailingLamp",
+    "name": "切れかけの灯",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrCorridor",
+    "name": "暗い廊下",
+    "moods": [
+     "horror",
+     "graphic"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrMold",
+    "name": "広がる染み",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrDeadTrees",
+    "name": "枯れ木の森",
+    "moods": [
+     "horror",
+     "calm",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sunburst",
+    "name": "放射",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "concentric",
+    "name": "同心円",
+    "moods": [
+     "calm",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "halftoneFade",
+    "name": "網点グラデ",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bigStripes",
+    "name": "大きな斜線",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "splitV",
+    "name": "左右二色",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "splitH",
+    "name": "上下二色",
+    "moods": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "splitDiag",
+    "name": "斜め二色",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "gradientSweep",
+    "name": "グラデ",
+    "moods": [
+     "calm",
+     "emotional",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spotlight",
+    "name": "スポットライト",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tvBars",
+    "name": "テレビの帯",
+    "moods": [
+     "glitch",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "checker",
+    "name": "市松",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bigChar",
+    "name": "巨大文字",
+    "moods": [
+     "editorial",
+     "emotional",
+     "graphic",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "speedLines",
+    "name": "集中線",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scanBars",
+    "name": "走査線の帯",
+    "moods": [
+     "calm",
+     "glitch",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dotGrid",
+    "name": "ドット格子",
+    "moods": [
+     "calm",
+     "editorial",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "retroGrid",
+    "name": "レトロ格子",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bokehBg",
+    "name": "ボケ玉",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "particlesBg",
+    "name": "舞い上がる粒",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ripples",
+    "name": "波紋",
+    "moods": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "polka",
+    "name": "水玉",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "eqBars",
+    "name": "背景イコライザー",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "borderFrame",
+    "name": "太枠",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "letterbox",
+    "name": "シネスコ帯",
+    "moods": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "noiseField",
+    "name": "ノイズの揺らぎ",
+    "moods": [
+     "glitch",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   }
+  ],
+  "cam": [
+   {
+    "k": "push",
+    "name": "ゆっくり寄る",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional",
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "orbitDrift",
+    "name": "周回",
+    "moods": [
+     "calm",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "barrelRoll",
+    "name": "バレルロール",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pendulumSway",
+    "name": "振り子",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "focusIn",
+    "name": "ピント合わせ",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rackFocus",
+    "name": "ピンぼけ",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "earthquake",
+    "name": "地震",
+    "moods": [
+     "glitch",
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "floatNoise",
+    "name": "浮遊",
+    "moods": [
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "vertigo",
+    "name": "めまい",
+    "moods": [
+     "emotional",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tiltDown",
+    "name": "ティルトダウン",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spiralIn",
+    "name": "渦ズーム",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "snapPan",
+    "name": "スナップパン",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "jelly",
+    "name": "ぷるん",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrNervous",
+    "name": "怯えた手持ち",
+    "moods": [
+     "horror",
+     "glitch",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrDutchSnap",
+    "name": "不意の傾き",
+    "moods": [
+     "horror",
+     "emotional",
+     "graphic"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knReadPan",
+    "name": "読み追い",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knTiltKick",
+    "name": "語で傾く",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knCardFlip",
+    "name": "カード返し",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knShearKick",
+    "name": "シアーキック",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knJumpCut",
+    "name": "ジャンプカット",
+    "moods": [
+     "pop",
+     "glitch",
+     "editorial"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knRushIn",
+    "name": "奥から突進",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pullOut",
+    "name": "引き",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "panL",
+    "name": "左パン",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "panR",
+    "name": "右パン",
+    "moods": [
+     "calm",
+     "editorial",
+     "emotional",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tiltUp",
+    "name": "ティルト",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dutch",
+    "name": "ダッチ",
+    "moods": [
+     "emotional",
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "handheld",
+    "name": "手持ち",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "beatPunch",
+    "name": "拍でズーム",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "whipIn",
+    "name": "ホイップイン",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "crashZoom",
+    "name": "クラッシュズーム",
+    "moods": [
+     "pop",
+     "glitch",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bounce",
+    "name": "バウンス",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "roll",
+    "name": "ロール",
+    "moods": [
+     "emotional",
+     "calm",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "driftDiag",
+    "name": "斜めドリフト",
+    "moods": [
+     "calm",
+     "emotional",
+     "editorial",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shakeHard",
+    "name": "強い揺れ",
+    "moods": [
+     "glitch",
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dollyIn",
+    "name": "ドリー",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "stepZoom",
+    "name": "段階ズーム",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   }
+  ],
+  "fx": [
+   {
+    "k": "chroma",
+    "name": "色ズレの跳ね",
+    "moods": [
+     "glitch",
+     "emotional",
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shake",
+    "name": "揺れ",
+    "moods": [
+     "pop",
+     "glitch",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "slice",
+    "name": "スライスグリッチ",
+    "moods": [
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "block",
+    "name": "ブロックグリッチ",
+    "moods": [
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "invert",
+    "name": "反転",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flash",
+    "name": "フラッシュ",
+    "moods": [
+     "pop",
+     "emotional",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zoom",
+    "name": "ズームブラー",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "mosaic",
+    "name": "モザイク",
+    "moods": [
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "radialChroma",
+    "name": "放射色収差",
+    "moods": [
+     "glitch",
+     "emotional",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bloomFlash",
+    "name": "ブルーム",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bulge",
+    "name": "魚眼",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pixelSort",
+    "name": "ピクセルソート",
+    "moods": [
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "interlace",
+    "name": "インターレース",
+    "moods": [
+     "glitch",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "macroBlock",
+    "name": "ブロックノイズ",
+    "moods": [
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "halftone",
+    "name": "網点",
+    "moods": [
+     "pop",
+     "graphic",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "duotone",
+    "name": "ダブルトーン",
+    "moods": [
+     "pop",
+     "emotional",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ditherBit",
+    "name": "1bitディザ",
+    "moods": [
+     "glitch",
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rotateSnap",
+    "name": "傾きスナップ",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "echoFrames",
+    "name": "残像エコー",
+    "moods": [
+     "emotional",
+     "pop",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "kaleido",
+    "name": "万華鏡",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "bandInvert",
+    "name": "帯反転",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "lightRays",
+    "name": "光芒",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "anamorphic",
+    "name": "アナモフレア",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "heartbeat",
+    "name": "鼓動",
+    "moods": [
+     "emotional",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tvStatic",
+    "name": "砂嵐",
+    "moods": [
+     "glitch",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "dustScratches",
+    "name": "フィルム傷",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "filmAdvance",
+    "name": "フィルム送り",
+    "moods": [
+     "emotional",
+     "editorial",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "perspectiveTilt",
+    "name": "パース揺れ",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "ripple",
+    "name": "波紋",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "focusLines",
+    "name": "集中線",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "speedLines",
+    "name": "流線",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "starGlint",
+    "name": "キラッ",
+    "moods": [
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "colorBars",
+    "name": "カラーバー",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zoomStutter",
+    "name": "ズーム連打",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "negativeRing",
+    "name": "反転リング",
+    "moods": [
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "edgeDetect",
+    "name": "輪郭抽出",
+    "moods": [
+     "graphic",
+     "glitch",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shatter",
+    "name": "ガラス割れ",
+    "moods": [
+     "glitch",
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "defocus",
+    "name": "ピンぼけ",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "snapshot",
+    "name": "シャッター",
+    "moods": [
+     "pop",
+     "emotional",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "squash",
+    "name": "伸縮",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "scanBar",
+    "name": "スキャン",
+    "moods": [
+     "graphic",
+     "editorial",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "loopScroll",
+    "name": "横ループ",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrSubliminal",
+    "name": "サブリミナル",
+    "moods": [
+     "horror",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrSignalLoss",
+    "name": "映像の途切れ",
+    "moods": [
+     "horror",
+     "glitch",
+     "editorial"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrPassingShadow",
+    "name": "横切る影",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "panelWipe",
+    "name": "パネルワイプ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "irisTrans",
+    "name": "アイリス",
+    "moods": [
+     "pop",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "doors",
+    "name": "扉",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blindsTrans",
+    "name": "ブラインド",
+    "moods": [
+     "graphic",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "rgbSplit",
+    "name": "RGB分離",
+    "moods": [
+     "glitch",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "smear",
+    "name": "横スミア",
+    "moods": [
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "vhsRoll",
+    "name": "VHSロール",
+    "moods": [
+     "glitch",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "trackingNoise",
+    "name": "トラッキングノイズ",
+    "moods": [
+     "glitch",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "mirrorFlash",
+    "name": "ミラー",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "strobe",
+    "name": "ストロボ",
+    "moods": [
+     "glitch",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "posterize",
+    "name": "ポスタリゼ",
+    "moods": [
+     "glitch",
+     "pop",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hueShift",
+    "name": "色相シフト",
+    "moods": [
+     "glitch",
+     "pop",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tileShift",
+    "name": "タイルずらし",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "filmBurn",
+    "name": "フィルム焼け",
+    "moods": [
+     "emotional",
+     "calm",
+     "editorial"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "whipBlur",
+    "name": "ホイップブラー",
+    "moods": [
+     "pop",
+     "graphic",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blackFrame",
+    "name": "黒コマ",
+    "moods": [
+     "editorial",
+     "emotional",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "whiteFrame",
+    "name": "白コマ",
+    "moods": [
+     "emotional",
+     "pop"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "gridRepeat",
+    "name": "画面分割",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "waveWarp",
+    "name": "波ゆがみ",
+    "moods": [
+     "emotional",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pixelDrift",
+    "name": "ピクセルずれ",
+    "moods": [
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zoomPunch",
+    "name": "ズームパンチ",
+    "moods": [
+     "pop",
+     "graphic",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "lightSweep",
+    "name": "光の筋",
+    "moods": [
+     "pop",
+     "emotional",
+     "calm"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "crtOff",
+    "name": "ブラウン管オフ",
+    "moods": [
+     "glitch",
+     "emotional"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "splitSlide",
+    "name": "上下スライド",
+    "moods": [
+     "graphic",
+     "pop",
+     "glitch"
+    ],
+    "set": "",
+    "wa": false,
+    "horror": false
+   }
+  ],
+  "trans": [
+   {
+    "k": "hrStaticCut",
+    "name": "砂嵐カット",
+    "moods": [
+     "horror",
+     "glitch"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "hrBlink",
+    "name": "まばたき",
+    "moods": [
+     "horror",
+     "emotional"
+    ],
+    "set": "horror",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knCornerSwing",
+    "name": "コーナースイング",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knStutterCut",
+    "name": "刻みカット",
+    "moods": [
+     "pop",
+     "glitch",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "knStripSlam",
+    "name": "短冊スラム",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "kinetic",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "wipe",
+    "name": "エッジワイプ",
+    "moods": [
+     "graphic",
+     "editorial",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "diagonalWipe",
+    "name": "斜め帯ワイプ",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "clockWipe",
+    "name": "クロックワイプ",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "irisOpen",
+    "name": "アイリスイン",
+    "moods": [
+     "emotional",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pushSlide",
+    "name": "プッシュ",
+    "moods": [
+     "graphic",
+     "pop",
+     "editorial"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "cover",
+    "name": "カバー",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "uncover",
+    "name": "アンカバー",
+    "moods": [
+     "editorial",
+     "calm",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "zoomThrough",
+    "name": "ズームスルー",
+    "moods": [
+     "pop",
+     "emotional",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "doorsOpen",
+    "name": "観音開き",
+    "moods": [
+     "graphic",
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blinds",
+    "name": "ブラインド転換",
+    "moods": [
+     "graphic",
+     "editorial",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "checker",
+    "name": "市松転換",
+    "moods": [
+     "pop",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "blockDissolve",
+    "name": "ブロック崩し",
+    "moods": [
+     "glitch",
+     "graphic"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "whipPan",
+    "name": "ホイップパン",
+    "moods": [
+     "pop",
+     "emotional",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "spinOut",
+    "name": "回転アウト",
+    "moods": [
+     "pop",
+     "glitch"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "inkBlob",
+    "name": "インク",
+    "moods": [
+     "emotional",
+     "calm",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "shatterTiles",
+    "name": "タイル崩落",
+    "moods": [
+     "glitch",
+     "pop",
+     "emotional"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "sliceShift",
+    "name": "短冊ずらし",
+    "moods": [
+     "glitch",
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "cubeTurn",
+    "name": "キューブ",
+    "moods": [
+     "graphic",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "flashCross",
+    "name": "フラッシュ転換",
+    "moods": [
+     "emotional",
+     "pop",
+     "calm"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "pixelate",
+    "name": "モザイク転換",
+    "moods": [
+     "glitch",
+     "pop"
+    ],
+    "set": "extra",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyRuleWipe",
+    "name": "罫線ワイプ",
+    "moods": [
+     "editorial",
+     "graphic",
+     "calm"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   },
+   {
+    "k": "tyGridCells",
+    "name": "升目送り",
+    "moods": [
+     "editorial",
+     "graphic"
+    ],
+    "set": "typo",
+    "wa": false,
+    "horror": false
+   }
+  ]
+ },
+ "moods": [
+  "glitch",
+  "calm",
+  "pop",
+  "graphic",
+  "editorial",
+  "emotional",
+  "horror",
+  "chaos"
+ ]
+}
