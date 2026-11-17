@@ -98,7 +98,7 @@
       }
       ctx.restore();
       // Readability gradient, never a separate text card.
-      if(activeLine(S.t)&&!Z.A3.jizura){
+      if((activeLine(S.t)||(S.t>100.25&&S.t<112.10))&&!Z.A3.jizura){
         const g=ctx.createLinearGradient(0,660,0,1080);
         g.addColorStop(0,'rgba(12,8,17,0)');g.addColorStop(.55,'rgba(12,8,17,.52)');g.addColorStop(1,'rgba(12,8,17,.8)');
         ctx.fillStyle=g;ctx.fillRect(0,660,1920,420);
@@ -138,6 +138,26 @@
     }
     if(Z.A3.jizura) return;                       // JIZURA owns the body text; only the title card is drawn here
     const line=activeLine(t);
+    // Instrumental passage (100.25–112.10): vocals genuinely stop here, so the sheet says nothing.
+    // JIZURA's own convention for long interludes is to show the song title; do the same, quietly.
+    if(!line && t>100.25 && t<112.10){
+      const i=t-100.25, o=112.10-t;
+      const a=Math.min(1,C(i/.8),C(o/.8))*.8;
+      if(a>0){
+        ctx.save();ctx.globalAlpha=a;
+        ctx.font='700 86px "A3 Chinese","Microsoft YaHei",sans-serif';
+        ctx.letterSpacing='12px';
+        const w=ctx.measureText(film.title).width;
+        ctx.shadowColor='rgba(4,2,8,.8)';ctx.shadowBlur=12;ctx.shadowOffsetY=3;
+        ctx.fillStyle='#f4e8d6';ctx.fillText(film.title,(1920-w)/2,884);
+        ctx.shadowBlur=0;ctx.shadowOffsetY=0;
+        ctx.letterSpacing='0px';
+        ctx.strokeStyle=GOLD;ctx.lineWidth=2;
+        ctx.beginPath();ctx.moveTo(130,918);ctx.lineTo(130+240*E.outCubic(C((i-.2)/.8)),918);ctx.stroke();
+        star(ctx,104,862,6,0,.9);
+        ctx.restore();
+      }
+    }
     if(line){
       const age=t-line.start,left=line.end-t;
       const chorus=line.text.startsWith('恋って')||line.text.startsWith('今夜は君と乾杯');
