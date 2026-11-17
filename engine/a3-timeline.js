@@ -39,12 +39,48 @@
     [155.55,1],[162.67,7],[168.11,45],
     [173.82,59,'outro'],[182,2,'outro']
   ];
-  function view(a,p,lt){
-    const k=E.inOutSine(C(p));
+  // Song-time cues follow the approved lyric starts. Values are peak zoom,
+  // horizontal crop shift, vertical crop shift, and movement timing.
+  const lyricCamera = [
+    [7,.08,.08,0,'slow'],[9.63,.14,.02,-.05,'slow'],[12.87,.02,0,0,'hold'],
+    [16.05,.07,-.05,0,'slow'],[19.37,.16,0,-.07,'slow'],[22.45,.08,0,-.03,'hold'],
+    [25.17,.15,.02,.10,'late'],[27.89,.13,0,.09,'quick'],[31.17,-.16,0,0,'slow'],
+    [35.33,.03,.19,0,'slow'],[38.51,.17,-.04,.11,'late'],[40.67,.15,0,.08,'quick'],
+    [43.99,-.10,.05,0,'slow'],[48.17,.19,0,-.08,'slow'],[52.09,.10,.11,.04,'sway'],
+    [57.63,.04,0,0,'hold'],[61.47,-.08,-.18,.04,'slow'],[64.81,.05,-.09,0,'slow'],
+    [68.15,.09,.03,-.03,'hold'],[71.27,.14,0,.12,'slow'],[73.89,.13,0,-.08,'late'],
+    [77.29,-.07,.07,0,'quick'],[80.65,.02,0,0,'hold'],[83.45,.20,.04,.13,'late'],
+    [85.45,.15,0,.09,'quick'],[91.27,.18,0,.15,'late'],[93.29,.08,.13,0,'quick'],
+    [96.89,.08,-.12,.04,'sway'],[112.1,.11,0,.08,'slow'],[115.49,.11,0,.10,'quick'],
+    [118.67,.18,.01,-.07,'slow'],[121.87,.08,0,-.07,'hold'],[124.57,-.15,-.07,0,'slow'],
+    [128.81,.20,0,-.12,'quick'],[131.81,.22,0,-.12,'slow'],[135.01,.36,0,-.21,'slow'],
+    [138.05,.25,.12,.14,'quick'],[141.45,-.20,.14,0,'quick'],[144.45,.20,0,-.11,'slow'],
+    [148.97,.13,0,.09,'slow'],[152.99,.23,0,.13,'hold'],[155.55,-.09,-.07,0,'slow'],
+    [158.67,.18,0,-.09,'slow'],[162.67,-.06,.08,0,'hold'],[168.11,.32,0,-.16,'quick']
+  ];
+  const cameraByLine = new Map(lyricCamera.map(cue=>[cue[0],cue.slice(1)]));
+
+  function view(a,p,lt,t){
+    const line=Number.isFinite(t)?activeLine(t):undefined;
+    const cue=line&&cameraByLine.get(line.start);
+    const hold=cue?.[3]==='hold';
+    const k=hold ? .5 : E.inOutSine(C(p));
     const v=a.from.map((n,i)=>L(n,a.to[i],k));
-    // Six-frame acceleration on a known toast cut; small and monotonic.
-    if(a.kind==='toast') v[0]+=.032*E.outCubic(C(lt/.2));
-    return v;
+    if(a.kind==='toast')v[0]+=.032*E.outCubic(C(lt/.2));
+    if(!cue)return v;
+    const [zoom,dx,dy,motion]=cue;
+    const age=t-line.start;
+    const progress=C(age/Math.max(.1,line.end-line.start));
+    const enter={
+      slow:E.inOutSine(progress),
+      late:E.outCubic(C((progress-.40)/.60)),
+      quick:E.outCubic(C(age/.38)),
+      hold:E.outCubic(C(age/.24)),
+      sway:Math.sin(progress*Math.PI)
+    }[motion];
+    const release=E.inOutSine(C((line.end-t)/.24));
+    const weight=enter*release;
+    return [Math.max(1,v[0]+zoom*weight),C(v[1]+dx*weight),C(v[2]+dy*weight)];
   }
   function star(ctx,x,y,r,angle=0,alpha=1){
     ctx.save();ctx.globalAlpha*=C(alpha);ctx.translate(x,y);ctx.rotate(angle);
@@ -78,7 +114,7 @@
     draw(ctx,S){
       const img=Z.imgSync(path(S.args.image));
       if(!img) throw new Error('Missing approved plate '+S.args.image);
-      const [z,px,py]=view(S.args,S.p,S.lt);
+      const [z,px,py]=view(S.args,S.p,S.lt,S.t);
       const scale=Math.max(S.W/img.width,S.H/img.height)*z;
       const w=img.width*scale,h=img.height*scale;
       const x=-(w-S.W)*C(px),y=-(h-S.H)*C(py);
@@ -115,6 +151,109 @@
     const width=ctx.measureText(text).width;
     ctx.beginPath();ctx.rect(x-8,y-200,(width+16)*C(progress),260);ctx.clip();
     ctx.fillText(text,x,y);ctx.restore();return width;
+  }
+  const lyricObjects=new Map([
+    [7,'meeting'],[9.63,'thread'],[12.87,'orbit'],[16.05,'clock'],
+    [19.37,'heart'],[22.45,'spark'],[25.17,'bottle'],[27.89,'toast'],
+    [31.17,'orbit'],[35.33,'path'],[38.51,'bottle'],[40.67,'toast'],
+    [43.99,'spark'],[48.17,'orbit'],[52.09,'steam'],[57.63,'lamp'],
+    [61.47,'path'],[64.81,'clock'],[68.15,'sky'],[71.27,'bottle'],
+    [73.89,'bottle'],[77.29,'door'],[80.65,'lamp'],[83.45,'bottle'],
+    [85.45,'toast'],[91.27,'lamp'],[93.29,'ripple'],[96.89,'orbit'],
+    [112.1,'sky'],[115.49,'toast'],[118.67,'ripple'],[121.87,'heart'],
+    [124.57,'orbit'],[128.81,'eye'],[131.81,'steam'],[135.01,'eye'],
+    [138.05,'thread'],[141.45,'path'],[144.45,'drop'],[148.97,'bottle'],
+    [152.99,'toast'],[155.55,'clock'],[158.67,'sky'],[162.67,'thread'],
+    [168.11,'drop']
+  ]);
+  const ornamentPaths={
+    meeting:[[[0,-10],[10,0],[0,10],[-10,0],[0,-10]]],
+    thread:[[[-22,10],[-13,3],[-5,5],[3,-5],[12,-3],[22,-12]]],
+    orbit:[[[-18,3],[-14,-7],[-5,-13],[7,-12],[16,-6],[19,2],[14,10],[4,14],[-8,12],[-18,3]],
+      [[-23,9],[-12,9],[1,4],[13,-3],[24,-11]]],
+    heart:[[[0,13],[-15,0],[-16,-7],[-11,-13],[-5,-13],[0,-7],[5,-13],[11,-13],[16,-7],[15,0],[0,13]]],
+    spark:[[[0,-15],[0,15]],[[-15,0],[15,0]],[[-8,-8],[8,8]],[[-8,8],[8,-8]]],
+    path:[[[-20,14],[-10,14],[-10,3],[2,3],[2,-8],[17,-8]],[[11,-14],[17,-8],[11,-2]]],
+    steam:[[[-10,15],[-14,8],[-7,0],[-7,-6],[-11,-13]],[[5,15],[1,8],[8,0],[8,-6],[4,-13]]],
+    ripple:[[[-16,0],[-8,-5],[0,-5],[8,0],[16,0]],[[-16,8],[-8,3],[0,3],[8,8],[16,8]]],
+    eye:[[[-20,0],[-11,-8],[0,-11],[11,-8],[20,0],[11,8],[0,11],[-11,8],[-20,0]],
+      [[0,-6],[5,0],[0,6],[-5,0],[0,-6]]],
+    drop:[[[0,-15],[8,-4],[11,3],[9,10],[4,14],[-4,14],[-9,10],[-11,3],[-8,-4],[0,-15]]]
+  };
+  function lyricOrnament(ctx,x,y,age,left,kind){
+    const p=C(age/.45);
+    ctx.save();
+    ctx.translate(x,y);
+    ctx.globalAlpha=C(age/.14)*C(left/.25)*.9;
+    ctx.strokeStyle='#fff';
+    ctx.lineWidth=1.8;
+    ctx.lineCap='round';
+    ctx.lineJoin='round';
+    ctx.shadowColor='#17101c';
+    ctx.shadowBlur=4;
+    const draw=(points,progress=1)=>{
+      if(progress<=0)return;
+      ctx.beginPath();
+      ctx.moveTo(...points[0]);
+      const segments=(points.length-1)*C(progress);
+      for(let i=1;i<=Math.ceil(segments);i++){
+        const a=C(segments-i+1);
+        ctx.lineTo(L(points[i-1][0],points[i][0],a),L(points[i-1][1],points[i][1],a));
+      }
+      ctx.stroke();
+    };
+    if(kind==='toast'){
+      const tap=Math.sin(Math.PI*C(age/.55));
+      for(const side of [-1,1]){
+        ctx.save();
+        ctx.translate(side*(22-6*tap),0);
+        ctx.rotate(-side*.3*tap);
+        draw([[-9,-15],[9,-15],[11,-5],[7,2],[0,5],[-7,2],[-11,-5],[-9,-15]],p);
+        draw([[0,5],[0,18]],C((age-.07)/.26));
+        draw([[-7,18],[7,18]],C((age-.12)/.22));
+        ctx.restore();
+      }
+      const spark=C((age-.22)/.16);
+      ctx.globalAlpha*=spark*(1-C((age-.4)/.35));
+      for(let i=-1;i<=1;i++)draw([[i*3,-20],[i*9,-23-8*spark]]);
+    }else if(kind==='sky'){
+      ctx.setLineDash([2,5]);
+      draw([[-21,9],[0,-9],[22,2]],p);
+      ctx.setLineDash([]);
+      for(const [dx,dy,r,delay] of [[-21,9,5,0],[0,-9,10,.12],[22,2,6,.24]]){
+        const q=C((age-delay)/.28);
+        draw([[dx,dy-r],[dx+2,dy-2],[dx+r,dy],[dx+2,dy+2],[dx,dy+r],
+          [dx-2,dy+2],[dx-r,dy],[dx-2,dy-2],[dx,dy-r]],q);
+      }
+    }else if(ornamentPaths[kind]){
+      const float=E.inOutSine(C(age/.75));
+      ctx.translate(kind==='path'?8*float:0,kind==='drop'?9*float:-3*float);
+      ornamentPaths[kind].forEach((points,i)=>draw(points,C((age-.1*i)/.45)));
+    }else if(kind==='bottle'){
+      ctx.rotate(-.24*E.inOutSine(C(age/.6)));
+      draw([[-5,-22],[5,-22],[5,-10],[12,-3],[12,20],[-12,20],[-12,-3],[-5,-10],[-5,-22]],p);
+      draw([[-12,6],[12,6]],C((age-.2)/.25));
+      draw([[-12,13],[12,13]],C((age-.26)/.25));
+    }else if(kind==='door'){
+      draw([[-15,21],[-15,-21],[15,-21],[15,21]],p);
+      const edge=L(15,1,E.inOutSine(C((age-.18)/.7)));
+      draw([[-15,-21],[edge,-15],[edge,16],[-15,21]],C((age-.12)/.4));
+      draw([[edge-4,2],[edge-2,2]],C((age-.45)/.2));
+    }else if(kind==='clock'){
+      ctx.beginPath();
+      ctx.arc(0,0,17,-Math.PI/2,-Math.PI/2+Math.PI*2*p);
+      ctx.stroke();
+      const angle=-Math.PI/2+Math.PI/2*E.outCubic(C((age-.35)/.55));
+      draw([[0,-8],[0,0],[Math.cos(angle)*12,Math.sin(angle)*12]],C((age-.24)/.24));
+    }else{
+      ctx.translate(0,-20);
+      ctx.rotate(.13*Math.sin(age*5)*Math.exp(-age*1.4));
+      draw([[0,0],[0,9],[-6,11],[-13,23],[13,23],[6,11],[0,9]],p);
+      draw([[-4,27],[0,30],[4,27]],C((age-.22)/.24));
+      draw([[-12,28],[-16,33]],C((age-.3)/.25));
+      draw([[12,28],[16,33]],C((age-.3)/.25));
+    }
+    ctx.restore();
   }
   function text(ctx,S){
     const t=S.t;
@@ -193,6 +332,13 @@
         ctx.strokeStyle=GOLD;ctx.lineWidth=2;
         ctx.beginPath();ctx.moveTo(x0,y+34);ctx.lineTo(x0+Math.min(240,width*.2)*E.outCubic(sweep),y+34);ctx.stroke();
         star(ctx,x0-26,y-22,chorus?8:5,0,.8);
+      }
+      const object=lyricObjects.get(line.start) ?? 'sky';
+      const accent=object==='toast'?activeCue(t):null;
+      if(accent?.text==='乾杯'){
+        lyricOrnament(ctx,1585,630,t-accent.start,accent.end-t,'toast');
+      }else{
+        lyricOrnament(ctx,Math.max(62,x0-55),y-40,age,left,object==='toast'?'sky':object);
       }
       // Chinese reference line, one notch smaller, after the Japanese has landed.
       if(line.zh){
