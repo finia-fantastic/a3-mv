@@ -58,6 +58,8 @@ node tools/render_final.mjs --url 'engine/a3.html?render' --name A3_mv_v1 \
 | `assets/a3/*.png` | 九张原图（1/2/6/7/29/32/34/45/59） |
 | `audio/A3_no_harmony.wav` | 本版音频（无和声） |
 | `analysis/a3-film.json` | 45 句 + 9 个卡点 + 音频信息 |
+| `docs/A3_SHOTS.md` | 47 个镜头的起止/用图/运镜参数/入点歌词（`tools/export_shots.mjs` 生成） |
+| `lyrics/` | 三份权威时间轴原样存档 |
 
 ## 五、已知问题（别当成 bug 又查一遍）
 
