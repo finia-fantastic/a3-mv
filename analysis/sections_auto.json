@@ -1,0 +1,173 @@
+[
+ {
+  "first_bar": 0,
+  "last_bar": 3,
+  "label": "section",
+  "group": "A",
+  "name": "A1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 4,
+  "last_bar": 5,
+  "label": "section",
+  "group": "B",
+  "name": "B1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 6,
+  "last_bar": 9,
+  "label": "section",
+  "group": "C",
+  "name": "C1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 10,
+  "last_bar": 11,
+  "label": "section",
+  "group": "D",
+  "name": "D1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 12,
+  "last_bar": 14,
+  "label": "section",
+  "group": "E",
+  "name": "E1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 15,
+  "last_bar": 36,
+  "label": "section",
+  "group": "F",
+  "name": "F1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 37,
+  "last_bar": 39,
+  "label": "section",
+  "group": "G",
+  "name": "G1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 40,
+  "last_bar": 41,
+  "label": "section",
+  "group": "H",
+  "name": "H1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 42,
+  "last_bar": 44,
+  "label": "section",
+  "group": "I",
+  "name": "I1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": "group I repeats (aligned bar-chroma similarity >= 0.6)"
+ },
+ {
+  "first_bar": 45,
+  "last_bar": 50,
+  "label": "section",
+  "group": "I",
+  "name": "I2",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": "group I repeats (aligned bar-chroma similarity >= 0.6)"
+ },
+ {
+  "first_bar": 51,
+  "last_bar": 52,
+  "label": "section",
+  "group": "J",
+  "name": "J1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 53,
+  "last_bar": 82,
+  "label": "section",
+  "group": "K",
+  "name": "K1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": "group K repeats (aligned bar-chroma similarity >= 0.6)"
+ },
+ {
+  "first_bar": 83,
+  "last_bar": 84,
+  "label": "section",
+  "group": "L",
+  "name": "L1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": "group L repeats (aligned bar-chroma similarity >= 0.6)"
+ },
+ {
+  "first_bar": 85,
+  "last_bar": 87,
+  "label": "section",
+  "group": "L",
+  "name": "L2",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": "group L repeats (aligned bar-chroma similarity >= 0.6)"
+ },
+ {
+  "first_bar": 88,
+  "last_bar": 93,
+  "label": "section",
+  "group": "M",
+  "name": "M1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 94,
+  "last_bar": 105,
+  "label": "section",
+  "group": "N",
+  "name": "N1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 106,
+  "last_bar": 115,
+  "label": "section",
+  "group": "K",
+  "name": "K2",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": "group K repeats (aligned bar-chroma similarity >= 0.6)"
+ },
+ {
+  "first_bar": 116,
+  "last_bar": 117,
+  "label": "section",
+  "group": "O",
+  "name": "O1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ },
+ {
+  "first_bar": 118,
+  "last_bar": 118,
+  "label": "section",
+  "group": "P",
+  "name": "P1",
+  "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+  "notable": ""
+ }
+]

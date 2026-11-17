@@ -1,0 +1,368 @@
+{
+  "title": "恋爱如酒",
+  "singer": "肥鱼爱吃大白饭",
+  "duration": 191.541,
+  "fps": 30,
+  "lines": [
+    {
+      "start": 7.0,
+      "end": 9.63,
+      "text": "君と会ったのは偶然かな"
+    },
+    {
+      "start": 9.63,
+      "end": 12.87,
+      "text": "それとも運命だったのかな"
+    },
+    {
+      "start": 12.87,
+      "end": 16.05,
+      "text": "世界の謎はあとにしよう"
+    },
+    {
+      "start": 16.05,
+      "end": 19.37,
+      "text": "君といると時を忘れそう"
+    },
+    {
+      "start": 19.37,
+      "end": 22.45,
+      "text": "これって恋なのかな"
+    },
+    {
+      "start": 22.45,
+      "end": 25.17,
+      "text": "そんなわけないよな"
+    },
+    {
+      "start": 25.17,
+      "end": 27.89,
+      "text": "恋ってお酒みたいでちょっと苦い"
+    },
+    {
+      "start": 27.89,
+      "end": 31.17,
+      "text": "今夜は君と乾杯、もう一杯"
+    },
+    {
+      "start": 31.17,
+      "end": 35.33,
+      "text": "世界が終わってもかまわない"
+    },
+    {
+      "start": 35.33,
+      "end": 38.51,
+      "text": "今度はふたりでどこか行きたい"
+    },
+    {
+      "start": 38.51,
+      "end": 40.67,
+      "text": "恋ってお酒みたいでちょっと苦い"
+    },
+    {
+      "start": 40.67,
+      "end": 43.99,
+      "text": "今夜は君と乾杯、もう一杯"
+    },
+    {
+      "start": 43.99,
+      "end": 48.17,
+      "text": "うまくいかない日も気にしない"
+    },
+    {
+      "start": 48.17,
+      "end": 52.09,
+      "text": "君のことが頭から離れない"
+    },
+    {
+      "start": 52.09,
+      "end": 57.63,
+      "text": "匂いだけでもう立ってられない"
+    },
+    {
+      "start": 57.63,
+      "end": 61.47,
+      "text": "あんなに楽しかったのにな"
+    },
+    {
+      "start": 61.47,
+      "end": 64.81,
+      "text": "帰り道はやけにさみしいな"
+    },
+    {
+      "start": 64.81,
+      "end": 68.15,
+      "text": "一週間ってこんなに長いのに"
+    },
+    {
+      "start": 68.15,
+      "end": 71.27,
+      "text": "君に会える日は少ないのに"
+    },
+    {
+      "start": 71.27,
+      "end": 73.89,
+      "text": "お酒は好きじゃないんだけど"
+    },
+    {
+      "start": 73.89,
+      "end": 77.29,
+      "text": "君を思い浮かべて飲み干した"
+    },
+    {
+      "start": 77.29,
+      "end": 80.65,
+      "text": "ドアを開けたら部屋は真っ暗"
+    },
+    {
+      "start": 80.65,
+      "end": 83.45,
+      "text": "さっきまで笑ってたのにな"
+    },
+    {
+      "start": 83.45,
+      "end": 85.45,
+      "text": "恋ってお酒みたいでちょっと苦い"
+    },
+    {
+      "start": 85.45,
+      "end": 91.27,
+      "text": "今夜は君と乾杯、もう一杯"
+    },
+    {
+      "start": 91.27,
+      "end": 93.29,
+      "text": "灯りの下で冷酒をぐいっと飲んだ"
+    },
+    {
+      "start": 93.29,
+      "end": 96.89,
+      "text": "今夜はやけに口が回るな"
+    },
+    {
+      "start": 96.89,
+      "end": 100.25,
+      "text": "ちょっと飲みすぎたのかな"
+    },
+    {
+      "start": 112.1,
+      "end": 115.49,
+      "text": "恋ってお酒みたいでちょっと苦い"
+    },
+    {
+      "start": 115.49,
+      "end": 118.67,
+      "text": "今夜は君と乾杯、もう一杯"
+    },
+    {
+      "start": 118.67,
+      "end": 121.87,
+      "text": "もう少しだけ本音で話したい"
+    },
+    {
+      "start": 121.87,
+      "end": 124.57,
+      "text": "好きじゃないふりをしていたい"
+    },
+    {
+      "start": 124.57,
+      "end": 128.81,
+      "text": "おかしな世界は今夜だけ忘れたい"
+    },
+    {
+      "start": 128.81,
+      "end": 131.81,
+      "text": "なのに君から目が離せない"
+    },
+    {
+      "start": 131.81,
+      "end": 135.01,
+      "text": "この酔いはまだ醒めそうにない"
+    },
+    {
+      "start": 135.01,
+      "end": 138.05,
+      "text": "金色の瞳が泣きそうで"
+    },
+    {
+      "start": 138.05,
+      "end": 141.45,
+      "text": "夢なら君に手が届きそうで"
+    },
+    {
+      "start": 141.45,
+      "end": 144.45,
+      "text": "手を伸ばすたび君は遠ざかる"
+    },
+    {
+      "start": 144.45,
+      "end": 148.97,
+      "text": "君が泣くとこっちまで泣けてくる"
+    },
+    {
+      "start": 148.97,
+      "end": 152.99,
+      "text": "恋ってお酒みたいでちょっと苦い"
+    },
+    {
+      "start": 152.99,
+      "end": 155.55,
+      "text": "今夜は君と乾杯、あと一杯"
+    },
+    {
+      "start": 155.55,
+      "end": 158.67,
+      "text": "昔ばかり見てるのはもったいない"
+    },
+    {
+      "start": 158.67,
+      "end": 162.67,
+      "text": "君に会えた今日を見逃したくない"
+    },
+    {
+      "start": 162.67,
+      "end": 168.11,
+      "text": "さよならの日は泣かないでね"
+    },
+    {
+      "start": 168.11,
+      "end": 173.82,
+      "text": "そう言った僕が先に泣いたね"
+    }
+  ],
+  "cues": [
+    {
+      "start": 28.52,
+      "end": 29.18,
+      "text": "苦い"
+    },
+    {
+      "start": 30.62,
+      "end": 31.28,
+      "text": "乾杯"
+    },
+    {
+      "start": 39.34,
+      "end": 39.88,
+      "text": "お酒"
+    },
+    {
+      "start": 41.16,
+      "end": 41.98,
+      "text": "苦い"
+    },
+    {
+      "start": 43.44,
+      "end": 44.08,
+      "text": "乾杯"
+    },
+    {
+      "start": 71.36,
+      "end": 72.06,
+      "text": "お酒"
+    },
+    {
+      "start": 86.0,
+      "end": 86.8,
+      "text": "苦い"
+    },
+    {
+      "start": 88.2,
+      "end": 88.88,
+      "text": "乾杯"
+    },
+    {
+      "start": 116.98,
+      "end": 117.7,
+      "text": "乾杯"
+    }
+  ],
+  "plates": [
+    {
+      "path": "assets/a3/1.png",
+      "sha256": "40099d396c8aecb4395fa87a4593b57d00a9c58a84d68454e29c7727ad220e85"
+    },
+    {
+      "path": "assets/a3/2.png",
+      "sha256": "1b151fad22c764c1c8f6dc71ba0c220cb5cec0d491d3339c65490a283648d772"
+    },
+    {
+      "path": "assets/a3/6.png",
+      "sha256": "d68dda3de2f9779108c34c6cc7a7ad4670b1fb6599ba7d87d8a07e443806ea5e"
+    },
+    {
+      "path": "assets/a3/7.png",
+      "sha256": "57597c3a85867628e9607d452afaa672e9b9f70ebf0d6bc3afdbd728955f99a1"
+    },
+    {
+      "path": "assets/a3/29.png",
+      "sha256": "7644877d334895671b2f57a63c0d6d1ba572b2c0565338ddb073abcc13ac3a28"
+    },
+    {
+      "path": "assets/a3/32.png",
+      "sha256": "78e8a56438bfb1a305de4a8381c37a95f77bec830be97b5e6a6e9d99d725fc5a"
+    },
+    {
+      "path": "assets/a3/34.png",
+      "sha256": "83aebe334fc21292be338fbf6a3b05448995d660df6a449518c7a2ca77edd12e"
+    },
+    {
+      "path": "assets/a3/45.png",
+      "sha256": "6f6563ef9e1a394256fd382845d83a3d8587fd6e7483275c5d83f2b6a56aadea"
+    },
+    {
+      "path": "assets/a3/59.png",
+      "sha256": "b88992d7ee06070bc4eee1dad14271d1fe15e8ce5d91c183fa7bc4f431fdabeb"
+    }
+  ],
+  "master": {
+    "path": "audio/A3_no_harmony.wav",
+    "sha256": "55fcacf2b81648bc26708e36ad83f9be387a4781c3f0ea550d0ccb3ab00d1139",
+    "provenance": "夜酒_无和声.wav; explicitly selected by user",
+    "sampleRate": 44100,
+    "sourceDuration": 191.541406,
+    "alignmentStatus": "Existing lyric times retained; alignment against this recording not yet checked"
+  },
+  "timingConflicts": [
+    {
+      "cue": {
+        "start": 28.52,
+        "end": 29.18,
+        "text": "苦い"
+      },
+      "activeSentence": {
+        "start": 27.89,
+        "end": 31.17,
+        "text": "今夜は君と乾杯、もう一杯"
+      },
+      "status": "source disagreement; unchanged"
+    },
+    {
+      "cue": {
+        "start": 41.16,
+        "end": 41.98,
+        "text": "苦い"
+      },
+      "activeSentence": {
+        "start": 40.67,
+        "end": 43.99,
+        "text": "今夜は君と乾杯、もう一杯"
+      },
+      "status": "source disagreement; unchanged"
+    },
+    {
+      "cue": {
+        "start": 86.0,
+        "end": 86.8,
+        "text": "苦い"
+      },
+      "activeSentence": {
+        "start": 85.45,
+        "end": 91.27,
+        "text": "今夜は君と乾杯、もう一杯"
+      },
+      "status": "source disagreement; unchanged"
+    }
+  ],
+  "timingPolicy": "Sentence and keyword timestamps are separate authoritative inputs; no inferred word timing."
+}

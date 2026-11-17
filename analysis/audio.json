@@ -1,0 +1,7488 @@
+{
+ "source": "audio/song.wav",
+ "generator": "tools/analyze_audio.py",
+ "title": "mv-20261117-build",
+ "duration": 191.541,
+ "sr": 48000,
+ "analysis_sr": 24000,
+ "frames_30fps": 5747,
+ "music_start": 0.21,
+ "music_cut": 190.33,
+ "tail_end": 190.46,
+ "bpm": 150.009,
+ "tempo": {
+  "bpm": 150.009,
+  "bpm_definition": "mean over the song = 60*(n_beats-1)/(last-first beat)",
+  "bpm_median_local": 149.987,
+  "bpm_start": 150.054,
+  "bpm_end": 150.003,
+  "bpm_mean_from_beats": 150.009,
+  "drift": "smooth accelerando over the whole song (see bars[].bpm)",
+  "estimators": {
+   "librosa_default_prior": 150.0,
+   "librosa_uniform_prior": 150.0,
+   "acf_multilag_global": 150.042,
+   "fourier_tempogram": 169.79,
+   "local_curve_median": 150.046,
+   "beat_regression_mean": 150.009
+  },
+  "octave_check": {
+   "candidates_bpm": {
+    "75.0": 0.494,
+    "150.0": 0.508,
+    "300.0": 0.433
+   },
+   "verdict": "~150 BPM chosen: the 2x candidate (~300) has similar ACF strength (busy 8th-note parts) but kick/snare alternate at the ~150 level (backbeat on 2 & 4); ~75 would put the snare on every beat"
+  },
+  "estimator_agreement(within 2.5%, octave-folded)": 0.833,
+  "confidence": 0.841,
+  "search_range_bpm": [
+   133.929,
+   168.0
+  ]
+ },
+ "meter": "4/4",
+ "beat_tracking": {
+  "librosa_beats_used": 475,
+  "spline_residual_ms_median": 4.108,
+  "spline_residual_ms_p90": 14.335,
+  "snapped_to_onset_fraction": 0.903,
+  "grid_extrapolated_before": 0,
+  "grid_extrapolated_after": 1,
+  "note": "beats = onset-snapped (use for hits); beats_smooth = jitter-free spline grid (same indices; use for continuous motion)"
+ },
+ "downbeat_info": {
+  "assumed_meter": "4/4",
+  "winning_phase": 2,
+  "phase_definition": "downbeat = beats[k] with k % 4 == winning_phase",
+  "phase_scores": [
+   0.261,
+   0.297,
+   0.86,
+   -0.138
+  ],
+  "per_feature_phase_means": {
+   "bass_chroma_change": [
+    -0.13,
+    0.014,
+    0.241,
+    -0.125
+   ],
+   "chroma_change": [
+    -0.216,
+    -0.058,
+    0.395,
+    -0.122
+   ],
+   "kick": [
+    0.019,
+    -0.031,
+    0.215,
+    -0.202
+   ],
+   "snare_backbeat(neg)": [
+    0.227,
+    -0.19,
+    0.24,
+    -0.277
+   ],
+   "bass_reentries(count of top low-band jumps)": [
+    5,
+    5,
+    3,
+    3
+   ]
+  },
+  "window_winner_histogram(32-beat windows)": [
+   8,
+   4,
+   42,
+   2
+  ],
+  "repeat_lags_mod4_zero_fraction": 1.0,
+  "top_repeat_lags": [
+   {
+    "sim": 0.984,
+    "lag_beats": 92,
+    "from": 115.94,
+    "to": 152.75
+   },
+   {
+    "sim": 0.976,
+    "lag_beats": 72,
+    "from": 87.14,
+    "to": 115.94
+   },
+   {
+    "sim": 0.972,
+    "lag_beats": 164,
+    "from": 87.14,
+    "to": 152.75
+   },
+   {
+    "sim": 0.972,
+    "lag_beats": 32,
+    "from": 29.54,
+    "to": 42.34
+   },
+   {
+    "sim": 0.961,
+    "lag_beats": 180,
+    "from": 104.73,
+    "to": 176.74
+   },
+   {
+    "sim": 0.958,
+    "lag_beats": 184,
+    "from": 41.14,
+    "to": 114.74
+   },
+   {
+    "sim": 0.956,
+    "lag_beats": 308,
+    "from": 27.94,
+    "to": 151.15
+   },
+   {
+    "sim": 0.956,
+    "lag_beats": 276,
+    "from": 41.95,
+    "to": 152.36
+   }
+  ],
+  "notes": "winning phase = argmax of the weighted per-phase means (bass-chroma change 1.0, chroma change 0.5, kick 0.4, -snare/backbeat 0.4) + 0.08 x bass re-entry counts; see per_feature_phase_means. repeat_lags_mod4_zero_fraction near 1 = repeats are whole bars apart (no odd bars).",
+  "confidence": 0.738
+ },
+ "beats": [
+  0.36,
+  0.74,
+  1.13,
+  1.54,
+  1.95,
+  2.34,
+  2.74,
+  3.14,
+  3.54,
+  3.94,
+  4.34,
+  4.74,
+  5.14,
+  5.54,
+  5.94,
+  6.34,
+  6.74,
+  7.13,
+  7.54,
+  7.93,
+  8.33,
+  8.71,
+  9.14,
+  9.51,
+  9.95,
+  10.35,
+  10.74,
+  11.12,
+  11.53,
+  11.92,
+  12.32,
+  12.71,
+  13.138,
+  13.54,
+  13.94,
+  14.33,
+  14.74,
+  15.12,
+  15.54,
+  15.94,
+  16.34,
+  16.73,
+  17.13,
+  17.52,
+  17.937,
+  18.33,
+  18.74,
+  19.13,
+  19.55,
+  19.94,
+  20.34,
+  20.73,
+  21.136,
+  21.55,
+  21.94,
+  22.336,
+  22.76,
+  23.135,
+  23.53,
+  23.95,
+  24.34,
+  24.75,
+  25.135,
+  25.53,
+  25.93,
+  26.34,
+  26.74,
+  27.13,
+  27.53,
+  27.94,
+  28.34,
+  28.74,
+  29.134,
+  29.54,
+  29.94,
+  30.34,
+  30.734,
+  31.13,
+  31.53,
+  31.94,
+  32.35,
+  32.72,
+  33.14,
+  33.54,
+  33.92,
+  34.34,
+  34.74,
+  35.14,
+  35.54,
+  35.94,
+  36.34,
+  36.73,
+  37.11,
+  37.53,
+  37.93,
+  38.32,
+  38.733,
+  39.15,
+  39.53,
+  39.94,
+  40.33,
+  40.74,
+  41.14,
+  41.54,
+  41.95,
+  42.34,
+  42.74,
+  43.14,
+  43.54,
+  43.94,
+  44.34,
+  44.74,
+  45.14,
+  45.54,
+  45.94,
+  46.34,
+  46.74,
+  47.14,
+  47.53,
+  47.94,
+  48.34,
+  48.74,
+  49.11,
+  49.53,
+  49.933,
+  50.333,
+  50.75,
+  51.14,
+  51.54,
+  51.93,
+  52.34,
+  52.74,
+  53.14,
+  53.53,
+  53.93,
+  54.34,
+  54.73,
+  55.13,
+  55.53,
+  55.93,
+  56.33,
+  56.733,
+  57.133,
+  57.53,
+  57.94,
+  58.33,
+  58.74,
+  59.14,
+  59.54,
+  59.92,
+  60.333,
+  60.72,
+  61.14,
+  61.53,
+  61.94,
+  62.33,
+  62.73,
+  63.13,
+  63.533,
+  63.94,
+  64.35,
+  64.74,
+  65.14,
+  65.53,
+  65.95,
+  66.31,
+  66.74,
+  67.13,
+  67.51,
+  67.93,
+  68.33,
+  68.73,
+  69.12,
+  69.53,
+  69.92,
+  70.32,
+  70.74,
+  71.14,
+  71.54,
+  71.93,
+  72.34,
+  72.734,
+  73.14,
+  73.53,
+  73.93,
+  74.34,
+  74.73,
+  75.13,
+  75.53,
+  75.93,
+  76.31,
+  76.73,
+  77.14,
+  77.54,
+  77.94,
+  78.34,
+  78.72,
+  79.12,
+  79.55,
+  79.94,
+  80.34,
+  80.74,
+  81.14,
+  81.54,
+  81.91,
+  82.35,
+  82.735,
+  83.13,
+  83.52,
+  83.94,
+  84.33,
+  84.73,
+  85.13,
+  85.54,
+  85.94,
+  86.34,
+  86.74,
+  87.14,
+  87.54,
+  87.94,
+  88.31,
+  88.74,
+  89.14,
+  89.54,
+  89.95,
+  90.33,
+  90.74,
+  91.13,
+  91.52,
+  91.94,
+  92.33,
+  92.74,
+  93.14,
+  93.54,
+  93.94,
+  94.34,
+  94.71,
+  95.14,
+  95.53,
+  95.94,
+  96.34,
+  96.74,
+  97.14,
+  97.54,
+  97.94,
+  98.34,
+  98.73,
+  99.13,
+  99.538,
+  99.93,
+  100.34,
+  100.74,
+  101.14,
+  101.53,
+  101.93,
+  102.33,
+  102.73,
+  103.13,
+  103.53,
+  103.93,
+  104.33,
+  104.73,
+  105.13,
+  105.53,
+  105.94,
+  106.34,
+  106.74,
+  107.14,
+  107.53,
+  107.93,
+  108.33,
+  108.73,
+  109.13,
+  109.53,
+  109.93,
+  110.33,
+  110.74,
+  111.13,
+  111.54,
+  111.94,
+  112.33,
+  112.74,
+  113.13,
+  113.52,
+  113.94,
+  114.34,
+  114.74,
+  115.14,
+  115.54,
+  115.94,
+  116.34,
+  116.74,
+  117.14,
+  117.54,
+  117.94,
+  118.34,
+  118.75,
+  119.14,
+  119.54,
+  119.941,
+  120.34,
+  120.74,
+  121.15,
+  121.54,
+  121.94,
+  122.34,
+  122.74,
+  123.15,
+  123.54,
+  123.93,
+  124.32,
+  124.74,
+  125.14,
+  125.53,
+  125.93,
+  126.34,
+  126.74,
+  127.13,
+  127.54,
+  127.94,
+  128.34,
+  128.74,
+  129.14,
+  129.54,
+  129.94,
+  130.34,
+  130.74,
+  131.15,
+  131.55,
+  131.95,
+  132.35,
+  132.744,
+  133.15,
+  133.53,
+  133.96,
+  134.34,
+  134.744,
+  135.144,
+  135.54,
+  135.94,
+  136.344,
+  136.73,
+  137.14,
+  137.55,
+  137.945,
+  138.34,
+  138.76,
+  139.13,
+  139.52,
+  139.945,
+  140.345,
+  140.745,
+  141.16,
+  141.55,
+  141.95,
+  142.35,
+  142.72,
+  143.15,
+  143.55,
+  143.95,
+  144.33,
+  144.75,
+  145.15,
+  145.55,
+  145.95,
+  146.35,
+  146.746,
+  147.14,
+  147.53,
+  147.94,
+  148.35,
+  148.74,
+  149.15,
+  149.55,
+  149.95,
+  150.34,
+  150.74,
+  151.15,
+  151.56,
+  151.95,
+  152.36,
+  152.75,
+  153.15,
+  153.55,
+  153.95,
+  154.35,
+  154.75,
+  155.15,
+  155.55,
+  155.95,
+  156.35,
+  156.75,
+  157.13,
+  157.55,
+  157.95,
+  158.33,
+  158.75,
+  159.15,
+  159.55,
+  159.94,
+  160.35,
+  160.75,
+  161.14,
+  161.55,
+  161.96,
+  162.35,
+  162.74,
+  163.15,
+  163.56,
+  163.95,
+  164.37,
+  164.76,
+  165.17,
+  165.54,
+  165.95,
+  166.34,
+  166.76,
+  167.15,
+  167.548,
+  167.94,
+  168.35,
+  168.75,
+  169.15,
+  169.549,
+  169.92,
+  170.349,
+  170.75,
+  171.13,
+  171.549,
+  171.95,
+  172.36,
+  172.75,
+  173.15,
+  173.55,
+  173.95,
+  174.34,
+  174.74,
+  175.14,
+  175.55,
+  175.94,
+  176.34,
+  176.74,
+  177.15,
+  177.54,
+  177.96,
+  178.35,
+  178.76,
+  179.16,
+  179.55,
+  179.95,
+  180.35,
+  180.74,
+  181.14,
+  181.54,
+  181.95,
+  182.34,
+  182.75,
+  183.14,
+  183.549,
+  183.94,
+  184.34,
+  184.74,
+  185.149,
+  185.549,
+  185.949,
+  186.349,
+  186.749,
+  187.149,
+  187.549,
+  187.949,
+  188.349,
+  188.76,
+  189.17,
+  189.549,
+  189.96,
+  190.349
+ ],
+ "beats_smooth": [
+  0.342,
+  0.742,
+  1.142,
+  1.541,
+  1.941,
+  2.341,
+  2.741,
+  3.141,
+  3.541,
+  3.941,
+  4.34,
+  4.74,
+  5.14,
+  5.54,
+  5.94,
+  6.34,
+  6.74,
+  7.14,
+  7.539,
+  7.939,
+  8.339,
+  8.739,
+  9.139,
+  9.539,
+  9.939,
+  10.339,
+  10.738,
+  11.138,
+  11.538,
+  11.938,
+  12.338,
+  12.738,
+  13.138,
+  13.538,
+  13.938,
+  14.337,
+  14.737,
+  15.137,
+  15.537,
+  15.937,
+  16.337,
+  16.737,
+  17.137,
+  17.537,
+  17.937,
+  18.336,
+  18.736,
+  19.136,
+  19.536,
+  19.936,
+  20.336,
+  20.736,
+  21.136,
+  21.536,
+  21.936,
+  22.336,
+  22.736,
+  23.135,
+  23.535,
+  23.935,
+  24.335,
+  24.735,
+  25.135,
+  25.535,
+  25.935,
+  26.335,
+  26.735,
+  27.135,
+  27.535,
+  27.935,
+  28.335,
+  28.735,
+  29.134,
+  29.534,
+  29.934,
+  30.334,
+  30.734,
+  31.134,
+  31.534,
+  31.934,
+  32.334,
+  32.734,
+  33.134,
+  33.534,
+  33.934,
+  34.334,
+  34.734,
+  35.134,
+  35.534,
+  35.934,
+  36.334,
+  36.734,
+  37.134,
+  37.533,
+  37.933,
+  38.333,
+  38.733,
+  39.133,
+  39.533,
+  39.933,
+  40.333,
+  40.733,
+  41.133,
+  41.533,
+  41.933,
+  42.333,
+  42.733,
+  43.133,
+  43.533,
+  43.933,
+  44.333,
+  44.733,
+  45.133,
+  45.533,
+  45.933,
+  46.333,
+  46.733,
+  47.133,
+  47.533,
+  47.933,
+  48.333,
+  48.733,
+  49.133,
+  49.533,
+  49.933,
+  50.333,
+  50.733,
+  51.133,
+  51.533,
+  51.933,
+  52.333,
+  52.733,
+  53.133,
+  53.533,
+  53.933,
+  54.333,
+  54.733,
+  55.133,
+  55.533,
+  55.933,
+  56.333,
+  56.733,
+  57.133,
+  57.533,
+  57.933,
+  58.333,
+  58.733,
+  59.133,
+  59.533,
+  59.933,
+  60.333,
+  60.733,
+  61.133,
+  61.533,
+  61.933,
+  62.333,
+  62.733,
+  63.133,
+  63.533,
+  63.933,
+  64.333,
+  64.733,
+  65.133,
+  65.533,
+  65.933,
+  66.334,
+  66.734,
+  67.134,
+  67.534,
+  67.934,
+  68.334,
+  68.734,
+  69.134,
+  69.534,
+  69.934,
+  70.334,
+  70.734,
+  71.134,
+  71.534,
+  71.934,
+  72.334,
+  72.734,
+  73.134,
+  73.534,
+  73.934,
+  74.334,
+  74.734,
+  75.134,
+  75.534,
+  75.934,
+  76.334,
+  76.734,
+  77.135,
+  77.535,
+  77.935,
+  78.335,
+  78.735,
+  79.135,
+  79.535,
+  79.935,
+  80.335,
+  80.735,
+  81.135,
+  81.535,
+  81.935,
+  82.335,
+  82.735,
+  83.135,
+  83.535,
+  83.935,
+  84.335,
+  84.735,
+  85.136,
+  85.536,
+  85.936,
+  86.336,
+  86.736,
+  87.136,
+  87.536,
+  87.936,
+  88.336,
+  88.736,
+  89.136,
+  89.536,
+  89.936,
+  90.336,
+  90.736,
+  91.136,
+  91.536,
+  91.937,
+  92.337,
+  92.737,
+  93.137,
+  93.537,
+  93.937,
+  94.337,
+  94.737,
+  95.137,
+  95.537,
+  95.937,
+  96.337,
+  96.737,
+  97.137,
+  97.537,
+  97.938,
+  98.338,
+  98.738,
+  99.138,
+  99.538,
+  99.938,
+  100.338,
+  100.738,
+  101.138,
+  101.538,
+  101.938,
+  102.338,
+  102.738,
+  103.138,
+  103.538,
+  103.939,
+  104.339,
+  104.739,
+  105.139,
+  105.539,
+  105.939,
+  106.339,
+  106.739,
+  107.139,
+  107.539,
+  107.939,
+  108.339,
+  108.739,
+  109.139,
+  109.54,
+  109.94,
+  110.34,
+  110.74,
+  111.14,
+  111.54,
+  111.94,
+  112.34,
+  112.74,
+  113.14,
+  113.54,
+  113.94,
+  114.34,
+  114.74,
+  115.141,
+  115.541,
+  115.941,
+  116.341,
+  116.741,
+  117.141,
+  117.541,
+  117.941,
+  118.341,
+  118.741,
+  119.141,
+  119.541,
+  119.941,
+  120.342,
+  120.742,
+  121.142,
+  121.542,
+  121.942,
+  122.342,
+  122.742,
+  123.142,
+  123.542,
+  123.942,
+  124.342,
+  124.742,
+  125.142,
+  125.542,
+  125.943,
+  126.343,
+  126.743,
+  127.143,
+  127.543,
+  127.943,
+  128.343,
+  128.743,
+  129.143,
+  129.543,
+  129.943,
+  130.343,
+  130.743,
+  131.143,
+  131.544,
+  131.944,
+  132.344,
+  132.744,
+  133.144,
+  133.544,
+  133.944,
+  134.344,
+  134.744,
+  135.144,
+  135.544,
+  135.944,
+  136.344,
+  136.744,
+  137.144,
+  137.545,
+  137.945,
+  138.345,
+  138.745,
+  139.145,
+  139.545,
+  139.945,
+  140.345,
+  140.745,
+  141.145,
+  141.545,
+  141.945,
+  142.345,
+  142.745,
+  143.145,
+  143.546,
+  143.946,
+  144.346,
+  144.746,
+  145.146,
+  145.546,
+  145.946,
+  146.346,
+  146.746,
+  147.146,
+  147.546,
+  147.946,
+  148.346,
+  148.746,
+  149.146,
+  149.546,
+  149.946,
+  150.347,
+  150.747,
+  151.147,
+  151.547,
+  151.947,
+  152.347,
+  152.747,
+  153.147,
+  153.547,
+  153.947,
+  154.347,
+  154.747,
+  155.147,
+  155.547,
+  155.947,
+  156.347,
+  156.747,
+  157.147,
+  157.547,
+  157.947,
+  158.348,
+  158.748,
+  159.148,
+  159.548,
+  159.948,
+  160.348,
+  160.748,
+  161.148,
+  161.548,
+  161.948,
+  162.348,
+  162.748,
+  163.148,
+  163.548,
+  163.948,
+  164.348,
+  164.748,
+  165.148,
+  165.548,
+  165.948,
+  166.348,
+  166.748,
+  167.148,
+  167.548,
+  167.948,
+  168.349,
+  168.749,
+  169.149,
+  169.549,
+  169.949,
+  170.349,
+  170.749,
+  171.149,
+  171.549,
+  171.949,
+  172.349,
+  172.749,
+  173.149,
+  173.549,
+  173.949,
+  174.349,
+  174.749,
+  175.149,
+  175.549,
+  175.949,
+  176.349,
+  176.749,
+  177.149,
+  177.549,
+  177.949,
+  178.349,
+  178.749,
+  179.149,
+  179.549,
+  179.949,
+  180.349,
+  180.749,
+  181.149,
+  181.549,
+  181.949,
+  182.349,
+  182.749,
+  183.149,
+  183.549,
+  183.949,
+  184.349,
+  184.749,
+  185.149,
+  185.549,
+  185.949,
+  186.349,
+  186.749,
+  187.149,
+  187.549,
+  187.949,
+  188.349,
+  188.749,
+  189.149,
+  189.549,
+  189.949,
+  190.349
+ ],
+ "downbeats": [
+  1.13,
+  2.74,
+  4.34,
+  5.94,
+  7.54,
+  9.14,
+  10.74,
+  12.32,
+  13.94,
+  15.54,
+  17.13,
+  18.74,
+  20.34,
+  21.94,
+  23.53,
+  25.135,
+  26.74,
+  28.34,
+  29.94,
+  31.53,
+  33.14,
+  34.74,
+  36.34,
+  37.93,
+  39.53,
+  41.14,
+  42.74,
+  44.34,
+  45.94,
+  47.53,
+  49.11,
+  50.75,
+  52.34,
+  53.93,
+  55.53,
+  57.133,
+  58.74,
+  60.333,
+  61.94,
+  63.533,
+  65.14,
+  66.74,
+  68.33,
+  69.92,
+  71.54,
+  73.14,
+  74.73,
+  76.31,
+  77.94,
+  79.55,
+  81.14,
+  82.735,
+  84.33,
+  85.94,
+  87.54,
+  89.14,
+  90.74,
+  92.33,
+  93.94,
+  95.53,
+  97.14,
+  98.73,
+  100.34,
+  101.93,
+  103.53,
+  105.13,
+  106.74,
+  108.33,
+  109.93,
+  111.54,
+  113.13,
+  114.74,
+  116.34,
+  117.94,
+  119.54,
+  121.15,
+  122.74,
+  124.32,
+  125.93,
+  127.54,
+  129.14,
+  130.74,
+  132.35,
+  133.96,
+  135.54,
+  137.14,
+  138.76,
+  140.345,
+  141.95,
+  143.55,
+  145.15,
+  146.746,
+  148.35,
+  149.95,
+  151.56,
+  153.15,
+  154.75,
+  156.35,
+  157.95,
+  159.55,
+  161.14,
+  162.74,
+  164.37,
+  165.95,
+  167.548,
+  169.15,
+  170.75,
+  172.36,
+  173.95,
+  175.55,
+  177.15,
+  178.76,
+  180.35,
+  181.95,
+  183.549,
+  185.149,
+  186.749,
+  188.349,
+  189.96
+ ],
+ "bars": [
+  {
+   "index": 0,
+   "start": 0.36,
+   "end": 1.13,
+   "pickup": true,
+   "beats": 2
+  },
+  {
+   "index": 1,
+   "start": 1.13,
+   "end": 2.74,
+   "bpm": 150.056
+  },
+  {
+   "index": 2,
+   "start": 2.74,
+   "end": 4.34,
+   "bpm": 150.054
+  },
+  {
+   "index": 3,
+   "start": 4.34,
+   "end": 5.94,
+   "bpm": 150.052
+  },
+  {
+   "index": 4,
+   "start": 5.94,
+   "end": 7.54,
+   "bpm": 150.049
+  },
+  {
+   "index": 5,
+   "start": 7.54,
+   "end": 9.14,
+   "bpm": 150.047
+  },
+  {
+   "index": 6,
+   "start": 9.14,
+   "end": 10.74,
+   "bpm": 150.045
+  },
+  {
+   "index": 7,
+   "start": 10.74,
+   "end": 12.32,
+   "bpm": 150.043
+  },
+  {
+   "index": 8,
+   "start": 12.32,
+   "end": 13.94,
+   "bpm": 150.041
+  },
+  {
+   "index": 9,
+   "start": 13.94,
+   "end": 15.54,
+   "bpm": 150.039
+  },
+  {
+   "index": 10,
+   "start": 15.54,
+   "end": 17.13,
+   "bpm": 150.037
+  },
+  {
+   "index": 11,
+   "start": 17.13,
+   "end": 18.74,
+   "bpm": 150.035
+  },
+  {
+   "index": 12,
+   "start": 18.74,
+   "end": 20.34,
+   "bpm": 150.033
+  },
+  {
+   "index": 13,
+   "start": 20.34,
+   "end": 21.94,
+   "bpm": 150.031
+  },
+  {
+   "index": 14,
+   "start": 21.94,
+   "end": 23.53,
+   "bpm": 150.029
+  },
+  {
+   "index": 15,
+   "start": 23.53,
+   "end": 25.135,
+   "bpm": 150.027
+  },
+  {
+   "index": 16,
+   "start": 25.135,
+   "end": 26.74,
+   "bpm": 150.025
+  },
+  {
+   "index": 17,
+   "start": 26.74,
+   "end": 28.34,
+   "bpm": 150.023
+  },
+  {
+   "index": 18,
+   "start": 28.34,
+   "end": 29.94,
+   "bpm": 150.021
+  },
+  {
+   "index": 19,
+   "start": 29.94,
+   "end": 31.53,
+   "bpm": 150.02
+  },
+  {
+   "index": 20,
+   "start": 31.53,
+   "end": 33.14,
+   "bpm": 150.018
+  },
+  {
+   "index": 21,
+   "start": 33.14,
+   "end": 34.74,
+   "bpm": 150.016
+  },
+  {
+   "index": 22,
+   "start": 34.74,
+   "end": 36.34,
+   "bpm": 150.015
+  },
+  {
+   "index": 23,
+   "start": 36.34,
+   "end": 37.93,
+   "bpm": 150.013
+  },
+  {
+   "index": 24,
+   "start": 37.93,
+   "end": 39.53,
+   "bpm": 150.011
+  },
+  {
+   "index": 25,
+   "start": 39.53,
+   "end": 41.14,
+   "bpm": 150.01
+  },
+  {
+   "index": 26,
+   "start": 41.14,
+   "end": 42.74,
+   "bpm": 150.008
+  },
+  {
+   "index": 27,
+   "start": 42.74,
+   "end": 44.34,
+   "bpm": 150.007
+  },
+  {
+   "index": 28,
+   "start": 44.34,
+   "end": 45.94,
+   "bpm": 150.005
+  },
+  {
+   "index": 29,
+   "start": 45.94,
+   "end": 47.53,
+   "bpm": 150.004
+  },
+  {
+   "index": 30,
+   "start": 47.53,
+   "end": 49.11,
+   "bpm": 150.003
+  },
+  {
+   "index": 31,
+   "start": 49.11,
+   "end": 50.75,
+   "bpm": 150.001
+  },
+  {
+   "index": 32,
+   "start": 50.75,
+   "end": 52.34,
+   "bpm": 150.0
+  },
+  {
+   "index": 33,
+   "start": 52.34,
+   "end": 53.93,
+   "bpm": 149.999
+  },
+  {
+   "index": 34,
+   "start": 53.93,
+   "end": 55.53,
+   "bpm": 149.997
+  },
+  {
+   "index": 35,
+   "start": 55.53,
+   "end": 57.133,
+   "bpm": 149.996
+  },
+  {
+   "index": 36,
+   "start": 57.133,
+   "end": 58.74,
+   "bpm": 149.995
+  },
+  {
+   "index": 37,
+   "start": 58.74,
+   "end": 60.333,
+   "bpm": 149.994
+  },
+  {
+   "index": 38,
+   "start": 60.333,
+   "end": 61.94,
+   "bpm": 149.992
+  },
+  {
+   "index": 39,
+   "start": 61.94,
+   "end": 63.533,
+   "bpm": 149.991
+  },
+  {
+   "index": 40,
+   "start": 63.533,
+   "end": 65.14,
+   "bpm": 149.99
+  },
+  {
+   "index": 41,
+   "start": 65.14,
+   "end": 66.74,
+   "bpm": 149.989
+  },
+  {
+   "index": 42,
+   "start": 66.74,
+   "end": 68.33,
+   "bpm": 149.988
+  },
+  {
+   "index": 43,
+   "start": 68.33,
+   "end": 69.92,
+   "bpm": 149.987
+  },
+  {
+   "index": 44,
+   "start": 69.92,
+   "end": 71.54,
+   "bpm": 149.986
+  },
+  {
+   "index": 45,
+   "start": 71.54,
+   "end": 73.14,
+   "bpm": 149.985
+  },
+  {
+   "index": 46,
+   "start": 73.14,
+   "end": 74.73,
+   "bpm": 149.984
+  },
+  {
+   "index": 47,
+   "start": 74.73,
+   "end": 76.31,
+   "bpm": 149.984
+  },
+  {
+   "index": 48,
+   "start": 76.31,
+   "end": 77.94,
+   "bpm": 149.983
+  },
+  {
+   "index": 49,
+   "start": 77.94,
+   "end": 79.55,
+   "bpm": 149.982
+  },
+  {
+   "index": 50,
+   "start": 79.55,
+   "end": 81.14,
+   "bpm": 149.981
+  },
+  {
+   "index": 51,
+   "start": 81.14,
+   "end": 82.735,
+   "bpm": 149.98
+  },
+  {
+   "index": 52,
+   "start": 82.735,
+   "end": 84.33,
+   "bpm": 149.98
+  },
+  {
+   "index": 53,
+   "start": 84.33,
+   "end": 85.94,
+   "bpm": 149.979
+  },
+  {
+   "index": 54,
+   "start": 85.94,
+   "end": 87.54,
+   "bpm": 149.979
+  },
+  {
+   "index": 55,
+   "start": 87.54,
+   "end": 89.14,
+   "bpm": 149.978
+  },
+  {
+   "index": 56,
+   "start": 89.14,
+   "end": 90.74,
+   "bpm": 149.977
+  },
+  {
+   "index": 57,
+   "start": 90.74,
+   "end": 92.33,
+   "bpm": 149.977
+  },
+  {
+   "index": 58,
+   "start": 92.33,
+   "end": 93.94,
+   "bpm": 149.976
+  },
+  {
+   "index": 59,
+   "start": 93.94,
+   "end": 95.53,
+   "bpm": 149.976
+  },
+  {
+   "index": 60,
+   "start": 95.53,
+   "end": 97.14,
+   "bpm": 149.975
+  },
+  {
+   "index": 61,
+   "start": 97.14,
+   "end": 98.73,
+   "bpm": 149.975
+  },
+  {
+   "index": 62,
+   "start": 98.73,
+   "end": 100.34,
+   "bpm": 149.975
+  },
+  {
+   "index": 63,
+   "start": 100.34,
+   "end": 101.93,
+   "bpm": 149.974
+  },
+  {
+   "index": 64,
+   "start": 101.93,
+   "end": 103.53,
+   "bpm": 149.974
+  },
+  {
+   "index": 65,
+   "start": 103.53,
+   "end": 105.13,
+   "bpm": 149.974
+  },
+  {
+   "index": 66,
+   "start": 105.13,
+   "end": 106.74,
+   "bpm": 149.973
+  },
+  {
+   "index": 67,
+   "start": 106.74,
+   "end": 108.33,
+   "bpm": 149.973
+  },
+  {
+   "index": 68,
+   "start": 108.33,
+   "end": 109.93,
+   "bpm": 149.973
+  },
+  {
+   "index": 69,
+   "start": 109.93,
+   "end": 111.54,
+   "bpm": 149.973
+  },
+  {
+   "index": 70,
+   "start": 111.54,
+   "end": 113.13,
+   "bpm": 149.973
+  },
+  {
+   "index": 71,
+   "start": 113.13,
+   "end": 114.74,
+   "bpm": 149.973
+  },
+  {
+   "index": 72,
+   "start": 114.74,
+   "end": 116.34,
+   "bpm": 149.973
+  },
+  {
+   "index": 73,
+   "start": 116.34,
+   "end": 117.94,
+   "bpm": 149.973
+  },
+  {
+   "index": 74,
+   "start": 117.94,
+   "end": 119.54,
+   "bpm": 149.973
+  },
+  {
+   "index": 75,
+   "start": 119.54,
+   "end": 121.15,
+   "bpm": 149.973
+  },
+  {
+   "index": 76,
+   "start": 121.15,
+   "end": 122.74,
+   "bpm": 149.973
+  },
+  {
+   "index": 77,
+   "start": 122.74,
+   "end": 124.32,
+   "bpm": 149.973
+  },
+  {
+   "index": 78,
+   "start": 124.32,
+   "end": 125.93,
+   "bpm": 149.973
+  },
+  {
+   "index": 79,
+   "start": 125.93,
+   "end": 127.54,
+   "bpm": 149.973
+  },
+  {
+   "index": 80,
+   "start": 127.54,
+   "end": 129.14,
+   "bpm": 149.973
+  },
+  {
+   "index": 81,
+   "start": 129.14,
+   "end": 130.74,
+   "bpm": 149.973
+  },
+  {
+   "index": 82,
+   "start": 130.74,
+   "end": 132.35,
+   "bpm": 149.974
+  },
+  {
+   "index": 83,
+   "start": 132.35,
+   "end": 133.96,
+   "bpm": 149.974
+  },
+  {
+   "index": 84,
+   "start": 133.96,
+   "end": 135.54,
+   "bpm": 149.974
+  },
+  {
+   "index": 85,
+   "start": 135.54,
+   "end": 137.14,
+   "bpm": 149.975
+  },
+  {
+   "index": 86,
+   "start": 137.14,
+   "end": 138.76,
+   "bpm": 149.975
+  },
+  {
+   "index": 87,
+   "start": 138.76,
+   "end": 140.345,
+   "bpm": 149.976
+  },
+  {
+   "index": 88,
+   "start": 140.345,
+   "end": 141.95,
+   "bpm": 149.976
+  },
+  {
+   "index": 89,
+   "start": 141.95,
+   "end": 143.55,
+   "bpm": 149.976
+  },
+  {
+   "index": 90,
+   "start": 143.55,
+   "end": 145.15,
+   "bpm": 149.977
+  },
+  {
+   "index": 91,
+   "start": 145.15,
+   "end": 146.746,
+   "bpm": 149.978
+  },
+  {
+   "index": 92,
+   "start": 146.746,
+   "end": 148.35,
+   "bpm": 149.978
+  },
+  {
+   "index": 93,
+   "start": 148.35,
+   "end": 149.95,
+   "bpm": 149.979
+  },
+  {
+   "index": 94,
+   "start": 149.95,
+   "end": 151.56,
+   "bpm": 149.979
+  },
+  {
+   "index": 95,
+   "start": 151.56,
+   "end": 153.15,
+   "bpm": 149.98
+  },
+  {
+   "index": 96,
+   "start": 153.15,
+   "end": 154.75,
+   "bpm": 149.981
+  },
+  {
+   "index": 97,
+   "start": 154.75,
+   "end": 156.35,
+   "bpm": 149.981
+  },
+  {
+   "index": 98,
+   "start": 156.35,
+   "end": 157.95,
+   "bpm": 149.982
+  },
+  {
+   "index": 99,
+   "start": 157.95,
+   "end": 159.55,
+   "bpm": 149.983
+  },
+  {
+   "index": 100,
+   "start": 159.55,
+   "end": 161.14,
+   "bpm": 149.984
+  },
+  {
+   "index": 101,
+   "start": 161.14,
+   "end": 162.74,
+   "bpm": 149.985
+  },
+  {
+   "index": 102,
+   "start": 162.74,
+   "end": 164.37,
+   "bpm": 149.986
+  },
+  {
+   "index": 103,
+   "start": 164.37,
+   "end": 165.95,
+   "bpm": 149.987
+  },
+  {
+   "index": 104,
+   "start": 165.95,
+   "end": 167.548,
+   "bpm": 149.988
+  },
+  {
+   "index": 105,
+   "start": 167.548,
+   "end": 169.15,
+   "bpm": 149.989
+  },
+  {
+   "index": 106,
+   "start": 169.15,
+   "end": 170.75,
+   "bpm": 149.99
+  },
+  {
+   "index": 107,
+   "start": 170.75,
+   "end": 172.36,
+   "bpm": 149.991
+  },
+  {
+   "index": 108,
+   "start": 172.36,
+   "end": 173.95,
+   "bpm": 149.992
+  },
+  {
+   "index": 109,
+   "start": 173.95,
+   "end": 175.55,
+   "bpm": 149.993
+  },
+  {
+   "index": 110,
+   "start": 175.55,
+   "end": 177.15,
+   "bpm": 149.994
+  },
+  {
+   "index": 111,
+   "start": 177.15,
+   "end": 178.76,
+   "bpm": 149.995
+  },
+  {
+   "index": 112,
+   "start": 178.76,
+   "end": 180.35,
+   "bpm": 149.996
+  },
+  {
+   "index": 113,
+   "start": 180.35,
+   "end": 181.95,
+   "bpm": 149.998
+  },
+  {
+   "index": 114,
+   "start": 181.95,
+   "end": 183.549,
+   "bpm": 149.999
+  },
+  {
+   "index": 115,
+   "start": 183.549,
+   "end": 185.149,
+   "bpm": 150.0
+  },
+  {
+   "index": 116,
+   "start": 185.149,
+   "end": 186.749,
+   "bpm": 150.002
+  },
+  {
+   "index": 117,
+   "start": 186.749,
+   "end": 188.349,
+   "bpm": 150.003
+  },
+  {
+   "index": 118,
+   "start": 188.349,
+   "end": 189.96,
+   "bpm": 150.004
+  }
+ ],
+ "sections_source": "auto",
+ "sections_method": "automatic: boundaries = bar-level novelty candidates (MFCC, chroma, bass in/out, stops), groups = aligned bar-chroma repetition; curate into analysis/sections.json; validated at run time (boundary_novelty*, repeat_similarity -> confidence)",
+ "sections": [
+  {
+   "index": 0,
+   "name": "A1",
+   "start": 0.0,
+   "end": 5.94,
+   "label": "section",
+   "group": "A",
+   "bars": [
+    0,
+    3
+   ],
+   "bar_count": 3,
+   "energy": 0.469,
+   "vocal_fraction": 0.742,
+   "boundary_novelty": 1.0,
+   "boundary_novelty_rank": 1.0,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": true,
+   "confidence": 0.88,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 1,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 1,
+   "name": "B1",
+   "start": 5.94,
+   "end": 9.14,
+   "label": "section",
+   "group": "B",
+   "bars": [
+    4,
+    5
+   ],
+   "bar_count": 2,
+   "energy": 0.576,
+   "vocal_fraction": 0.478,
+   "boundary_novelty": 0.358,
+   "boundary_novelty_rank": 0.873,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": true,
+   "confidence": 0.846,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 2,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 2,
+   "name": "C1",
+   "start": 9.14,
+   "end": 15.54,
+   "label": "section",
+   "group": "C",
+   "bars": [
+    6,
+    9
+   ],
+   "bar_count": 4,
+   "energy": 0.611,
+   "vocal_fraction": 0.473,
+   "boundary_novelty": 0.354,
+   "boundary_novelty_rank": 0.856,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": true,
+   "confidence": 0.841,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 3,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 3,
+   "name": "D1",
+   "start": 15.54,
+   "end": 18.74,
+   "label": "section",
+   "group": "D",
+   "bars": [
+    10,
+    11
+   ],
+   "bar_count": 2,
+   "energy": 0.552,
+   "vocal_fraction": 0.775,
+   "boundary_novelty": 0.327,
+   "boundary_novelty_rank": 0.805,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": true,
+   "confidence": 0.827,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 4,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 4,
+   "name": "E1",
+   "start": 18.74,
+   "end": 23.53,
+   "label": "section",
+   "group": "E",
+   "bars": [
+    12,
+    14
+   ],
+   "bar_count": 3,
+   "energy": 0.538,
+   "vocal_fraction": 0.8,
+   "boundary_novelty": 0.362,
+   "boundary_novelty_rank": 0.89,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": true,
+   "confidence": 0.85,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 5,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 5,
+   "name": "F1",
+   "start": 23.53,
+   "end": 58.74,
+   "label": "section",
+   "group": "F",
+   "bars": [
+    15,
+    36
+   ],
+   "bar_count": 22,
+   "energy": 0.747,
+   "vocal_fraction": 0.181,
+   "boundary_novelty": 0.349,
+   "boundary_novelty_rank": 0.839,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": false,
+   "confidence": 0.717,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 6,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 6,
+   "name": "G1",
+   "start": 58.74,
+   "end": 63.533,
+   "label": "section",
+   "group": "G",
+   "bars": [
+    37,
+    39
+   ],
+   "bar_count": 3,
+   "energy": 0.772,
+   "vocal_fraction": 0.856,
+   "boundary_novelty": 0.354,
+   "boundary_novelty_rank": 0.864,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": true,
+   "confidence": 0.843,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 7,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 7,
+   "name": "H1",
+   "start": 63.533,
+   "end": 66.74,
+   "label": "section",
+   "group": "H",
+   "bars": [
+    40,
+    41
+   ],
+   "bar_count": 2,
+   "energy": 0.745,
+   "vocal_fraction": 0.523,
+   "boundary_novelty": 0.332,
+   "boundary_novelty_rank": 0.814,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": true,
+   "confidence": 0.83,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 8,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 8,
+   "name": "I1",
+   "start": 66.74,
+   "end": 71.54,
+   "label": "section",
+   "group": "I",
+   "bars": [
+    42,
+    44
+   ],
+   "bar_count": 3,
+   "energy": 0.776,
+   "vocal_fraction": 0.665,
+   "boundary_novelty": 0.315,
+   "boundary_novelty_rank": 0.754,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {
+    "section_9": 0.609
+   },
+   "vocal_entry": true,
+   "confidence": 0.873,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: group I repeats (aligned bar-chroma similarity >= 0.6).",
+   "occurrence": 9,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": "group I repeats (aligned bar-chroma similarity >= 0.6)"
+  },
+  {
+   "index": 9,
+   "name": "I2",
+   "start": 71.54,
+   "end": 81.14,
+   "label": "section",
+   "group": "I",
+   "bars": [
+    45,
+    50
+   ],
+   "bar_count": 6,
+   "energy": 0.762,
+   "vocal_fraction": 0.332,
+   "boundary_novelty": 0.392,
+   "boundary_novelty_rank": 0.924,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {
+    "section_8": 0.609
+   },
+   "vocal_entry": false,
+   "confidence": 0.798,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: group I repeats (aligned bar-chroma similarity >= 0.6).",
+   "occurrence": 10,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": "group I repeats (aligned bar-chroma similarity >= 0.6)"
+  },
+  {
+   "index": 10,
+   "name": "J1",
+   "start": 81.14,
+   "end": 84.33,
+   "label": "section",
+   "group": "J",
+   "bars": [
+    51,
+    52
+   ],
+   "bar_count": 2,
+   "energy": 0.665,
+   "vocal_fraction": 0.567,
+   "boundary_novelty": 0.318,
+   "boundary_novelty_rank": 0.763,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": true,
+   "confidence": 0.816,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 11,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 11,
+   "name": "K1",
+   "start": 84.33,
+   "end": 132.35,
+   "label": "section",
+   "group": "K",
+   "bars": [
+    53,
+    82
+   ],
+   "bar_count": 30,
+   "energy": 0.734,
+   "vocal_fraction": 0.288,
+   "boundary_novelty": 0.376,
+   "boundary_novelty_rank": 0.915,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {
+    "section_16": 0.658
+   },
+   "vocal_entry": true,
+   "confidence": 0.949,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: group K repeats (aligned bar-chroma similarity >= 0.6).",
+   "occurrence": 12,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": "group K repeats (aligned bar-chroma similarity >= 0.6)"
+  },
+  {
+   "index": 12,
+   "name": "L1",
+   "start": 132.35,
+   "end": 135.54,
+   "label": "section",
+   "group": "L",
+   "bars": [
+    83,
+    84
+   ],
+   "bar_count": 2,
+   "energy": 0.699,
+   "vocal_fraction": 1.0,
+   "boundary_novelty": 0.554,
+   "boundary_novelty_rank": 0.975,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {
+    "section_13": 0.642
+   },
+   "vocal_entry": true,
+   "confidence": 0.955,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: group L repeats (aligned bar-chroma similarity >= 0.6).",
+   "occurrence": 13,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": "group L repeats (aligned bar-chroma similarity >= 0.6)"
+  },
+  {
+   "index": 13,
+   "name": "L2",
+   "start": 135.54,
+   "end": 140.345,
+   "label": "section",
+   "group": "L",
+   "bars": [
+    85,
+    87
+   ],
+   "bar_count": 3,
+   "energy": 0.404,
+   "vocal_fraction": 1.0,
+   "boundary_novelty": 0.324,
+   "boundary_novelty_rank": 0.788,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {
+    "section_12": 0.642
+   },
+   "vocal_entry": false,
+   "confidence": 0.784,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: group L repeats (aligned bar-chroma similarity >= 0.6).",
+   "occurrence": 14,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": "group L repeats (aligned bar-chroma similarity >= 0.6)"
+  },
+  {
+   "index": 14,
+   "name": "M1",
+   "start": 140.345,
+   "end": 149.95,
+   "label": "section",
+   "group": "M",
+   "bars": [
+    88,
+    93
+   ],
+   "bar_count": 6,
+   "energy": 0.68,
+   "vocal_fraction": 0.618,
+   "boundary_novelty": 0.54,
+   "boundary_novelty_rank": 0.966,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": false,
+   "confidence": 0.751,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 15,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 15,
+   "name": "N1",
+   "start": 149.95,
+   "end": 169.15,
+   "label": "section",
+   "group": "N",
+   "bars": [
+    94,
+    105
+   ],
+   "bar_count": 12,
+   "energy": 0.685,
+   "vocal_fraction": 0.274,
+   "boundary_novelty": 0.363,
+   "boundary_novelty_rank": 0.898,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": true,
+   "confidence": 0.853,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 16,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 16,
+   "name": "K2",
+   "start": 169.15,
+   "end": 185.149,
+   "label": "section",
+   "group": "K",
+   "bars": [
+    106,
+    115
+   ],
+   "bar_count": 10,
+   "energy": 0.645,
+   "vocal_fraction": 0.417,
+   "boundary_novelty": 0.418,
+   "boundary_novelty_rank": 0.932,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {
+    "section_11": 0.658
+   },
+   "vocal_entry": true,
+   "confidence": 0.954,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: group K repeats (aligned bar-chroma similarity >= 0.6).",
+   "occurrence": 17,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": "group K repeats (aligned bar-chroma similarity >= 0.6)"
+  },
+  {
+   "index": 17,
+   "name": "O1",
+   "start": 185.149,
+   "end": 188.349,
+   "label": "section",
+   "group": "O",
+   "bars": [
+    116,
+    117
+   ],
+   "bar_count": 2,
+   "energy": 0.014,
+   "vocal_fraction": 0.166,
+   "boundary_novelty": 0.836,
+   "boundary_novelty_rank": 0.992,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": true,
+   "confidence": 0.878,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 18,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 18,
+   "name": "P1",
+   "start": 188.349,
+   "end": 190.33,
+   "label": "section",
+   "group": "P",
+   "bars": [
+    118,
+    118
+   ],
+   "bar_count": 1,
+   "energy": 0.482,
+   "vocal_fraction": 0.899,
+   "boundary_novelty": 0.632,
+   "boundary_novelty_rank": 0.983,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "vocal_entry": true,
+   "confidence": 0.875,
+   "notes": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops). Notable: .",
+   "occurrence": 19,
+   "character": "auto: boundary from bar-level novelty (MFCC / chroma / bass in-out / stops)",
+   "notable": ""
+  },
+  {
+   "index": 19,
+   "name": "Tail",
+   "start": 190.33,
+   "end": 190.46,
+   "label": "tail",
+   "group": "tail",
+   "bars": [
+    119,
+    119
+   ],
+   "bar_count": 0,
+   "energy": 0.126,
+   "vocal_fraction": 0.0,
+   "boundary_novelty": 1.0,
+   "boundary_novelty_rank": 1.0,
+   "nearest_auto_boundary_bars": 0,
+   "repeat_similarity": {},
+   "confidence": 1.0,
+   "notes": "reverb tail after the hard cut (no new notes).",
+   "occurrence": 1,
+   "character": "reverb tail after the hard cut (no new notes)",
+   "notable": "last usable frame for the afterglow / logo fade"
+  }
+ ],
+ "auto_boundary_candidates_bars": [
+  1,
+  4,
+  6,
+  10,
+  12,
+  15,
+  37,
+  40,
+  42,
+  45,
+  51,
+  53,
+  83,
+  85,
+  88,
+  94,
+  106,
+  116,
+  118
+ ],
+ "impacts": [
+  {
+   "t": 0.21,
+   "strength": 0.6,
+   "kind": "first_sound",
+   "section": 0,
+   "label": "intro"
+  },
+  {
+   "t": 0.74,
+   "strength": 0.522,
+   "kind": "hit",
+   "on_downbeat": false
+  },
+  {
+   "t": 1.35,
+   "strength": 0.665,
+   "kind": "stop",
+   "end": 1.55,
+   "depth_db": 16.631
+  },
+  {
+   "t": 2.71,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 2.95,
+   "depth_db": 21.294
+  },
+  {
+   "t": 5.55,
+   "strength": 0.772,
+   "kind": "stop",
+   "end": 5.73,
+   "depth_db": 19.306
+  },
+  {
+   "t": 5.94,
+   "strength": 0.865,
+   "kind": "section_start",
+   "section": 1,
+   "label": "section",
+   "jump_db": 4.384,
+   "low_jump_db": 4.92
+  },
+  {
+   "t": 7.71,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 7.93,
+   "depth_db": 20.525
+  },
+  {
+   "t": 9.14,
+   "strength": 0.564,
+   "kind": "section_start",
+   "section": 2,
+   "label": "section",
+   "jump_db": -1.076,
+   "low_jump_db": -7.03
+  },
+  {
+   "t": 9.39,
+   "strength": 0.464,
+   "kind": "gap",
+   "end": 9.53,
+   "depth_db": 11.609
+  },
+  {
+   "t": 11.0,
+   "strength": 0.484,
+   "kind": "gap",
+   "end": 11.14,
+   "depth_db": 12.11
+  },
+  {
+   "t": 12.54,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 12.73,
+   "depth_db": 23.82
+  },
+  {
+   "t": 14.15,
+   "strength": 0.574,
+   "kind": "stop",
+   "end": 14.33,
+   "depth_db": 14.353
+  },
+  {
+   "t": 15.12,
+   "strength": 0.432,
+   "kind": "hit",
+   "on_downbeat": false
+  },
+  {
+   "t": 15.54,
+   "strength": 0.543,
+   "kind": "section_start",
+   "section": 3,
+   "label": "section",
+   "jump_db": -2.238,
+   "low_jump_db": -6.799
+  },
+  {
+   "t": 17.58,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 17.93,
+   "depth_db": 20.23
+  },
+  {
+   "t": 18.74,
+   "strength": 0.764,
+   "kind": "section_start",
+   "section": 4,
+   "label": "section",
+   "jump_db": 3.166,
+   "low_jump_db": 7.907
+  },
+  {
+   "t": 20.93,
+   "strength": 0.623,
+   "kind": "stop",
+   "end": 21.14,
+   "depth_db": 15.575
+  },
+  {
+   "t": 22.67,
+   "strength": 0.36,
+   "kind": "gap",
+   "end": 22.92,
+   "depth_db": 9.003
+  },
+  {
+   "t": 23.53,
+   "strength": 0.979,
+   "kind": "section_start",
+   "section": 5,
+   "label": "section",
+   "jump_db": 5.139,
+   "low_jump_db": 7.55
+  },
+  {
+   "t": 25.05,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 25.34,
+   "depth_db": 27.446
+  },
+  {
+   "t": 27.95,
+   "strength": 0.682,
+   "kind": "stop",
+   "end": 28.13,
+   "depth_db": 17.048
+  },
+  {
+   "t": 28.92,
+   "strength": 0.414,
+   "kind": "hit",
+   "on_downbeat": false
+  },
+  {
+   "t": 30.38,
+   "strength": 0.372,
+   "kind": "gap",
+   "end": 30.52,
+   "depth_db": 9.288
+  },
+  {
+   "t": 33.92,
+   "strength": 0.465,
+   "kind": "hit",
+   "on_downbeat": false
+  },
+  {
+   "t": 34.34,
+   "strength": 0.789,
+   "kind": "stop",
+   "end": 34.53,
+   "depth_db": 19.733
+  },
+  {
+   "t": 38.66,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 38.92,
+   "depth_db": 25.946
+  },
+  {
+   "t": 40.76,
+   "strength": 0.623,
+   "kind": "stop",
+   "end": 40.94,
+   "depth_db": 15.587
+  },
+  {
+   "t": 43.18,
+   "strength": 0.394,
+   "kind": "gap",
+   "end": 43.31,
+   "depth_db": 9.853
+  },
+  {
+   "t": 47.15,
+   "strength": 0.59,
+   "kind": "stop",
+   "end": 47.33,
+   "depth_db": 14.739
+  },
+  {
+   "t": 52.75,
+   "strength": 0.463,
+   "kind": "gap",
+   "end": 52.92,
+   "depth_db": 11.583
+  },
+  {
+   "t": 53.56,
+   "strength": 0.63,
+   "kind": "stop",
+   "end": 53.74,
+   "depth_db": 15.747
+  },
+  {
+   "t": 57.96,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 58.36,
+   "depth_db": 22.129
+  },
+  {
+   "t": 58.74,
+   "strength": 1.0,
+   "kind": "section_start",
+   "section": 6,
+   "label": "section",
+   "jump_db": 6.306,
+   "low_jump_db": 1.773
+  },
+  {
+   "t": 59.57,
+   "strength": 0.622,
+   "kind": "stop",
+   "end": 59.73,
+   "depth_db": 15.541
+  },
+  {
+   "t": 60.49,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 60.74,
+   "depth_db": 25.059
+  },
+  {
+   "t": 62.76,
+   "strength": 0.628,
+   "kind": "stop",
+   "end": 62.92,
+   "depth_db": 15.696
+  },
+  {
+   "t": 63.533,
+   "strength": 0.687,
+   "kind": "section_start",
+   "section": 7,
+   "label": "section",
+   "jump_db": 1.069,
+   "low_jump_db": 4.655
+  },
+  {
+   "t": 65.53,
+   "strength": 0.518,
+   "kind": "gap",
+   "end": 65.72,
+   "depth_db": 12.959
+  },
+  {
+   "t": 66.15,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 66.54,
+   "depth_db": 22.343
+  },
+  {
+   "t": 66.74,
+   "strength": 1.0,
+   "kind": "section_start",
+   "section": 8,
+   "label": "section",
+   "jump_db": 6.844,
+   "low_jump_db": 5.604
+  },
+  {
+   "t": 70.06,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 70.35,
+   "depth_db": 29.379
+  },
+  {
+   "t": 71.54,
+   "strength": 0.8,
+   "kind": "drop",
+   "section": 9,
+   "label": "section",
+   "jump_db": 0.52,
+   "low_jump_db": 13.871
+  },
+  {
+   "t": 71.95,
+   "strength": 0.461,
+   "kind": "gap",
+   "end": 72.11,
+   "depth_db": 11.529
+  },
+  {
+   "t": 73.58,
+   "strength": 0.531,
+   "kind": "stop",
+   "end": 73.73,
+   "depth_db": 13.273
+  },
+  {
+   "t": 76.01,
+   "strength": 0.362,
+   "kind": "gap",
+   "end": 76.15,
+   "depth_db": 9.054
+  },
+  {
+   "t": 81.14,
+   "strength": 0.583,
+   "kind": "section_start",
+   "section": 10,
+   "label": "section",
+   "jump_db": -3.79,
+   "low_jump_db": -29.875
+  },
+  {
+   "t": 81.33,
+   "strength": 0.682,
+   "kind": "stop",
+   "end": 81.69,
+   "depth_db": 17.041
+  },
+  {
+   "t": 82.43,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 82.73,
+   "depth_db": 79.386
+  },
+  {
+   "t": 84.33,
+   "strength": 0.69,
+   "kind": "section_start",
+   "section": 11,
+   "label": "section",
+   "jump_db": 1.164,
+   "low_jump_db": 3.884
+  },
+  {
+   "t": 85.57,
+   "strength": 0.532,
+   "kind": "stop",
+   "end": 85.73,
+   "depth_db": 13.289
+  },
+  {
+   "t": 98.39,
+   "strength": 0.385,
+   "kind": "gap",
+   "end": 98.53,
+   "depth_db": 9.623
+  },
+  {
+   "t": 102.53,
+   "strength": 0.464,
+   "kind": "hit",
+   "on_downbeat": false
+  },
+  {
+   "t": 104.93,
+   "strength": 0.498,
+   "kind": "hit",
+   "on_downbeat": false
+  },
+  {
+   "t": 107.98,
+   "strength": 0.59,
+   "kind": "stop",
+   "end": 108.13,
+   "depth_db": 14.749
+  },
+  {
+   "t": 111.33,
+   "strength": 0.42,
+   "kind": "hit",
+   "on_downbeat": false
+  },
+  {
+   "t": 114.36,
+   "strength": 0.509,
+   "kind": "gap",
+   "end": 114.51,
+   "depth_db": 12.713
+  },
+  {
+   "t": 119.96,
+   "strength": 0.479,
+   "kind": "gap",
+   "end": 120.11,
+   "depth_db": 11.978
+  },
+  {
+   "t": 126.39,
+   "strength": 0.394,
+   "kind": "gap",
+   "end": 126.53,
+   "depth_db": 9.861
+  },
+  {
+   "t": 127.19,
+   "strength": 0.453,
+   "kind": "gap",
+   "end": 127.33,
+   "depth_db": 11.335
+  },
+  {
+   "t": 132.35,
+   "strength": 0.595,
+   "kind": "section_start",
+   "section": 12,
+   "label": "section",
+   "jump_db": -0.009,
+   "low_jump_db": -45.737
+  },
+  {
+   "t": 133.72,
+   "strength": 0.657,
+   "kind": "stop",
+   "end": 133.94,
+   "depth_db": 16.424
+  },
+  {
+   "t": 134.93,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 135.38,
+   "depth_db": 32.664
+  },
+  {
+   "t": 135.54,
+   "strength": 0.678,
+   "kind": "section_start",
+   "section": 13,
+   "label": "section",
+   "jump_db": 2.608,
+   "low_jump_db": 6.303
+  },
+  {
+   "t": 136.21,
+   "strength": 0.79,
+   "kind": "stop",
+   "end": 136.55,
+   "depth_db": 19.754
+  },
+  {
+   "t": 138.13,
+   "strength": 0.631,
+   "kind": "stop",
+   "end": 138.34,
+   "depth_db": 15.774
+  },
+  {
+   "t": 139.17,
+   "strength": 0.581,
+   "kind": "stop",
+   "end": 139.38,
+   "depth_db": 14.533
+  },
+  {
+   "t": 140.03,
+   "strength": 0.713,
+   "kind": "stop",
+   "end": 140.32,
+   "depth_db": 17.822
+  },
+  {
+   "t": 140.345,
+   "strength": 0.853,
+   "kind": "section_start",
+   "section": 14,
+   "label": "section",
+   "jump_db": 3.715,
+   "low_jump_db": 0.258
+  },
+  {
+   "t": 143.34,
+   "strength": 0.442,
+   "kind": "hit",
+   "on_downbeat": false
+  },
+  {
+   "t": 144.0,
+   "strength": 0.373,
+   "kind": "gap",
+   "end": 144.13,
+   "depth_db": 9.332
+  },
+  {
+   "t": 145.6,
+   "strength": 0.396,
+   "kind": "gap",
+   "end": 145.71,
+   "depth_db": 9.897
+  },
+  {
+   "t": 148.38,
+   "strength": 0.78,
+   "kind": "stop",
+   "end": 148.93,
+   "depth_db": 19.511
+  },
+  {
+   "t": 149.95,
+   "strength": 0.74,
+   "kind": "section_start",
+   "section": 15,
+   "label": "section",
+   "jump_db": 2.105,
+   "low_jump_db": 2.457
+  },
+  {
+   "t": 151.19,
+   "strength": 0.499,
+   "kind": "gap",
+   "end": 151.33,
+   "depth_db": 12.471
+  },
+  {
+   "t": 160.01,
+   "strength": 0.373,
+   "kind": "gap",
+   "end": 160.14,
+   "depth_db": 9.331
+  },
+  {
+   "t": 162.74,
+   "strength": 0.558,
+   "kind": "hit",
+   "on_downbeat": true
+  },
+  {
+   "t": 167.53,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 168.49,
+   "depth_db": 25.761
+  },
+  {
+   "t": 169.15,
+   "strength": 0.848,
+   "kind": "drop",
+   "section": 16,
+   "label": "section",
+   "jump_db": 3.808,
+   "low_jump_db": 12.833
+  },
+  {
+   "t": 171.7,
+   "strength": 0.41,
+   "kind": "hit",
+   "on_downbeat": false
+  },
+  {
+   "t": 173.6,
+   "strength": 0.51,
+   "kind": "gap",
+   "end": 173.75,
+   "depth_db": 12.739
+  },
+  {
+   "t": 176.34,
+   "strength": 0.404,
+   "kind": "hit",
+   "on_downbeat": false
+  },
+  {
+   "t": 180.14,
+   "strength": 0.472,
+   "kind": "hit",
+   "on_downbeat": false
+  },
+  {
+   "t": 183.2,
+   "strength": 0.404,
+   "kind": "gap",
+   "end": 183.32,
+   "depth_db": 10.09
+  },
+  {
+   "t": 184.58,
+   "strength": 0.715,
+   "kind": "stop",
+   "end": 184.74,
+   "depth_db": 17.88
+  },
+  {
+   "t": 185.13,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 188.59,
+   "depth_db": 66.295
+  },
+  {
+   "t": 185.13,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 188.59,
+   "depth_db": 46.593
+  },
+  {
+   "t": 185.13,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 188.59,
+   "depth_db": 81.408
+  },
+  {
+   "t": 185.149,
+   "strength": 0.355,
+   "kind": "section_start",
+   "section": 17,
+   "label": "section",
+   "jump_db": -46.726,
+   "low_jump_db": -48.621
+  },
+  {
+   "t": 188.349,
+   "strength": 1.0,
+   "kind": "drop",
+   "section": 18,
+   "label": "section",
+   "jump_db": 63.352,
+   "low_jump_db": 57.741
+  },
+  {
+   "t": 189.46,
+   "strength": 0.8,
+   "kind": "stop",
+   "end": 189.63,
+   "depth_db": 20.462
+  },
+  {
+   "t": 190.33,
+   "strength": 1.0,
+   "kind": "final_cut",
+   "note": "music stops / fades below the loud level; only tail after"
+  },
+  {
+   "t": 190.46,
+   "strength": 0.2,
+   "kind": "end_of_tail"
+  }
+ ],
+ "onsets_strong": [
+  {
+   "t": 0.24,
+   "strength": 0.556,
+   "band": "kick",
+   "grid": "beat",
+   "beat": -1
+  },
+  {
+   "t": 0.36,
+   "strength": 0.216,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 0
+  },
+  {
+   "t": 0.45,
+   "strength": 0.292,
+   "band": "snare",
+   "grid": "16th",
+   "beat": 0
+  },
+  {
+   "t": 0.55,
+   "strength": 0.682,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 0
+  },
+  {
+   "t": 0.74,
+   "strength": 1.0,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 1
+  },
+  {
+   "t": 1.13,
+   "strength": 0.697,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 2
+  },
+  {
+   "t": 1.54,
+   "strength": 0.894,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 3
+  },
+  {
+   "t": 1.74,
+   "strength": 0.589,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 3
+  },
+  {
+   "t": 1.95,
+   "strength": 0.347,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 4
+  },
+  {
+   "t": 2.14,
+   "strength": 0.315,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 4
+  },
+  {
+   "t": 2.34,
+   "strength": 0.413,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 5
+  },
+  {
+   "t": 2.54,
+   "strength": 0.787,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 5
+  },
+  {
+   "t": 2.74,
+   "strength": 0.215,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 6
+  },
+  {
+   "t": 2.85,
+   "strength": 0.447,
+   "band": "snare",
+   "grid": "16th",
+   "beat": 6
+  },
+  {
+   "t": 2.94,
+   "strength": 0.777,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 6
+  },
+  {
+   "t": 3.14,
+   "strength": 0.44,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 7
+  },
+  {
+   "t": 3.34,
+   "strength": 0.598,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 7
+  },
+  {
+   "t": 3.74,
+   "strength": 0.33,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 8
+  },
+  {
+   "t": 3.94,
+   "strength": 0.509,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 9
+  },
+  {
+   "t": 4.34,
+   "strength": 0.4,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 10
+  },
+  {
+   "t": 4.74,
+   "strength": 0.407,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 11
+  },
+  {
+   "t": 4.94,
+   "strength": 0.44,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 11
+  },
+  {
+   "t": 5.33,
+   "strength": 0.705,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 12
+  },
+  {
+   "t": 5.73,
+   "strength": 0.643,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 13
+  },
+  {
+   "t": 6.14,
+   "strength": 0.35,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 14
+  },
+  {
+   "t": 6.34,
+   "strength": 0.349,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 15
+  },
+  {
+   "t": 6.54,
+   "strength": 0.331,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 15
+  },
+  {
+   "t": 6.74,
+   "strength": 0.313,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 16
+  },
+  {
+   "t": 7.13,
+   "strength": 0.494,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 17
+  },
+  {
+   "t": 7.33,
+   "strength": 0.7,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 17
+  },
+  {
+   "t": 7.54,
+   "strength": 0.602,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 18
+  },
+  {
+   "t": 7.93,
+   "strength": 0.606,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 19
+  },
+  {
+   "t": 8.33,
+   "strength": 0.346,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 20
+  },
+  {
+   "t": 8.71,
+   "strength": 0.581,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 21
+  },
+  {
+   "t": 9.14,
+   "strength": 0.207,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 22
+  },
+  {
+   "t": 9.51,
+   "strength": 0.795,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 23
+  },
+  {
+   "t": 9.74,
+   "strength": 0.244,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 23
+  },
+  {
+   "t": 10.53,
+   "strength": 0.598,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 25
+  },
+  {
+   "t": 11.12,
+   "strength": 0.998,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 27
+  },
+  {
+   "t": 11.53,
+   "strength": 0.323,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 28
+  },
+  {
+   "t": 11.92,
+   "strength": 0.576,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 29
+  },
+  {
+   "t": 12.32,
+   "strength": 0.398,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 30
+  },
+  {
+   "t": 12.71,
+   "strength": 1.0,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 31
+  },
+  {
+   "t": 12.94,
+   "strength": 0.238,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 31
+  },
+  {
+   "t": 13.54,
+   "strength": 0.295,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 33
+  },
+  {
+   "t": 13.94,
+   "strength": 0.326,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 34
+  },
+  {
+   "t": 14.33,
+   "strength": 0.625,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 35
+  },
+  {
+   "t": 14.74,
+   "strength": 0.285,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 36
+  },
+  {
+   "t": 14.93,
+   "strength": 0.403,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 36
+  },
+  {
+   "t": 15.12,
+   "strength": 0.702,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 37
+  },
+  {
+   "t": 15.94,
+   "strength": 0.296,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 39
+  },
+  {
+   "t": 16.34,
+   "strength": 0.209,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 40
+  },
+  {
+   "t": 16.49,
+   "strength": 0.298,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 40
+  },
+  {
+   "t": 16.73,
+   "strength": 0.573,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 41
+  },
+  {
+   "t": 16.91,
+   "strength": 0.599,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 41
+  },
+  {
+   "t": 17.13,
+   "strength": 0.428,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 42
+  },
+  {
+   "t": 17.52,
+   "strength": 0.643,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 43
+  },
+  {
+   "t": 17.72,
+   "strength": 0.644,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 43
+  },
+  {
+   "t": 17.9,
+   "strength": 1.0,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 44
+  },
+  {
+   "t": 18.33,
+   "strength": 0.385,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 45
+  },
+  {
+   "t": 18.53,
+   "strength": 0.267,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 45
+  },
+  {
+   "t": 19.13,
+   "strength": 0.272,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 47
+  },
+  {
+   "t": 19.73,
+   "strength": 0.421,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 48
+  },
+  {
+   "t": 20.1,
+   "strength": 0.244,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 49
+  },
+  {
+   "t": 20.73,
+   "strength": 0.289,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 51
+  },
+  {
+   "t": 21.1,
+   "strength": 0.363,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 52
+  },
+  {
+   "t": 22.1,
+   "strength": 0.444,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 54
+  },
+  {
+   "t": 22.54,
+   "strength": 0.212,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 55
+  },
+  {
+   "t": 23.18,
+   "strength": 0.213,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 57
+  },
+  {
+   "t": 23.33,
+   "strength": 0.251,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 57
+  },
+  {
+   "t": 23.53,
+   "strength": 0.329,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 58
+  },
+  {
+   "t": 24.94,
+   "strength": 0.373,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 61
+  },
+  {
+   "t": 25.32,
+   "strength": 0.983,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 62
+  },
+  {
+   "t": 25.53,
+   "strength": 0.613,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 63
+  },
+  {
+   "t": 25.74,
+   "strength": 0.206,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 63
+  },
+  {
+   "t": 25.83,
+   "strength": 0.349,
+   "band": "kick",
+   "grid": "16th",
+   "beat": 63
+  },
+  {
+   "t": 25.93,
+   "strength": 0.527,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 64
+  },
+  {
+   "t": 26.11,
+   "strength": 0.357,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 64
+  },
+  {
+   "t": 26.53,
+   "strength": 0.281,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 65
+  },
+  {
+   "t": 26.74,
+   "strength": 0.229,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 66
+  },
+  {
+   "t": 27.53,
+   "strength": 0.409,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 68
+  },
+  {
+   "t": 27.94,
+   "strength": 0.244,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 69
+  },
+  {
+   "t": 28.12,
+   "strength": 0.253,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 69
+  },
+  {
+   "t": 28.52,
+   "strength": 0.299,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 70
+  },
+  {
+   "t": 28.74,
+   "strength": 0.285,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 71
+  },
+  {
+   "t": 28.92,
+   "strength": 0.344,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 71
+  },
+  {
+   "t": 29.32,
+   "strength": 0.278,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 72
+  },
+  {
+   "t": 30.12,
+   "strength": 0.237,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 74
+  },
+  {
+   "t": 30.34,
+   "strength": 0.334,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 75
+  },
+  {
+   "t": 30.53,
+   "strength": 0.281,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 75
+  },
+  {
+   "t": 30.7,
+   "strength": 0.417,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 76
+  },
+  {
+   "t": 31.13,
+   "strength": 0.466,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 77
+  },
+  {
+   "t": 31.53,
+   "strength": 0.22,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 78
+  },
+  {
+   "t": 32.13,
+   "strength": 0.533,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 79
+  },
+  {
+   "t": 33.14,
+   "strength": 0.322,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 82
+  },
+  {
+   "t": 33.54,
+   "strength": 0.237,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 83
+  },
+  {
+   "t": 33.92,
+   "strength": 0.613,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 84
+  },
+  {
+   "t": 34.51,
+   "strength": 0.428,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 85
+  },
+  {
+   "t": 34.93,
+   "strength": 0.199,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 86
+  },
+  {
+   "t": 35.34,
+   "strength": 0.326,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 87
+  },
+  {
+   "t": 35.71,
+   "strength": 0.232,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 88
+  },
+  {
+   "t": 36.13,
+   "strength": 0.261,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 89
+  },
+  {
+   "t": 36.34,
+   "strength": 0.199,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 90
+  },
+  {
+   "t": 36.73,
+   "strength": 0.402,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 91
+  },
+  {
+   "t": 37.11,
+   "strength": 0.415,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 92
+  },
+  {
+   "t": 37.33,
+   "strength": 0.365,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 92
+  },
+  {
+   "t": 37.53,
+   "strength": 0.263,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 93
+  },
+  {
+   "t": 37.71,
+   "strength": 0.408,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 93
+  },
+  {
+   "t": 37.93,
+   "strength": 0.458,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 94
+  },
+  {
+   "t": 38.13,
+   "strength": 0.359,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 94
+  },
+  {
+   "t": 38.32,
+   "strength": 0.733,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 95
+  },
+  {
+   "t": 38.9,
+   "strength": 0.552,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 96
+  },
+  {
+   "t": 39.53,
+   "strength": 0.304,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 98
+  },
+  {
+   "t": 41.3,
+   "strength": 0.366,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 102
+  },
+  {
+   "t": 41.73,
+   "strength": 0.305,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 103
+  },
+  {
+   "t": 42.1,
+   "strength": 0.232,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 104
+  },
+  {
+   "t": 42.9,
+   "strength": 0.229,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 106
+  },
+  {
+   "t": 43.31,
+   "strength": 0.248,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 107
+  },
+  {
+   "t": 43.94,
+   "strength": 0.213,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 109
+  },
+  {
+   "t": 44.74,
+   "strength": 0.238,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 111
+  },
+  {
+   "t": 44.92,
+   "strength": 0.409,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 111
+  },
+  {
+   "t": 45.33,
+   "strength": 0.296,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 112
+  },
+  {
+   "t": 46.12,
+   "strength": 0.288,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 114
+  },
+  {
+   "t": 46.94,
+   "strength": 0.226,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 116
+  },
+  {
+   "t": 47.73,
+   "strength": 0.223,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 118
+  },
+  {
+   "t": 48.13,
+   "strength": 0.316,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 119
+  },
+  {
+   "t": 48.48,
+   "strength": 0.228,
+   "band": "hat",
+   "grid": "16th",
+   "beat": 120
+  },
+  {
+   "t": 48.74,
+   "strength": 0.221,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 121
+  },
+  {
+   "t": 49.9,
+   "strength": 0.252,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 124
+  },
+  {
+   "t": 50.13,
+   "strength": 0.29,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 124
+  },
+  {
+   "t": 50.3,
+   "strength": 0.379,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 125
+  },
+  {
+   "t": 51.14,
+   "strength": 0.223,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 127
+  },
+  {
+   "t": 51.93,
+   "strength": 0.341,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 129
+  },
+  {
+   "t": 52.94,
+   "strength": 0.293,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 131
+  },
+  {
+   "t": 53.14,
+   "strength": 0.295,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 132
+  },
+  {
+   "t": 53.53,
+   "strength": 0.388,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 133
+  },
+  {
+   "t": 53.73,
+   "strength": 0.703,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 133
+  },
+  {
+   "t": 53.93,
+   "strength": 0.254,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 134
+  },
+  {
+   "t": 54.13,
+   "strength": 0.462,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 134
+  },
+  {
+   "t": 54.53,
+   "strength": 0.482,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 135
+  },
+  {
+   "t": 54.73,
+   "strength": 0.315,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 136
+  },
+  {
+   "t": 55.13,
+   "strength": 0.428,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 137
+  },
+  {
+   "t": 55.3,
+   "strength": 0.315,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 137
+  },
+  {
+   "t": 55.53,
+   "strength": 0.23,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 138
+  },
+  {
+   "t": 55.93,
+   "strength": 0.305,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 139
+  },
+  {
+   "t": 56.93,
+   "strength": 0.244,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 141
+  },
+  {
+   "t": 57.34,
+   "strength": 0.204,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 142
+  },
+  {
+   "t": 57.53,
+   "strength": 0.509,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 143
+  },
+  {
+   "t": 58.12,
+   "strength": 0.83,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 144
+  },
+  {
+   "t": 58.33,
+   "strength": 0.89,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 145
+  },
+  {
+   "t": 59.14,
+   "strength": 0.198,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 147
+  },
+  {
+   "t": 59.34,
+   "strength": 0.228,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 147
+  },
+  {
+   "t": 59.54,
+   "strength": 0.22,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 148
+  },
+  {
+   "t": 59.71,
+   "strength": 0.846,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 148
+  },
+  {
+   "t": 59.92,
+   "strength": 0.588,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 149
+  },
+  {
+   "t": 60.3,
+   "strength": 0.897,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 150
+  },
+  {
+   "t": 60.72,
+   "strength": 1.0,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 151
+  },
+  {
+   "t": 60.94,
+   "strength": 0.337,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 151
+  },
+  {
+   "t": 61.33,
+   "strength": 0.45,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 152
+  },
+  {
+   "t": 61.53,
+   "strength": 0.509,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 153
+  },
+  {
+   "t": 61.89,
+   "strength": 0.223,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 153
+  },
+  {
+   "t": 62.11,
+   "strength": 0.411,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 154
+  },
+  {
+   "t": 62.33,
+   "strength": 0.754,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 155
+  },
+  {
+   "t": 62.87,
+   "strength": 0.648,
+   "band": "hat",
+   "grid": "16th",
+   "beat": 156
+  },
+  {
+   "t": 63.13,
+   "strength": 0.355,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 157
+  },
+  {
+   "t": 63.49,
+   "strength": 0.846,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 157
+  },
+  {
+   "t": 63.94,
+   "strength": 0.214,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 159
+  },
+  {
+   "t": 64.13,
+   "strength": 0.449,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 159
+  },
+  {
+   "t": 64.74,
+   "strength": 0.279,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 161
+  },
+  {
+   "t": 65.08,
+   "strength": 0.206,
+   "band": "kick",
+   "grid": "16th",
+   "beat": 161
+  },
+  {
+   "t": 65.32,
+   "strength": 0.382,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 162
+  },
+  {
+   "t": 65.53,
+   "strength": 0.339,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 163
+  },
+  {
+   "t": 65.9,
+   "strength": 0.321,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 163
+  },
+  {
+   "t": 66.14,
+   "strength": 0.274,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 164
+  },
+  {
+   "t": 66.31,
+   "strength": 0.97,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 165
+  },
+  {
+   "t": 66.51,
+   "strength": 0.344,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 165
+  },
+  {
+   "t": 67.13,
+   "strength": 0.574,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 167
+  },
+  {
+   "t": 67.33,
+   "strength": 0.38,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 167
+  },
+  {
+   "t": 67.51,
+   "strength": 0.325,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 168
+  },
+  {
+   "t": 67.93,
+   "strength": 0.426,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 169
+  },
+  {
+   "t": 68.33,
+   "strength": 0.477,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 170
+  },
+  {
+   "t": 68.5,
+   "strength": 0.381,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 170
+  },
+  {
+   "t": 68.73,
+   "strength": 0.535,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 171
+  },
+  {
+   "t": 68.94,
+   "strength": 0.302,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 171
+  },
+  {
+   "t": 69.12,
+   "strength": 0.666,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 172
+  },
+  {
+   "t": 69.53,
+   "strength": 0.381,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 173
+  },
+  {
+   "t": 69.74,
+   "strength": 0.23,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 173
+  },
+  {
+   "t": 70.32,
+   "strength": 0.762,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 175
+  },
+  {
+   "t": 70.54,
+   "strength": 0.386,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 175
+  },
+  {
+   "t": 70.93,
+   "strength": 0.491,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 176
+  },
+  {
+   "t": 71.14,
+   "strength": 0.392,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 177
+  },
+  {
+   "t": 71.47,
+   "strength": 0.255,
+   "band": "snare",
+   "grid": "16th",
+   "beat": 177
+  },
+  {
+   "t": 71.54,
+   "strength": 0.289,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 178
+  },
+  {
+   "t": 72.34,
+   "strength": 0.223,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 180
+  },
+  {
+   "t": 72.7,
+   "strength": 0.266,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 181
+  },
+  {
+   "t": 72.93,
+   "strength": 0.248,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 181
+  },
+  {
+   "t": 73.14,
+   "strength": 0.219,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 182
+  },
+  {
+   "t": 73.53,
+   "strength": 0.388,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 183
+  },
+  {
+   "t": 73.7,
+   "strength": 0.618,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 183
+  },
+  {
+   "t": 73.93,
+   "strength": 0.2,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 184
+  },
+  {
+   "t": 74.28,
+   "strength": 0.342,
+   "band": "kick",
+   "grid": "16th",
+   "beat": 184
+  },
+  {
+   "t": 74.73,
+   "strength": 0.22,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 186
+  },
+  {
+   "t": 75.13,
+   "strength": 0.577,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 187
+  },
+  {
+   "t": 75.53,
+   "strength": 0.543,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 188
+  },
+  {
+   "t": 75.93,
+   "strength": 0.475,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 189
+  },
+  {
+   "t": 76.13,
+   "strength": 0.436,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 189
+  },
+  {
+   "t": 76.31,
+   "strength": 0.421,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 190
+  },
+  {
+   "t": 76.54,
+   "strength": 0.287,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 190
+  },
+  {
+   "t": 76.73,
+   "strength": 0.266,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 191
+  },
+  {
+   "t": 77.33,
+   "strength": 0.36,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 192
+  },
+  {
+   "t": 78.1,
+   "strength": 0.364,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 194
+  },
+  {
+   "t": 78.34,
+   "strength": 0.199,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 195
+  },
+  {
+   "t": 78.72,
+   "strength": 0.447,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 196
+  },
+  {
+   "t": 78.91,
+   "strength": 0.395,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 196
+  },
+  {
+   "t": 79.12,
+   "strength": 0.397,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 197
+  },
+  {
+   "t": 79.94,
+   "strength": 0.199,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 199
+  },
+  {
+   "t": 80.14,
+   "strength": 0.285,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 199
+  },
+  {
+   "t": 80.48,
+   "strength": 0.269,
+   "band": "hat",
+   "grid": "16th",
+   "beat": 200
+  },
+  {
+   "t": 80.74,
+   "strength": 0.241,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 201
+  },
+  {
+   "t": 81.47,
+   "strength": 0.771,
+   "band": "hat",
+   "grid": "16th",
+   "beat": 202
+  },
+  {
+   "t": 81.72,
+   "strength": 0.216,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 203
+  },
+  {
+   "t": 81.91,
+   "strength": 0.413,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 204
+  },
+  {
+   "t": 82.7,
+   "strength": 0.947,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 206
+  },
+  {
+   "t": 82.91,
+   "strength": 0.343,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 206
+  },
+  {
+   "t": 83.52,
+   "strength": 0.225,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 208
+  },
+  {
+   "t": 83.73,
+   "strength": 0.24,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 208
+  },
+  {
+   "t": 84.33,
+   "strength": 0.382,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 210
+  },
+  {
+   "t": 85.13,
+   "strength": 0.221,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 212
+  },
+  {
+   "t": 85.54,
+   "strength": 0.23,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 213
+  },
+  {
+   "t": 86.34,
+   "strength": 0.206,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 215
+  },
+  {
+   "t": 86.53,
+   "strength": 0.375,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 215
+  },
+  {
+   "t": 86.91,
+   "strength": 0.251,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 216
+  },
+  {
+   "t": 87.54,
+   "strength": 0.196,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 218
+  },
+  {
+   "t": 87.94,
+   "strength": 0.214,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 219
+  },
+  {
+   "t": 88.13,
+   "strength": 0.218,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 219
+  },
+  {
+   "t": 88.74,
+   "strength": 0.211,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 221
+  },
+  {
+   "t": 89.72,
+   "strength": 0.39,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 223
+  },
+  {
+   "t": 90.74,
+   "strength": 0.237,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 226
+  },
+  {
+   "t": 91.13,
+   "strength": 0.225,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 227
+  },
+  {
+   "t": 91.52,
+   "strength": 0.217,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 228
+  },
+  {
+   "t": 91.94,
+   "strength": 0.278,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 229
+  },
+  {
+   "t": 92.33,
+   "strength": 0.206,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 230
+  },
+  {
+   "t": 92.74,
+   "strength": 0.231,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 231
+  },
+  {
+   "t": 92.94,
+   "strength": 0.36,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 231
+  },
+  {
+   "t": 93.33,
+   "strength": 0.241,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 232
+  },
+  {
+   "t": 94.34,
+   "strength": 0.204,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 235
+  },
+  {
+   "t": 94.94,
+   "strength": 0.225,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 236
+  },
+  {
+   "t": 95.53,
+   "strength": 0.296,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 238
+  },
+  {
+   "t": 95.94,
+   "strength": 0.219,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 239
+  },
+  {
+   "t": 96.74,
+   "strength": 0.224,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 241
+  },
+  {
+   "t": 97.94,
+   "strength": 0.295,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 244
+  },
+  {
+   "t": 98.34,
+   "strength": 0.267,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 245
+  },
+  {
+   "t": 98.5,
+   "strength": 0.454,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 245
+  },
+  {
+   "t": 98.73,
+   "strength": 0.427,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 246
+  },
+  {
+   "t": 99.5,
+   "strength": 0.544,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 248
+  },
+  {
+   "t": 99.73,
+   "strength": 0.387,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 248
+  },
+  {
+   "t": 99.89,
+   "strength": 0.487,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 248
+  },
+  {
+   "t": 100.13,
+   "strength": 0.206,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 249
+  },
+  {
+   "t": 100.34,
+   "strength": 0.326,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 250
+  },
+  {
+   "t": 101.14,
+   "strength": 0.277,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 252
+  },
+  {
+   "t": 101.53,
+   "strength": 0.286,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 253
+  },
+  {
+   "t": 101.74,
+   "strength": 0.442,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 253
+  },
+  {
+   "t": 101.93,
+   "strength": 0.245,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 254
+  },
+  {
+   "t": 102.14,
+   "strength": 0.288,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 254
+  },
+  {
+   "t": 102.33,
+   "strength": 0.366,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 255
+  },
+  {
+   "t": 102.53,
+   "strength": 0.638,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 255
+  },
+  {
+   "t": 102.73,
+   "strength": 0.393,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 256
+  },
+  {
+   "t": 102.94,
+   "strength": 0.32,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 256
+  },
+  {
+   "t": 103.13,
+   "strength": 0.441,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 257
+  },
+  {
+   "t": 103.33,
+   "strength": 0.23,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 257
+  },
+  {
+   "t": 103.53,
+   "strength": 0.712,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 258
+  },
+  {
+   "t": 103.73,
+   "strength": 0.278,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 258
+  },
+  {
+   "t": 103.93,
+   "strength": 0.524,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 259
+  },
+  {
+   "t": 104.14,
+   "strength": 0.247,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 259
+  },
+  {
+   "t": 104.33,
+   "strength": 0.555,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 260
+  },
+  {
+   "t": 104.53,
+   "strength": 0.257,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 260
+  },
+  {
+   "t": 104.73,
+   "strength": 0.497,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 261
+  },
+  {
+   "t": 104.93,
+   "strength": 0.743,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 261
+  },
+  {
+   "t": 105.13,
+   "strength": 0.35,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 262
+  },
+  {
+   "t": 105.34,
+   "strength": 0.344,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 262
+  },
+  {
+   "t": 105.53,
+   "strength": 0.446,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 263
+  },
+  {
+   "t": 105.73,
+   "strength": 0.581,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 263
+  },
+  {
+   "t": 105.94,
+   "strength": 0.258,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 264
+  },
+  {
+   "t": 106.14,
+   "strength": 0.214,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 264
+  },
+  {
+   "t": 106.34,
+   "strength": 0.246,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 265
+  },
+  {
+   "t": 106.53,
+   "strength": 0.279,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 265
+  },
+  {
+   "t": 106.74,
+   "strength": 0.246,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 266
+  },
+  {
+   "t": 107.14,
+   "strength": 0.263,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 267
+  },
+  {
+   "t": 107.53,
+   "strength": 0.507,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 268
+  },
+  {
+   "t": 107.93,
+   "strength": 0.339,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 269
+  },
+  {
+   "t": 108.13,
+   "strength": 0.642,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 269
+  },
+  {
+   "t": 108.33,
+   "strength": 0.345,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 270
+  },
+  {
+   "t": 108.53,
+   "strength": 0.341,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 270
+  },
+  {
+   "t": 108.73,
+   "strength": 0.431,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 271
+  },
+  {
+   "t": 108.93,
+   "strength": 0.596,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 271
+  },
+  {
+   "t": 109.13,
+   "strength": 0.371,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 272
+  },
+  {
+   "t": 109.33,
+   "strength": 0.396,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 272
+  },
+  {
+   "t": 109.53,
+   "strength": 0.444,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 273
+  },
+  {
+   "t": 109.73,
+   "strength": 0.23,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 273
+  },
+  {
+   "t": 109.93,
+   "strength": 0.611,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 274
+  },
+  {
+   "t": 110.13,
+   "strength": 0.239,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 274
+  },
+  {
+   "t": 110.33,
+   "strength": 0.453,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 275
+  },
+  {
+   "t": 110.54,
+   "strength": 0.31,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 275
+  },
+  {
+   "t": 110.65,
+   "strength": 0.208,
+   "band": "hat",
+   "grid": "16th",
+   "beat": 275
+  },
+  {
+   "t": 110.74,
+   "strength": 0.315,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 276
+  },
+  {
+   "t": 110.93,
+   "strength": 0.389,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 276
+  },
+  {
+   "t": 111.13,
+   "strength": 0.403,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 277
+  },
+  {
+   "t": 111.33,
+   "strength": 0.666,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 277
+  },
+  {
+   "t": 111.74,
+   "strength": 0.273,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 278
+  },
+  {
+   "t": 111.94,
+   "strength": 0.267,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 279
+  },
+  {
+   "t": 112.14,
+   "strength": 0.287,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 279
+  },
+  {
+   "t": 112.33,
+   "strength": 0.383,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 280
+  },
+  {
+   "t": 112.74,
+   "strength": 0.303,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 281
+  },
+  {
+   "t": 112.91,
+   "strength": 0.288,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 281
+  },
+  {
+   "t": 113.13,
+   "strength": 0.315,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 282
+  },
+  {
+   "t": 115.14,
+   "strength": 0.254,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 287
+  },
+  {
+   "t": 115.33,
+   "strength": 0.405,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 287
+  },
+  {
+   "t": 115.7,
+   "strength": 0.21,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 288
+  },
+  {
+   "t": 116.74,
+   "strength": 0.253,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 291
+  },
+  {
+   "t": 116.92,
+   "strength": 0.216,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 291
+  },
+  {
+   "t": 118.34,
+   "strength": 0.272,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 295
+  },
+  {
+   "t": 118.51,
+   "strength": 0.354,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 295
+  },
+  {
+   "t": 118.94,
+   "strength": 0.207,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 296
+  },
+  {
+   "t": 119.14,
+   "strength": 0.215,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 297
+  },
+  {
+   "t": 119.32,
+   "strength": 0.202,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 297
+  },
+  {
+   "t": 119.54,
+   "strength": 0.204,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 298
+  },
+  {
+   "t": 119.91,
+   "strength": 0.302,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 299
+  },
+  {
+   "t": 120.74,
+   "strength": 0.249,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 301
+  },
+  {
+   "t": 121.33,
+   "strength": 0.209,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 302
+  },
+  {
+   "t": 121.73,
+   "strength": 0.426,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 303
+  },
+  {
+   "t": 123.54,
+   "strength": 0.233,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 308
+  },
+  {
+   "t": 123.93,
+   "strength": 0.228,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 309
+  },
+  {
+   "t": 124.74,
+   "strength": 0.31,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 311
+  },
+  {
+   "t": 125.53,
+   "strength": 0.391,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 313
+  },
+  {
+   "t": 127.13,
+   "strength": 0.261,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 317
+  },
+  {
+   "t": 127.32,
+   "strength": 0.25,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 317
+  },
+  {
+   "t": 127.94,
+   "strength": 0.204,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 319
+  },
+  {
+   "t": 128.13,
+   "strength": 0.372,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 319
+  },
+  {
+   "t": 128.53,
+   "strength": 0.227,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 320
+  },
+  {
+   "t": 129.54,
+   "strength": 0.313,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 323
+  },
+  {
+   "t": 129.94,
+   "strength": 0.33,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 324
+  },
+  {
+   "t": 130.13,
+   "strength": 0.209,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 324
+  },
+  {
+   "t": 130.54,
+   "strength": 0.278,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 325
+  },
+  {
+   "t": 131.74,
+   "strength": 0.339,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 328
+  },
+  {
+   "t": 131.95,
+   "strength": 0.271,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 329
+  },
+  {
+   "t": 135.3,
+   "strength": 0.789,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 337
+  },
+  {
+   "t": 135.54,
+   "strength": 0.452,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 338
+  },
+  {
+   "t": 136.52,
+   "strength": 0.497,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 340
+  },
+  {
+   "t": 136.92,
+   "strength": 0.229,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 341
+  },
+  {
+   "t": 137.14,
+   "strength": 0.327,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 342
+  },
+  {
+   "t": 137.31,
+   "strength": 0.448,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 342
+  },
+  {
+   "t": 137.91,
+   "strength": 0.532,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 344
+  },
+  {
+   "t": 138.54,
+   "strength": 0.306,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 345
+  },
+  {
+   "t": 139.13,
+   "strength": 0.284,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 347
+  },
+  {
+   "t": 139.3,
+   "strength": 0.58,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 347
+  },
+  {
+   "t": 139.52,
+   "strength": 0.221,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 348
+  },
+  {
+   "t": 139.91,
+   "strength": 0.795,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 349
+  },
+  {
+   "t": 140.14,
+   "strength": 0.265,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 349
+  },
+  {
+   "t": 140.3,
+   "strength": 0.91,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 349
+  },
+  {
+   "t": 140.7,
+   "strength": 0.452,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 350
+  },
+  {
+   "t": 141.34,
+   "strength": 0.729,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 352
+  },
+  {
+   "t": 141.55,
+   "strength": 0.551,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 353
+  },
+  {
+   "t": 141.73,
+   "strength": 0.303,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 353
+  },
+  {
+   "t": 141.95,
+   "strength": 0.503,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 354
+  },
+  {
+   "t": 142.35,
+   "strength": 0.345,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 355
+  },
+  {
+   "t": 142.72,
+   "strength": 0.236,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 356
+  },
+  {
+   "t": 142.95,
+   "strength": 0.368,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 356
+  },
+  {
+   "t": 143.09,
+   "strength": 0.251,
+   "band": "snare",
+   "grid": "16th",
+   "beat": 356
+  },
+  {
+   "t": 143.34,
+   "strength": 0.425,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 357
+  },
+  {
+   "t": 143.72,
+   "strength": 0.463,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 358
+  },
+  {
+   "t": 143.95,
+   "strength": 0.238,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 359
+  },
+  {
+   "t": 144.33,
+   "strength": 0.561,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 360
+  },
+  {
+   "t": 144.55,
+   "strength": 0.196,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 360
+  },
+  {
+   "t": 144.69,
+   "strength": 0.237,
+   "band": "kick",
+   "grid": "16th",
+   "beat": 360
+  },
+  {
+   "t": 145.15,
+   "strength": 0.312,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 362
+  },
+  {
+   "t": 145.51,
+   "strength": 0.384,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 362
+  },
+  {
+   "t": 145.73,
+   "strength": 0.283,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 363
+  },
+  {
+   "t": 145.86,
+   "strength": 0.23,
+   "band": "tonal",
+   "grid": "16th",
+   "beat": 363
+  },
+  {
+   "t": 145.95,
+   "strength": 0.259,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 364
+  },
+  {
+   "t": 146.15,
+   "strength": 0.399,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 364
+  },
+  {
+   "t": 146.25,
+   "strength": 0.216,
+   "band": "hat",
+   "grid": "16th",
+   "beat": 364
+  },
+  {
+   "t": 146.55,
+   "strength": 0.536,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 365
+  },
+  {
+   "t": 146.94,
+   "strength": 0.453,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 366
+  },
+  {
+   "t": 147.14,
+   "strength": 0.396,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 367
+  },
+  {
+   "t": 147.34,
+   "strength": 0.368,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 367
+  },
+  {
+   "t": 147.53,
+   "strength": 0.496,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 368
+  },
+  {
+   "t": 147.72,
+   "strength": 0.284,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 368
+  },
+  {
+   "t": 147.94,
+   "strength": 0.446,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 369
+  },
+  {
+   "t": 148.35,
+   "strength": 0.731,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 370
+  },
+  {
+   "t": 148.54,
+   "strength": 1.0,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 370
+  },
+  {
+   "t": 148.74,
+   "strength": 0.696,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 371
+  },
+  {
+   "t": 148.95,
+   "strength": 0.595,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 371
+  },
+  {
+   "t": 149.15,
+   "strength": 0.506,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 372
+  },
+  {
+   "t": 149.33,
+   "strength": 0.225,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 372
+  },
+  {
+   "t": 149.55,
+   "strength": 0.239,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 373
+  },
+  {
+   "t": 149.74,
+   "strength": 0.266,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 373
+  },
+  {
+   "t": 149.95,
+   "strength": 0.368,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 374
+  },
+  {
+   "t": 150.34,
+   "strength": 0.209,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 375
+  },
+  {
+   "t": 150.74,
+   "strength": 0.323,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 376
+  },
+  {
+   "t": 151.15,
+   "strength": 0.259,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 377
+  },
+  {
+   "t": 151.7,
+   "strength": 0.198,
+   "band": "hat",
+   "grid": "16th",
+   "beat": 378
+  },
+  {
+   "t": 151.95,
+   "strength": 0.259,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 379
+  },
+  {
+   "t": 152.14,
+   "strength": 0.399,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 379
+  },
+  {
+   "t": 152.51,
+   "strength": 0.272,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 380
+  },
+  {
+   "t": 152.75,
+   "strength": 0.231,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 381
+  },
+  {
+   "t": 153.15,
+   "strength": 0.228,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 382
+  },
+  {
+   "t": 153.55,
+   "strength": 0.328,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 383
+  },
+  {
+   "t": 153.74,
+   "strength": 0.196,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 383
+  },
+  {
+   "t": 154.35,
+   "strength": 0.323,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 385
+  },
+  {
+   "t": 154.93,
+   "strength": 0.211,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 386
+  },
+  {
+   "t": 155.15,
+   "strength": 0.348,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 387
+  },
+  {
+   "t": 155.35,
+   "strength": 0.388,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 387
+  },
+  {
+   "t": 155.95,
+   "strength": 0.273,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 389
+  },
+  {
+   "t": 156.35,
+   "strength": 0.436,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 390
+  },
+  {
+   "t": 156.55,
+   "strength": 0.316,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 390
+  },
+  {
+   "t": 156.75,
+   "strength": 0.232,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 391
+  },
+  {
+   "t": 156.95,
+   "strength": 0.212,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 391
+  },
+  {
+   "t": 157.13,
+   "strength": 0.324,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 392
+  },
+  {
+   "t": 157.55,
+   "strength": 0.238,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 393
+  },
+  {
+   "t": 157.76,
+   "strength": 0.223,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 393
+  },
+  {
+   "t": 157.95,
+   "strength": 0.225,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 394
+  },
+  {
+   "t": 158.15,
+   "strength": 0.282,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 394
+  },
+  {
+   "t": 159.15,
+   "strength": 0.286,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 397
+  },
+  {
+   "t": 159.35,
+   "strength": 0.215,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 397
+  },
+  {
+   "t": 159.55,
+   "strength": 0.37,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 398
+  },
+  {
+   "t": 159.94,
+   "strength": 0.256,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 399
+  },
+  {
+   "t": 160.35,
+   "strength": 0.2,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 400
+  },
+  {
+   "t": 160.75,
+   "strength": 0.27,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 401
+  },
+  {
+   "t": 160.95,
+   "strength": 0.237,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 401
+  },
+  {
+   "t": 161.14,
+   "strength": 0.317,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 402
+  },
+  {
+   "t": 161.55,
+   "strength": 0.36,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 403
+  },
+  {
+   "t": 161.74,
+   "strength": 0.325,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 403
+  },
+  {
+   "t": 162.35,
+   "strength": 0.34,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 405
+  },
+  {
+   "t": 162.74,
+   "strength": 0.579,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 406
+  },
+  {
+   "t": 163.75,
+   "strength": 0.216,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 408
+  },
+  {
+   "t": 163.95,
+   "strength": 0.274,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 409
+  },
+  {
+   "t": 164.16,
+   "strength": 0.207,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 409
+  },
+  {
+   "t": 164.55,
+   "strength": 0.321,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 410
+  },
+  {
+   "t": 165.34,
+   "strength": 0.467,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 412
+  },
+  {
+   "t": 165.54,
+   "strength": 0.529,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 413
+  },
+  {
+   "t": 165.75,
+   "strength": 0.231,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 413
+  },
+  {
+   "t": 165.95,
+   "strength": 0.297,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 414
+  },
+  {
+   "t": 166.34,
+   "strength": 0.327,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 415
+  },
+  {
+   "t": 167.15,
+   "strength": 0.354,
+   "band": "tonal",
+   "grid": "beat",
+   "beat": 417
+  },
+  {
+   "t": 167.35,
+   "strength": 0.602,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 417
+  },
+  {
+   "t": 167.75,
+   "strength": 0.404,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 418
+  },
+  {
+   "t": 167.94,
+   "strength": 0.454,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 419
+  },
+  {
+   "t": 168.14,
+   "strength": 0.499,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 419
+  },
+  {
+   "t": 168.35,
+   "strength": 0.483,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 420
+  },
+  {
+   "t": 168.44,
+   "strength": 0.209,
+   "band": "hat",
+   "grid": "16th",
+   "beat": 420
+  },
+  {
+   "t": 168.55,
+   "strength": 0.289,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 420
+  },
+  {
+   "t": 168.75,
+   "strength": 0.404,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 421
+  },
+  {
+   "t": 168.94,
+   "strength": 0.393,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 421
+  },
+  {
+   "t": 169.15,
+   "strength": 0.543,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 422
+  },
+  {
+   "t": 170.14,
+   "strength": 0.2,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 424
+  },
+  {
+   "t": 170.68,
+   "strength": 0.357,
+   "band": "snare",
+   "grid": "16th",
+   "beat": 425
+  },
+  {
+   "t": 170.75,
+   "strength": 0.301,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 426
+  },
+  {
+   "t": 171.7,
+   "strength": 0.487,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 428
+  },
+  {
+   "t": 171.95,
+   "strength": 0.497,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 429
+  },
+  {
+   "t": 172.15,
+   "strength": 0.351,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 429
+  },
+  {
+   "t": 173.15,
+   "strength": 0.355,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 432
+  },
+  {
+   "t": 173.36,
+   "strength": 0.207,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 432
+  },
+  {
+   "t": 173.55,
+   "strength": 0.39,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 433
+  },
+  {
+   "t": 173.75,
+   "strength": 0.587,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 433
+  },
+  {
+   "t": 173.95,
+   "strength": 0.347,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 434
+  },
+  {
+   "t": 174.15,
+   "strength": 0.382,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 434
+  },
+  {
+   "t": 174.34,
+   "strength": 0.432,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 435
+  },
+  {
+   "t": 174.55,
+   "strength": 0.651,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 435
+  },
+  {
+   "t": 174.74,
+   "strength": 0.354,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 436
+  },
+  {
+   "t": 174.95,
+   "strength": 0.394,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 436
+  },
+  {
+   "t": 175.14,
+   "strength": 0.392,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 437
+  },
+  {
+   "t": 175.35,
+   "strength": 0.268,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 437
+  },
+  {
+   "t": 175.55,
+   "strength": 0.608,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 438
+  },
+  {
+   "t": 175.75,
+   "strength": 0.296,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 438
+  },
+  {
+   "t": 175.94,
+   "strength": 0.551,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 439
+  },
+  {
+   "t": 176.15,
+   "strength": 0.328,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 439
+  },
+  {
+   "t": 176.34,
+   "strength": 0.665,
+   "band": "snare",
+   "grid": "beat",
+   "beat": 440
+  },
+  {
+   "t": 176.55,
+   "strength": 0.339,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 440
+  },
+  {
+   "t": 176.74,
+   "strength": 0.426,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 441
+  },
+  {
+   "t": 176.95,
+   "strength": 0.558,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 441
+  },
+  {
+   "t": 177.15,
+   "strength": 0.319,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 442
+  },
+  {
+   "t": 177.35,
+   "strength": 0.441,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 442
+  },
+  {
+   "t": 177.54,
+   "strength": 0.422,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 443
+  },
+  {
+   "t": 177.75,
+   "strength": 0.535,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 443
+  },
+  {
+   "t": 178.16,
+   "strength": 0.273,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 444
+  },
+  {
+   "t": 178.35,
+   "strength": 0.263,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 445
+  },
+  {
+   "t": 178.55,
+   "strength": 0.381,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 445
+  },
+  {
+   "t": 178.76,
+   "strength": 0.206,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 446
+  },
+  {
+   "t": 179.55,
+   "strength": 0.381,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 448
+  },
+  {
+   "t": 179.95,
+   "strength": 0.41,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 449
+  },
+  {
+   "t": 180.15,
+   "strength": 0.642,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 449
+  },
+  {
+   "t": 180.35,
+   "strength": 0.353,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 450
+  },
+  {
+   "t": 180.55,
+   "strength": 0.42,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 450
+  },
+  {
+   "t": 180.74,
+   "strength": 0.46,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 451
+  },
+  {
+   "t": 180.94,
+   "strength": 0.669,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 451
+  },
+  {
+   "t": 181.14,
+   "strength": 0.415,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 452
+  },
+  {
+   "t": 181.35,
+   "strength": 0.431,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 452
+  },
+  {
+   "t": 181.54,
+   "strength": 0.608,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 453
+  },
+  {
+   "t": 181.75,
+   "strength": 0.275,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 453
+  },
+  {
+   "t": 181.85,
+   "strength": 0.233,
+   "band": "tonal",
+   "grid": "16th",
+   "beat": 453
+  },
+  {
+   "t": 181.95,
+   "strength": 0.554,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 454
+  },
+  {
+   "t": 182.15,
+   "strength": 0.312,
+   "band": "tonal",
+   "grid": "8th",
+   "beat": 454
+  },
+  {
+   "t": 182.34,
+   "strength": 0.614,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 455
+  },
+  {
+   "t": 182.55,
+   "strength": 0.369,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 455
+  },
+  {
+   "t": 182.66,
+   "strength": 0.297,
+   "band": "hat",
+   "grid": "16th",
+   "beat": 455
+  },
+  {
+   "t": 182.75,
+   "strength": 0.358,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 456
+  },
+  {
+   "t": 182.95,
+   "strength": 0.351,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 456
+  },
+  {
+   "t": 183.14,
+   "strength": 0.48,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 457
+  },
+  {
+   "t": 183.35,
+   "strength": 0.727,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 457
+  },
+  {
+   "t": 183.74,
+   "strength": 0.46,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 458
+  },
+  {
+   "t": 183.94,
+   "strength": 0.418,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 459
+  },
+  {
+   "t": 184.15,
+   "strength": 0.373,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 459
+  },
+  {
+   "t": 184.34,
+   "strength": 0.468,
+   "band": "hat",
+   "grid": "beat",
+   "beat": 460
+  },
+  {
+   "t": 184.55,
+   "strength": 0.357,
+   "band": "kick",
+   "grid": "8th",
+   "beat": 460
+  },
+  {
+   "t": 184.74,
+   "strength": 1.0,
+   "band": "kick",
+   "grid": "beat",
+   "beat": 461
+  },
+  {
+   "t": 188.56,
+   "strength": 0.867,
+   "band": "snare",
+   "grid": "8th",
+   "beat": 470
+  },
+  {
+   "t": 188.99,
+   "strength": 0.46,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 471
+  },
+  {
+   "t": 189.61,
+   "strength": 0.816,
+   "band": "snare",
+   "grid": "16th",
+   "beat": 473
+  },
+  {
+   "t": 190.04,
+   "strength": 0.245,
+   "band": "tonal",
+   "grid": "16th",
+   "beat": 474
+  },
+  {
+   "t": 190.18,
+   "strength": 0.41,
+   "band": "hat",
+   "grid": "8th",
+   "beat": 474
+  }
+ ],
+ "vocal_activity": [
+  {
+   "start": 0.21,
+   "end": 3.12
+  },
+  {
+   "start": 3.33,
+   "end": 4.31
+  },
+  {
+   "start": 5.2,
+   "end": 5.72
+  },
+  {
+   "start": 7.01,
+   "end": 8.18
+  },
+  {
+   "start": 8.53,
+   "end": 8.89
+  },
+  {
+   "start": 9.27,
+   "end": 9.87
+  },
+  {
+   "start": 10.84,
+   "end": 11.59
+  },
+  {
+   "start": 13.61,
+   "end": 14.33
+  },
+  {
+   "start": 14.58,
+   "end": 16.15
+  },
+  {
+   "start": 16.63,
+   "end": 17.06
+  },
+  {
+   "start": 17.28,
+   "end": 18.72
+  },
+  {
+   "start": 19.5,
+   "end": 20.42
+  },
+  {
+   "start": 20.62,
+   "end": 23.67
+  },
+  {
+   "start": 23.96,
+   "end": 24.39
+  },
+  {
+   "start": 26.02,
+   "end": 26.27
+  },
+  {
+   "start": 33.42,
+   "end": 33.81
+  },
+  {
+   "start": 34.03,
+   "end": 34.57
+  },
+  {
+   "start": 35.74,
+   "end": 36.22
+  },
+  {
+   "start": 38.16,
+   "end": 38.52
+  },
+  {
+   "start": 46.37,
+   "end": 46.97
+  },
+  {
+   "start": 48.58,
+   "end": 48.97
+  },
+  {
+   "start": 50.44,
+   "end": 50.87
+  },
+  {
+   "start": 51.09,
+   "end": 51.66
+  },
+  {
+   "start": 53.17,
+   "end": 53.53
+  },
+  {
+   "start": 54.45,
+   "end": 55.1
+  },
+  {
+   "start": 57.95,
+   "end": 58.72
+  },
+  {
+   "start": 59.01,
+   "end": 59.34
+  },
+  {
+   "start": 59.55,
+   "end": 61.9
+  },
+  {
+   "start": 62.11,
+   "end": 63.79
+  },
+  {
+   "start": 65.32,
+   "end": 67.37
+  },
+  {
+   "start": 67.93,
+   "end": 68.29
+  },
+  {
+   "start": 68.57,
+   "end": 69.39
+  },
+  {
+   "start": 69.58,
+   "end": 70.96
+  },
+  {
+   "start": 72.11,
+   "end": 72.37
+  },
+  {
+   "start": 72.84,
+   "end": 73.12
+  },
+  {
+   "start": 73.35,
+   "end": 73.74
+  },
+  {
+   "start": 74.55,
+   "end": 75.77
+  },
+  {
+   "start": 76.44,
+   "end": 77.09
+  },
+  {
+   "start": 78.16,
+   "end": 78.55
+  },
+  {
+   "start": 81.44,
+   "end": 82.53
+  },
+  {
+   "start": 82.86,
+   "end": 83.58
+  },
+  {
+   "start": 84.77,
+   "end": 85.16
+  },
+  {
+   "start": 90.46,
+   "end": 90.74
+  },
+  {
+   "start": 91.13,
+   "end": 91.67
+  },
+  {
+   "start": 92.82,
+   "end": 93.39
+  },
+  {
+   "start": 95.61,
+   "end": 96.47
+  },
+  {
+   "start": 97.38,
+   "end": 97.87
+  },
+  {
+   "start": 98.49,
+   "end": 100.15
+  },
+  {
+   "start": 101.37,
+   "end": 101.89
+  },
+  {
+   "start": 102.22,
+   "end": 103.84
+  },
+  {
+   "start": 104.53,
+   "end": 105.1
+  },
+  {
+   "start": 105.37,
+   "end": 105.77
+  },
+  {
+   "start": 108.77,
+   "end": 110.6
+  },
+  {
+   "start": 115.06,
+   "end": 115.35
+  },
+  {
+   "start": 116.88,
+   "end": 117.25
+  },
+  {
+   "start": 118.21,
+   "end": 118.62
+  },
+  {
+   "start": 119.98,
+   "end": 120.97
+  },
+  {
+   "start": 122.57,
+   "end": 122.85
+  },
+  {
+   "start": 123.25,
+   "end": 123.59
+  },
+  {
+   "start": 127.24,
+   "end": 127.53
+  },
+  {
+   "start": 130.93,
+   "end": 131.33
+  },
+  {
+   "start": 131.63,
+   "end": 141.52
+  },
+  {
+   "start": 143.23,
+   "end": 143.78
+  },
+  {
+   "start": 144.04,
+   "end": 146.57
+  },
+  {
+   "start": 147.67,
+   "end": 148.65
+  },
+  {
+   "start": 148.83,
+   "end": 149.53
+  },
+  {
+   "start": 155.2,
+   "end": 155.65
+  },
+  {
+   "start": 156.66,
+   "end": 157.38
+  },
+  {
+   "start": 161.6,
+   "end": 162.13
+  },
+  {
+   "start": 163.14,
+   "end": 164.15
+  },
+  {
+   "start": 165.1,
+   "end": 165.9
+  },
+  {
+   "start": 166.36,
+   "end": 166.73
+  },
+  {
+   "start": 167.73,
+   "end": 169.11
+  },
+  {
+   "start": 169.86,
+   "end": 170.14
+  },
+  {
+   "start": 170.4,
+   "end": 171.4
+  },
+  {
+   "start": 172.59,
+   "end": 173.15
+  },
+  {
+   "start": 173.6,
+   "end": 173.87
+  },
+  {
+   "start": 176.1,
+   "end": 177.0
+  },
+  {
+   "start": 177.43,
+   "end": 177.8
+  },
+  {
+   "start": 178.99,
+   "end": 181.07
+  },
+  {
+   "start": 181.74,
+   "end": 182.95
+  },
+  {
+   "start": 185.3,
+   "end": 185.83
+  },
+  {
+   "start": 188.55,
+   "end": 190.33
+  }
+ ],
+ "vocal_activity_method": {
+  "method": "REPET-SIM foreground ratio (250-4000 Hz) + Silero VAD on foreground, hysteresis"
+ },
+ "stops": [
+  {
+   "start": 1.35,
+   "end": 1.55,
+   "depth_db": 16.631,
+   "kind": "stop"
+  },
+  {
+   "start": 2.71,
+   "end": 2.95,
+   "depth_db": 21.294,
+   "kind": "stop"
+  },
+  {
+   "start": 5.55,
+   "end": 5.73,
+   "depth_db": 19.306,
+   "kind": "stop"
+  },
+  {
+   "start": 7.71,
+   "end": 7.93,
+   "depth_db": 20.525,
+   "kind": "stop"
+  },
+  {
+   "start": 9.39,
+   "end": 9.53,
+   "depth_db": 11.609,
+   "kind": "gap"
+  },
+  {
+   "start": 11.0,
+   "end": 11.14,
+   "depth_db": 12.11,
+   "kind": "gap"
+  },
+  {
+   "start": 12.54,
+   "end": 12.73,
+   "depth_db": 23.82,
+   "kind": "stop"
+  },
+  {
+   "start": 14.15,
+   "end": 14.33,
+   "depth_db": 14.353,
+   "kind": "stop"
+  },
+  {
+   "start": 17.58,
+   "end": 17.93,
+   "depth_db": 20.23,
+   "kind": "stop"
+  },
+  {
+   "start": 20.93,
+   "end": 21.14,
+   "depth_db": 15.575,
+   "kind": "stop"
+  },
+  {
+   "start": 22.67,
+   "end": 22.92,
+   "depth_db": 9.003,
+   "kind": "gap"
+  },
+  {
+   "start": 25.05,
+   "end": 25.34,
+   "depth_db": 27.446,
+   "kind": "stop"
+  },
+  {
+   "start": 27.95,
+   "end": 28.13,
+   "depth_db": 17.048,
+   "kind": "stop"
+  },
+  {
+   "start": 30.38,
+   "end": 30.52,
+   "depth_db": 9.288,
+   "kind": "gap"
+  },
+  {
+   "start": 34.34,
+   "end": 34.53,
+   "depth_db": 19.733,
+   "kind": "stop"
+  },
+  {
+   "start": 38.66,
+   "end": 38.92,
+   "depth_db": 25.946,
+   "kind": "stop"
+  },
+  {
+   "start": 40.76,
+   "end": 40.94,
+   "depth_db": 15.587,
+   "kind": "stop"
+  },
+  {
+   "start": 43.18,
+   "end": 43.31,
+   "depth_db": 9.853,
+   "kind": "gap"
+  },
+  {
+   "start": 47.15,
+   "end": 47.33,
+   "depth_db": 14.739,
+   "kind": "stop"
+  },
+  {
+   "start": 52.75,
+   "end": 52.92,
+   "depth_db": 11.583,
+   "kind": "gap"
+  },
+  {
+   "start": 53.56,
+   "end": 53.74,
+   "depth_db": 15.747,
+   "kind": "stop"
+  },
+  {
+   "start": 57.96,
+   "end": 58.36,
+   "depth_db": 22.129,
+   "kind": "stop"
+  },
+  {
+   "start": 59.57,
+   "end": 59.73,
+   "depth_db": 15.541,
+   "kind": "stop"
+  },
+  {
+   "start": 60.49,
+   "end": 60.74,
+   "depth_db": 25.059,
+   "kind": "stop"
+  },
+  {
+   "start": 62.76,
+   "end": 62.92,
+   "depth_db": 15.696,
+   "kind": "stop"
+  },
+  {
+   "start": 65.53,
+   "end": 65.72,
+   "depth_db": 12.959,
+   "kind": "gap"
+  },
+  {
+   "start": 66.15,
+   "end": 66.54,
+   "depth_db": 22.343,
+   "kind": "stop"
+  },
+  {
+   "start": 70.06,
+   "end": 70.35,
+   "depth_db": 29.379,
+   "kind": "stop"
+  },
+  {
+   "start": 71.95,
+   "end": 72.11,
+   "depth_db": 11.529,
+   "kind": "gap"
+  },
+  {
+   "start": 73.58,
+   "end": 73.73,
+   "depth_db": 13.273,
+   "kind": "stop"
+  },
+  {
+   "start": 76.01,
+   "end": 76.15,
+   "depth_db": 9.054,
+   "kind": "gap"
+  },
+  {
+   "start": 81.33,
+   "end": 81.69,
+   "depth_db": 17.041,
+   "kind": "stop"
+  },
+  {
+   "start": 82.43,
+   "end": 82.73,
+   "depth_db": 79.386,
+   "kind": "stop"
+  },
+  {
+   "start": 85.57,
+   "end": 85.73,
+   "depth_db": 13.289,
+   "kind": "stop"
+  },
+  {
+   "start": 98.39,
+   "end": 98.53,
+   "depth_db": 9.623,
+   "kind": "gap"
+  },
+  {
+   "start": 107.98,
+   "end": 108.13,
+   "depth_db": 14.749,
+   "kind": "stop"
+  },
+  {
+   "start": 114.36,
+   "end": 114.51,
+   "depth_db": 12.713,
+   "kind": "gap"
+  },
+  {
+   "start": 119.96,
+   "end": 120.11,
+   "depth_db": 11.978,
+   "kind": "gap"
+  },
+  {
+   "start": 126.39,
+   "end": 126.53,
+   "depth_db": 9.861,
+   "kind": "gap"
+  },
+  {
+   "start": 127.19,
+   "end": 127.33,
+   "depth_db": 11.335,
+   "kind": "gap"
+  },
+  {
+   "start": 133.72,
+   "end": 133.94,
+   "depth_db": 16.424,
+   "kind": "stop"
+  },
+  {
+   "start": 134.93,
+   "end": 135.38,
+   "depth_db": 32.664,
+   "kind": "stop"
+  },
+  {
+   "start": 136.21,
+   "end": 136.55,
+   "depth_db": 19.754,
+   "kind": "stop"
+  },
+  {
+   "start": 138.13,
+   "end": 138.34,
+   "depth_db": 15.774,
+   "kind": "stop"
+  },
+  {
+   "start": 139.17,
+   "end": 139.38,
+   "depth_db": 14.533,
+   "kind": "stop"
+  },
+  {
+   "start": 140.03,
+   "end": 140.32,
+   "depth_db": 17.822,
+   "kind": "stop"
+  },
+  {
+   "start": 144.0,
+   "end": 144.13,
+   "depth_db": 9.332,
+   "kind": "gap"
+  },
+  {
+   "start": 145.6,
+   "end": 145.71,
+   "depth_db": 9.897,
+   "kind": "gap"
+  },
+  {
+   "start": 148.38,
+   "end": 148.93,
+   "depth_db": 19.511,
+   "kind": "stop"
+  },
+  {
+   "start": 151.19,
+   "end": 151.33,
+   "depth_db": 12.471,
+   "kind": "gap"
+  },
+  {
+   "start": 160.01,
+   "end": 160.14,
+   "depth_db": 9.331,
+   "kind": "gap"
+  },
+  {
+   "start": 167.53,
+   "end": 168.49,
+   "depth_db": 25.761,
+   "kind": "stop"
+  },
+  {
+   "start": 173.6,
+   "end": 173.75,
+   "depth_db": 12.739,
+   "kind": "gap"
+  },
+  {
+   "start": 183.2,
+   "end": 183.32,
+   "depth_db": 10.09,
+   "kind": "gap"
+  },
+  {
+   "start": 184.58,
+   "end": 184.74,
+   "depth_db": 17.88,
+   "kind": "stop"
+  },
+  {
+   "start": 185.13,
+   "end": 188.59,
+   "depth_db": 66.295,
+   "kind": "stop"
+  },
+  {
+   "start": 185.13,
+   "end": 188.59,
+   "depth_db": 46.593,
+   "kind": "stop"
+  },
+  {
+   "start": 185.13,
+   "end": 188.59,
+   "depth_db": 81.408,
+   "kind": "stop"
+  },
+  {
+   "start": 189.46,
+   "end": 189.63,
+   "depth_db": 20.462,
+   "kind": "stop"
+  }
+ ]
+}
