@@ -56,7 +56,14 @@
     }ctx.closePath();ctx.fill();ctx.restore();
   }
   function activeLine(t){return film.lines.find(l=>t>=l.start&&t<l.end);}
-  function activeCue(t){return film.cues.find(c=>t>=c.start&&t<c.end);}
+  // A cue may only fire while a line that actually contains the word is on screen.
+  // 28.52 / 41.16 / 86.00 (苦い) arrive after their sentence has ended; showing them over the
+  // next line would caption the wrong word, so they are dropped rather than re-timed.
+  function activeCue(t){
+    const line=activeLine(t);
+    if(!line)return null;
+    return film.cues.find(c=>t>=c.start&&t<c.end&&line.text.includes(c.text))||null;
+  }
   Z.scene('a3-plate',{
     preload:a=>[path(a.image)],
     async init(){
@@ -158,14 +165,20 @@
       const enter=C(age/.16),exit=C((len-age)/.14);
       // Exact supplied cues only: no inferred vocal/word timing.
       const zoom=age<.14?L(.92,1.05,E.outCubic(age/.14)):L(1.05,1,E.outCubic(C((age-.14)/.18)));
-      ctx.save();ctx.globalAlpha=Math.min(enter,exit);ctx.translate(1510,765);ctx.scale(zoom,zoom);
-      ctx.font='400 146px "Dela Gothic One"';ctx.textAlign='center';
-      ctx.lineWidth=4;ctx.strokeStyle='rgba(25,13,27,.9)';
-      ctx.shadowColor='rgba(10,7,14,.7)';ctx.shadowBlur=12;
-      ctx.strokeText(cue.text,0,0);
+      ctx.save();ctx.globalAlpha=Math.min(enter,exit);ctx.translate(1585,812);ctx.scale(zoom,zoom);
+      ctx.font='400 132px "Dela Gothic One"';ctx.textAlign='center';
+      // Bright plates and white sleeves need a real scrim, not a 12px shadow.
+      ctx.lineJoin='round';ctx.lineWidth=10;ctx.strokeStyle='rgba(14,8,18,.42)';ctx.strokeText(cue.text,0,0);
+      ctx.lineWidth=3;ctx.strokeStyle='rgba(20,11,24,.95)';ctx.strokeText(cue.text,0,0);
       ctx.fillStyle=WHITE;ctx.fillText(cue.text,0,0);
-      ctx.shadowBlur=0;ctx.lineWidth=1.5;ctx.strokeStyle=GOLD;
-      ctx.globalAlpha*=.4*(1-C(age/.25));ctx.strokeText(cue.text,12*(1-enter),-9);
+      // Gold echo sliding out of the main word, then a rule that sweeps under it.
+      ctx.globalAlpha*=.45*(1-C(age/.3));ctx.lineWidth=1.3;ctx.strokeStyle=GOLD;
+      ctx.strokeText(cue.text,14*(1-enter),-11*(1-enter));
+      if(cue.text==='お酒'){
+        ctx.globalAlpha=Math.min(enter,exit);ctx.lineWidth=2.4;ctx.strokeStyle=GOLD;
+        const w=ctx.measureText(cue.text).width;
+        ctx.beginPath();ctx.moveTo(-w/2,18);ctx.lineTo(-w/2+w*E.outCubic(C(age/.3)),18);ctx.stroke();
+      }
       ctx.restore();
     }
   }

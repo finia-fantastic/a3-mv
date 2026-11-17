@@ -22,7 +22,7 @@
     if (busy) { wanted = t; return; }
     busy = true;
     try {
-      await Z.renderFrame(t);
+      await window.renderFrame(t);
       lastFrame = frameOf(t);
       clock.textContent = `${fmt(t)} / ${fmt(film.duration)}`;
     } catch (e) {
@@ -53,7 +53,7 @@
   }
 
   function seekTo(t, { snap = true } = {}) {
-    if (!film) return;
+    if (!film || !Number.isFinite(t)) return;
     t = Z.clamp(t, 0, film.duration);
     if (snap) t = frameOf(t) / FPS;
     try { audio.currentTime = t; } catch (e) { /* metadata not loaded yet */ }

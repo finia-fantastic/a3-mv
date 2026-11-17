@@ -1,4 +1,18 @@
-# Vocaloid-style MV project
+# 《恋爱如酒》歌词 MV
+
+九张静帧 + 日文歌词的 16:9 歌词 MV，跑在 `vocaloid-style-mv-pipeline` 上（MIT，NikusonP）。
+
+```bash
+node tools/serve.mjs      # → http://127.0.0.1:8899/engine/a3.html
+```
+
+- 成片时间线：`engine/a3-timeline.js`（47 个镜头 / 191.541 秒 / 30 fps）
+- 预览与交互：`engine/a3-preview.js`
+- 中文交接说明：`README_给本体.md`
+
+仓库不含音频与字体（`.gitignore` 排除）；要完整可跑的包，下 Releases 里的 `A3_MV_env_2026-11-17.zip`。
+
+---
 
 A Vocaloid-style 手書き (tegaki) lyric MV project made from the **vocaloid-style-mv-pipeline** template (author: **NikusonP**,
 MIT licence). Every frame is drawn by a deterministic front-end engine (Canvas2D scenes + a transparent lyric layer +
